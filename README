@@ -1,0 +1,30 @@
+::::::::::::::::::::::::::::::::::::::::
+ Package name: DETAILS
+ Short Desc: Template for MODx Revolution
+ Version: 0.1 (Revolution compatible)
+ Author: 
+    Menno Pietersen (designfromwithin.com and nieuwe-website-ontwerpen.nl)
+::::::::::::::::::::::::::::::::::::::::
+Description:
+    MODx HTML5 Boilerplate based template TV controlled with CSS3, HTML5 and jQuery slider
+    format you desire.
+::::::::::::::::::::::::::::::::::::::::
+Usage:
+    #1 
+	- Upload/copy zipped package to: <your_website_root>/core/packages/
+	
+	#2 
+	- Go to MODx Revolution manager
+	- Click on: System > Package Management > Add New Package
+	- Select 'Search Locally for Packages'
+	- Click 'Next'
+	- Install the 'DETAILS' add-on
+	- Clear you Cache!
+::::::::::::::::::::::::::::::::::::::::
+Many thanks to:
+	- Anselm Hannemann (smooth-graphics) - http://anselm.novolo.de/
+	for the MODx HTML5 Boilerplate - https://github.com/smooth-graphics/modx-boilerplate
+	- Mary (einsteinsboi) - http://codingpad.maryspad.com/
+	For a lot of tips and great tutorials
+	- the MODx Team!
+::::::::::::::::::::::::::::::::::::::::
