@@ -1,6 +1,6 @@
-Changelog for DETAILS
+Changelog for Flexibility
 
-DETAILS 0.1 (04-05-2001)
+flexibility-1.0-rl.transport (20-06-2011)
 ====================================
 DONE:
 -----------------------------------------------------------------
@@ -13,12 +13,3 @@ DONE:
 - jQuery slider added (NIVO Slider - http://nivo.dev7studios.com/)
 - Slider with image, title, text, link and link-text TV's
 - Hide/show slider TV added
-- YES/NO rounded corners TV added
-
-BUGS/ISSUES:
------------------------------------------------------------------
-- Categories are not saved after Package install
-This is a issue for Packman, Issue is reported on the Packman GitHub
-
-- I have not gotten MIGX working with MODx Revolution 2.0.8-pl
-Posted the problem on the forum: http://modxcms.com/forums/index.php/topic,58511.msg362516.html#msg362516

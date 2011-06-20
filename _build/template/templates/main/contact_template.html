@@ -1,0 +1,30 @@
+<div class="bg_main">
+	<div class="container row" id="content">
+		[[!FormIt?
+			&hooks=`spam,email,redirect`
+			&emailTpl=`chunk_email_form`
+			&emailTo=`[[$chunk_email_adress]]`
+			&redirectTo=`[[$thank_you_page_id]]`
+			&emailUseFieldForSubject=`1`
+			&validate=`name:required,
+			email:email:required,
+			text:required:stripTags`
+		]]
+		[[!If? &subject=`[[*tv_sidebar]]` &operator=`isnotempty` &then=`
+			<div class="col9">
+				[[*content]]
+				[[$chunk_contact_form]]
+				</div>
+				<div class="col3 last">
+					[[*tv_sidebar]]
+					<iframe width="220" height="220" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.nl/maps?f=q&amp;source=s_q&amp;hl=nl&amp;geocode=&amp;q=amsterdam&amp;aq=&amp;sll=52.469397,5.509644&amp;sspn=4.946599,14.27124&amp;ie=UTF8&amp;hq=&amp;hnear=Amsterdam,+Noord-Holland&amp;ll=52.373084,4.892349&amp;spn=0.046113,0.075188&amp;z=12&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="http://maps.google.nl/maps?f=q&amp;source=embed&amp;hl=nl&amp;geocode=&amp;q=amsterdam&amp;aq=&amp;sll=52.469397,5.509644&amp;sspn=4.946599,14.27124&amp;ie=UTF8&amp;hq=&amp;hnear=Amsterdam,+Noord-Holland&amp;ll=52.373084,4.892349&amp;spn=0.046113,0.075188&amp;z=12&amp;iwloc=A" style="color:#0000FF;text-align:left">Grotere kaart weergeven</a></small>
+			</div>
+		`&else=`
+			<div class="col12 last">
+				[[*content]]
+				[[$chunk_contact_form]]
+				[[!getResources? &resources=`[[$settings_page_id]]` &tpl=`chunk_footer_contact` &includeTVs=`1` &processTVs=`1` &tvPrefix=``]]
+			</div>
+		`]]
+	</div>
+</div>
