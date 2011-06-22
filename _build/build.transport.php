@@ -18,7 +18,6 @@ $sources= array (
     'lexicon' => $root . '_build/lexicon/',
     'resolvers' => $root . '_build/resolvers/',
     'data' => $root . '_build/data/',
-    'source_core' => $root.'_build/core/components/flexibility',
     'source_assets' => $root.'_build/assets/components/flexibility',
     'docs' => $root.'_build/docs/',
 	'template' => $root.'_build/template/templates',
