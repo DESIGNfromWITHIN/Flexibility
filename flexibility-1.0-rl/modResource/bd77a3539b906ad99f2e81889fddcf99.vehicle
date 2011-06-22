@@ -1,0 +1,26 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'id',
+  'related_objects' => true,
+  'related_object_attributes' => 
+  array (
+    'ContentType' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'flexibility',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'ac5b1983c869d455a91cbae48b348c20',
+  'package' => 'modx',
+  'class' => 'modResource',
+  'signature' => 'bd77a3539b906ad99f2e81889fddcf99',
+  'native_key' => 3,
+  'object' => '{"id":3,"type":"document","contentType":"text\\/html","pagetitle":"Gallery","longtitle":"Gallery page","description":"This is a gallery page","alias":"gallery","link_attributes":"","published":1,"pub_date":0,"unpub_date":0,"parent":0,"isfolder":0,"introtext":"","content":"<h1>Gallery<\\/h1>","richtext":1,"template":3,"menuindex":3,"searchable":1,"cacheable":1,"createdby":0,"createdon":0,"editedby":0,"editedon":0,"deleted":0,"deletedon":0,"deletedby":0,"publishedon":0,"publishedby":0,"menutitle":"gallery","donthit":0,"privateweb":0,"privatemgr":0,"content_dispo":0,"hidemenu":0,"class_key":"modDocument","context_key":"web","content_type":1,"uri":null,"uri_override":0}',
+);

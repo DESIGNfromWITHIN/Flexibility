@@ -1,0 +1,233 @@
+/*	MODX-Boilerplate CSS by Anselm Hannemann (www.novolo.de) based on the incredible HTML5 Boilerplate	*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+del { text-decoration: line-through; }
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+table { border-collapse: collapse; border-spacing: 0; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+body { font:13px/1.231 sans-serif; *font-size:small; } 
+select, input, textarea, button { font:99% sans-serif; }
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+
+html { overflow-y: scroll; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; }
+a:hover, a:active { outline: none; }
+ul, ol { margin-left: 2em; }
+ol { list-style-type: decimal; }
+nav ul, nav li { margin: 0; list-style:none; list-style-image: none; }
+small { font-size: 85%; }
+strong, th { font-weight: bold; }
+td { vertical-align: top; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; padding: 15px; }
+.ie6 legend, .ie7 legend { margin-left: -7px; } 
+button, input, select, textarea { width: auto; overflow: visible; margin: 0; font-size: 100%; font-family: sans-serif; vertical-align: baseline; }
+textarea { overflow: auto; vertical-align:text-top; }
+label, input[type="button"], input[type="submit"], input[type="image"], button { cursor: pointer; }
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { border-radius: 1px; -moz-box-shadow: 0px 0px 5px red; -webkit-box-shadow: 0px 0px 5px red; box-shadow: 0px 0px 5px red; }
+.no-boxshadow input:invalid, .no-boxshadow textarea:invalid { background-color: #f0dddd; }
+
+::-moz-selection{ background: #607890; color:#fff; text-shadow: none; }
+::selection { background:#607890; color:#fff; text-shadow: none; }
+a:link { -webkit-tap-highlight-color: #607890; }
+a, a:active, a:visited { color: #607890; }
+a:hover { color: #036; }
+
+input[type="button"], button {  width: auto; overflow: visible; }
+input[type="button"]::-moz-focus-inner, button::-moz-focus-inner { border: 0; padding: 0; }
+
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
+body, select, input, textarea {  color: #444; }
+h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+
+/*	
+	The simpler Grid from Nick La (http://webdesignerwall.com/about)
+	http://www.webdesignerwall.com/demo/simpler-grid/940grid.html
+*/
+.container {
+	width: 978px;
+	margin: 0 auto;
+}
+
+.row {
+	width: 987px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+.col1, .col2, .col3, .col4, .col5, .col6, .col7, .col8, .col9, .col10, .col11 {
+	margin-right: 30px;
+	float: left;
+}
+
+.col1 {
+	width: 34px;
+	padding: 20px 10px 20px 10px;
+}
+
+.col2 {
+	width: 118px;
+	padding: 20px 10px 20px 10px;
+}
+
+.col3 {
+	width: 202px;
+	padding: 20px 10px 20px 10px;
+}
+
+.col4 {
+	width: 286px;
+	padding: 20px 10px 20px 10px;
+}
+
+.col5 {
+	width: 370px;
+	padding: 20px 10px 20px 10px;
+}
+
+.col6 {
+	width: 454px;
+	padding: 20px 10px 20px 10px;
+}
+
+.col7 {
+	width: 538px;
+	padding: 20px 10px 20px 10px;
+}
+
+.col8 {
+	width: 622px;
+	padding: 20px 10px 20px 10px;
+}
+
+.col9 {
+	width: 706px;
+	padding: 20px 10px 20px 10px;
+}
+
+.col10 {
+	width: 790px;
+	padding: 20px 10px 20px 10px;
+}
+
+.col11 {
+	width: 874px;
+	padding: 20px 10px 20px 10px;
+}
+.col12 {
+	padding: 20px 10px 20px 10px;
+}
+
+.last {
+	margin-right: 0px;
+}
+
+img, object, embed {
+max-width: 100%;
+}
+
+/* Primary Styles
+    Author:
+*/
+
+
+
+
+
+/*
+SLIDES CSS
+*/
+.slides_container {
+    width:947px;
+	height: 310px;
+}
+.slides_container div {
+    width:947px;
+}
+div.slide_content {
+	display:none;
+	height: 310px;
+}
+.slides_container .slide_text {
+	width: 440px;
+	float: left;
+	margin-top: 15px;
+}
+.slides_container div.slide_img {
+	width: 500px;
+	float: left;
+}
+.slides_container div.wide div.slide_img {
+	width: 938px;
+	position: relative;
+}
+.slides_container div.wide div.slide_text {
+	width: 300px;
+	position: absolute;
+	right: 10px;
+	top: 30px;
+	background: #ffffff;
+	padding: 7px 10px 0px 10px;
+	margin-top: 0px;
+}
+
+/* nonsemantic helper classes */
+
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.hidden { display: none; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+/* media-queries | ovverride to primary styles for other media / (only print here, use separate files for mobile / tablets) */
+
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;
+  -ms-filter: none !important; } 
+  a, a:visited { color: #444 !important; text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; }
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3{ page-break-after: avoid; }
+}
