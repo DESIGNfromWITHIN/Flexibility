@@ -27,7 +27,7 @@ QUICKSTART        PLEASE READ THIS
 
 5. Enter your MODX Revolution manager ("your_url/manager"): Go to "System" > "System Settings" > Click on "Filter by area" and select "Friendly URL" > For "Use Friendly URL's" and "Use Friendly Alias Path" choose "Yes".
 
-6. Download the latest Flexibility version from github (https://github.com/DESIGNfromWITHIN/Flexibility) upload to your website and extract the zip in:
+6. Download the latest Flexibility version from github (https://github.com/DESIGNfromWITHIN/Flexibility) upload the .transport.zip (do not unzip this file) file to:
 <your_website_root>/core/packages/
 
 7. Install the "Flexibility" package: Go to "System" > "Package Management" > "Add New Package" > "Search Locally for Packages" > "Yes".
