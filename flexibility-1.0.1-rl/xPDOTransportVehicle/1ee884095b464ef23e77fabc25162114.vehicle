@@ -1,0 +1,25 @@
+<?php return array (
+  'class' => 'xPDOTransportVehicle',
+  'object' => 
+  array (
+    'source' => 'flexibility-1.0.1-rl/xPDOTransportVehicle/1ee884095b464ef23e77fabc25162114/',
+    'target' => 'return MODX_CORE_PATH . \'packages/\';',
+    'name' => 'getresources-1.3.0-pl.transport.zip',
+  ),
+  'vehicle_class' => 'xPDOTransportVehicle',
+  'namespace' => 'flexibility',
+  'resolve' => NULL,
+  'validate' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"flexibility-1.0.1-rl\\/xPDOTransportVehicle\\/1ee884095b464ef23e77fabc25162114.validate.getresources.validator","type":"php","name":"validate.getresources"}',
+    ),
+  ),
+  'vehicle_package' => 'transport',
+  'guid' => '6e6019c3061faabfaa5150625222fddc',
+  'package' => '',
+  'signature' => '1ee884095b464ef23e77fabc25162114',
+  'native_key' => '6e6019c3061faabfaa5150625222fddc',
+);

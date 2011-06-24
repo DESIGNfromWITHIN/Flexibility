@@ -1,0 +1,145 @@
+/* Green Styles
+    Author: Menno Pietersen - DESIGNfromWITHIN - http://designfromwithin.com
+*/
+p, span {
+	color: #625d56;
+}
+a, a:active, a:visited {
+	color: #79a323;
+}
+a:hover {
+	color: #79a323;
+}
+h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	color: #79a323;
+}
+.bg_header {
+	background: #79a323 url('../images/site/header_bg.png') no-repeat center bottom;
+	border-bottom: 1px solid #7ab261;
+}
+.bg_tagline {
+	background: #e6e6e6;
+	border-top: 1px solid #276d1c;
+	border-bottom: 1px solid #ffffff;
+}
+.tagline_link a {
+	background: -webkit-gradient(linear, 0 0, 0 70%, from(#5a9136), to(#8db980));
+    background: -moz-linear-gradient(#5a9136, #8db980 70%);
+    background: linear-gradient(#5a9136, #8db980 70%);
+    -pie-background: linear-gradient(#5a9136, #8db980 70%);
+	-webkit-box-shadow: #625D56 0.025em -0.05em .3em;
+    -moz-box-shadow: #625D56  0.025em -0.05em .3em;
+    box-shadow: #625D56  0.025em -0.05em .3em;
+	behavior: url(../PIE.htc);
+	color: #ffffff;
+	border: 1px solid #5a9136;
+}
+.tagline_link a:hover {
+	background: -webkit-gradient(linear, 0 0, 0 50%, from(#8db980), to(#5a9136));
+    background: -moz-linear-gradient(#8db980, #5a9136 50%);
+    background: linear-gradient(#8db980, #5a9136 50%);
+    -pie-background: linear-gradient(#8db980, #5a9136 50%);
+	behavior: url(../PIE.htc);
+	border: 1px solid #5a9136;
+}
+.tagline_link a:active {
+	background: -webkit-gradient(linear, 0 0, 0 70%, from(#5a9136), to(#8db980));
+    background: -moz-linear-gradient(#5a9136, #8db980 70%);
+    background: linear-gradient(#5a9136, #8db980 70%);
+    -pie-background: linear-gradient(#5a9136, #8db980 70%);
+	behavior: url(../PIE.htc);
+	border: 1px solid #5a9136;
+}
+.bg_main {
+	background: #f9f9f9;
+	border-top: 1px solid #e0e0e0;
+	border-bottom: 1px solid #276d1c;
+}
+.bg_footer {
+	background: #79a323 url('../images/site/footer_bg.png') no-repeat center top;
+	border-top: 1px solid #c2d9a6;
+}
+.bg_footer, .bg_footer p, .bg_footer a, .bg_footer h3, .bg_footer h4, .bg_footer h5, .bg_footer h6 {
+	color: #ffffff;
+}
+.slider img {
+	border: 5px solid #ffffff;
+	-webkit-box-shadow: #356915 0.2em -0.1em 0.5em;
+    -moz-box-shadow: #356915  0.2em -0.1em 0.5em;
+    box-shadow: #356915  0.2em -0.1em 0.5em;
+	behavior: url(../PIE.htc);
+}
+nav li a, nav li a:active, nav li a:visited {
+	color: #ffffff;
+}
+nav li a:hover, nav li a:active {
+	background: -webkit-gradient(linear, 0 0, 0 50%, from(#5a9136), to(#8db980));
+    background: -moz-linear-gradient(#5a9136, #8db980 50%);
+    background: linear-gradient(#5a9136, #8db980 50%);
+    -pie-background: linear-gradient(#5a9136, #8db980 50%);
+	-webkit-box-shadow: #356915 0.05em  -0.1em .3em;
+    -moz-box-shadow: #356915  0.05em -0.1em .3em;
+    box-shadow: #356915  0.05em -0.1em .3em;
+	behavior: url(../PIE.htc);
+	color: #ffffff;
+	border: 1px solid #79a323;
+}
+nav li.active a, nav li.active a:hover {
+	background: -webkit-gradient(linear, 0 0, 0 70%, from(#8db980), to(#5a9136));
+    background: -moz-linear-gradient(#8db980, #5a9136 70%);
+    background: linear-gradient(#8db980, #5a9136 70%);
+    -pie-background: linear-gradient(#8db980, #5a9136 70%);
+	-webkit-box-shadow: #356915 0.05em -0.1em .3em;
+    -moz-box-shadow: #356915  0.05em -0.1em .3em;
+    box-shadow: #356915  0.05em -0.1em .3em;
+	behavior: url(../PIE.htc);
+	color: #ffffff;
+	border: 1px solid #79a323;
+}
+nav li a:active {
+	color: #79a323;
+}
+.slides_container div.wide div.slide_text {
+	background: #5a9136;
+	-webkit-box-shadow: #356915 0.05em -0.1em .3em;
+    -moz-box-shadow: #356915  0.05em -0.1em .3em;
+    box-shadow: #356915  0.05em -0.1em .3em;
+	behavior: url(../PIE.htc);
+}
+
+
+
+
+.contact_form_field input {
+	border: 1px solid #79a323;
+}
+.contact_form_field_wide textarea {
+	border: 1px solid #79a323;
+}
+.tagline_link input {
+	background: -webkit-gradient(linear, 0 0, 0 70%, from(#5a9136), to(#8db980));
+    background: -moz-linear-gradient(#5a9136, #8db980 70%);
+    background: linear-gradient(#5a9136, #8db980 70%);
+    -pie-background: linear-gradient(#5a9136, #8db980 70%);
+	-webkit-box-shadow: #625D56 0.025em -0.05em .3em;
+    -moz-box-shadow: #625D56  0.025em -0.05em .3em;
+    box-shadow: #625D56  0.025em -0.05em .3em;
+	behavior: url(../PIE.htc);
+	border: 1px solid #79a323;
+}
+.tagline_link input:hover {
+	background: -webkit-gradient(linear, 0 0, 0 50%, from(#8db980), to(#5a9136));
+    background: -moz-linear-gradient(#8db980, #5a9136 50%);
+    background: linear-gradient(#8db980, #5a9136 50%);
+    -pie-background: linear-gradient(#8db980, #5a9136 50%);
+	behavior: url(../PIE.htc);
+	border: 1px solid #79a323;
+}
+.tagline_link input:active {
+	background: -webkit-gradient(linear, 0 0, 0 70%, from(#5a9136), to(#8db980));
+    background: -moz-linear-gradient(#5a9136, #8db980 70%);
+    background: linear-gradient(#5a9136, #8db980 70%);
+    -pie-background: linear-gradient(#5a9136, #8db980 70%);
+	behavior: url(../PIE.htc);
+	border: 1px solid #79a323;
+}
