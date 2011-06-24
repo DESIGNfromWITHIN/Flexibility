@@ -84,7 +84,7 @@ CONTENT:
 - favicon + apple touch icons
 - Modernizr with HTML5Shim + Modernizr.load/yepnope.js (JS-Loadhelper)
 - A Simpler Grid CSS
-
+- Clean code
 
 -----------------------------------------------------------------------------------------------------------
 UPDATE instructions:
