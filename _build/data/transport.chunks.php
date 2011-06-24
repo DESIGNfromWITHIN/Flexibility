@@ -125,28 +125,28 @@ $chunks[14]->fromArray(array(
 $chunks[15]= $modx->newObject('modChunk');
 $chunks[15]->fromArray(array(
     'id' => 15,
-    'name' => 'DemoGalAlbumRowTpl',
+    'name' => 'GalAlbumRowTpl',
     'description' => 'GalAlbumRowTpl chunk',
 	'category' => 'Flexibility',
-    'snippet' => file_get_contents($sources['data'].'chunks/DemoGalAlbumRowTpl.tpl'),
+    'snippet' => file_get_contents($sources['data'].'chunks/FlexGalAlbumRowTpl.tpl'),
 ),'',true,true);
 
 $chunks[16]= $modx->newObject('modChunk');
 $chunks[16]->fromArray(array(
     'id' => 16,
-    'name' => 'DemoGalItemThumb',
+    'name' => 'GalItemThumb',
     'description' => 'GalItemThumb chunk',
 	'category' => 'Flexibility',
-    'snippet' => file_get_contents($sources['data'].'chunks/DemoGalItemThumb.tpl'),
+    'snippet' => file_get_contents($sources['data'].'chunks/FlexGalItemThumb.tpl'),
 ),'',true,true);
 
 $chunks[17]= $modx->newObject('modChunk');
 $chunks[17]->fromArray(array(
     'id' => 17,
-    'name' => 'DemoGalleryAlbumTpl',
+    'name' => 'GalleryAlbumTpl',
     'description' => 'GalleryAlbumTpl chunk',
 	'category' => 'Flexibility',
-    'snippet' => file_get_contents($sources['data'].'chunks/DemoGalleryAlbumTpl.tpl'),
+    'snippet' => file_get_contents($sources['data'].'chunks/FlexGalAlbumTpl.tpl'),
 ),'',true,true);
 
 $chunks[18]= $modx->newObject('modChunk');

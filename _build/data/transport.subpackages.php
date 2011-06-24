@@ -26,7 +26,7 @@ $subpackages = array(
     'getresources' => 'getresources-1.3.0-pl',
     'wayfinder' => 'wayfinder-2.3.1-pl',
 	'if' => 'if-1.1-pl',
-	'gallery' => 'gallery-1.2.0-pl',
+	'gallery' => 'gallery-1.2.1-pl',
 	'migx' => 'migx-1.0.0-pl',
 	'tinymce' => 'tinymce-4.3.0-rc1',
 );
