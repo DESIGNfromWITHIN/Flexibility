@@ -1,0 +1,26 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'id',
+  'related_objects' => true,
+  'related_object_attributes' => 
+  array (
+    'ContentType' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'flexibility',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'f38c7db339b0f01d121c346a68e42b22',
+  'package' => 'modx',
+  'class' => 'modResource',
+  'signature' => 'ab75cca027655c8eb89b816a00a47e35',
+  'native_key' => 5,
+  'object' => '{"id":5,"type":"document","contentType":"text\\/html","pagetitle":"Site settings","longtitle":"Site settings page","description":"This is the site settings page, change your site options here","alias":"settings","link_attributes":"","published":1,"pub_date":0,"unpub_date":0,"parent":0,"isfolder":0,"introtext":"","content":"","richtext":1,"template":5,"menuindex":0,"searchable":1,"cacheable":1,"createdby":0,"createdon":0,"editedby":0,"editedon":0,"deleted":0,"deletedon":0,"deletedby":0,"publishedon":0,"publishedby":0,"menutitle":"settings","donthit":0,"privateweb":0,"privatemgr":0,"content_dispo":0,"hidemenu":1,"class_key":"modDocument","context_key":"web","content_type":0,"uri":null,"uri_override":0}',
+);

@@ -1,0 +1,42 @@
+<div class="bg_main">
+	<div class="container row" id="content">
+		[[!If? &subject=`[[*tv_sidebar]]` &operator=`isnotempty` &then=`
+			<div class="col9">
+				[[*content]]
+				[[!GalleryAlbums? &toPlaceholder=`GalleryAlbums` &limit=`0` &albumCoverSort=`rank` &prominentOnly=`0` &rowTpl=`GalAlbumRowTpl` &thumbWidth=`195` &thumbHeight=`140`]]
+          
+        [[!Gallery? &checkForRequestTagVar=`1` &toPlaceholder=`Gallery` &useCss=`0` &containerTpl=`GalleryAlbumTpl` &thumbWidth=`195` &thumbHeight=`140` &thumbTpl=`GalItemThumb` &imageWidth=`800` &imageHeight=`800`]]
+        
+        [[!If? &subject=`[[+Gallery]]` &operator=`isempty` &then=`
+            
+            [[+GalleryAlbums]]
+        
+        ` &else=`
+           
+            [[+Gallery]]
+            
+        `]]
+			</div>
+			<div class="col3 last">
+				[[*tv_sidebar]]
+			</div>
+		`&else=`
+			<div class="col12 last">
+				[[*content]]
+				[[!GalleryAlbums? &toPlaceholder=`GalleryAlbums` &limit=`0` &albumCoverSort=`rank` &prominentOnly=`0` &rowTpl=`GalAlbumRowTpl` &thumbWidth=`195` &thumbHeight=`140`]]
+          
+        [[!Gallery? &checkForRequestTagVar=`1` &toPlaceholder=`Gallery` &useCss=`0` &containerTpl=`GalleryAlbumTpl` &thumbWidth=`195` &thumbHeight=`140` &thumbTpl=`GalItemThumb` &imageWidth=`800` &imageHeight=`800`]]
+        
+        [[!If? &subject=`[[+Gallery]]` &operator=`isempty` &then=`
+            
+            [[+GalleryAlbums]]
+        
+        ` &else=`
+           
+            [[+Gallery]]
+            
+        `]]
+			</div>
+		`]]
+	</div>
+</div>
