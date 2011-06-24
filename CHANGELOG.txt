@@ -1,5 +1,9 @@
 Changelog for Flexibility
 
+flexibility-1.0.1-rl.transport (24-06-2011)
+====================================
+- Changed js files for slider and gallery support
+
 flexibility-1.0-rl.transport (20-06-2011)
 ====================================
 DONE:
