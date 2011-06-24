@@ -125,7 +125,7 @@ $chunks[14]->fromArray(array(
 $chunks[15]= $modx->newObject('modChunk');
 $chunks[15]->fromArray(array(
     'id' => 15,
-    'name' => 'GalAlbumRowTpl',
+    'name' => 'FlexGalAlbumRowTpl',
     'description' => 'GalAlbumRowTpl chunk',
 	'category' => 'Flexibility',
     'snippet' => file_get_contents($sources['data'].'chunks/FlexGalAlbumRowTpl.tpl'),
@@ -134,7 +134,7 @@ $chunks[15]->fromArray(array(
 $chunks[16]= $modx->newObject('modChunk');
 $chunks[16]->fromArray(array(
     'id' => 16,
-    'name' => 'GalItemThumb',
+    'name' => 'FlexGalItemThumb',
     'description' => 'GalItemThumb chunk',
 	'category' => 'Flexibility',
     'snippet' => file_get_contents($sources['data'].'chunks/FlexGalItemThumb.tpl'),
@@ -143,7 +143,7 @@ $chunks[16]->fromArray(array(
 $chunks[17]= $modx->newObject('modChunk');
 $chunks[17]->fromArray(array(
     'id' => 17,
-    'name' => 'GalleryAlbumTpl',
+    'name' => 'FlexGalAlbumTpl',
     'description' => 'GalleryAlbumTpl chunk',
 	'category' => 'Flexibility',
     'snippet' => file_get_contents($sources['data'].'chunks/FlexGalAlbumTpl.tpl'),
