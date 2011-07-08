@@ -1,5 +1,11 @@
 Changelog for Flexibility
 
+flexibility-1.0.3-rl.transport (08-07-2011)
+====================================
+- Sub-packages are now listed and padatable after package install.
+- Updated README.txt.
+- Add warning about MODX Revo 2.1.2-pl not working with this package.
+
 flexibility-1.0.1-rl.transport (24-06-2011)
 ====================================
 - Changed js files for slider and gallery support
