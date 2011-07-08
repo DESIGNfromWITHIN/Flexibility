@@ -7,6 +7,8 @@ ABOUT
 "Flexibility" is a HTML5/CSS3/jQuery based frontend MODx Revolution template based on the "MODX Boilerplate".
 With this package you will have a fully functional website with a contact form, slider and a image gallery.
 
+INSTRUCTIONAL VIDEO HERE: http://www.vimeo.com/25427462
+
 "Flexibility" is designed and coded by Menno Pietersen (blog: http://designfromwithin.com - Twitter: ThaClown)
 
 NOTE:
