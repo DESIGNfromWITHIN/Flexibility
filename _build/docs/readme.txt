@@ -1,4 +1,4 @@
-Flexibility - version 1.0-rl
+Flexibility - version 1.0.2-rl
 
 -----------------------------------------------------------------------------------------------------------
 ABOUT
@@ -69,7 +69,7 @@ I general you can find all website settings under:
 CONTENT:
 -----------------------------------------------------------------------------------------------------------
 
-- Packages: formit, gallery, getresources, if, tinymce, wayfinder
+- Packages: FlexibilitySubPackages (containing: bloggingessentials-1.0-pl, formit-1.7.0-pl, gallery-1.2.1-pl, getresources-1.3.0-pl, if-1.1-pl, login-1.6.4-pl, migx-1.1.0-rc1, tinymce-4.3.0-rc2, wayfinder-2.3.1-pl)
 - Templates: Basic page template, Contact page template, Gallery page template, Homepage template, Page settings template
 - Template Variables: tv.email_adress, tv.logo, tv_sidebar, tv_slider, tv_tagline, tv_tagline_link, tv_taline_link_text, tv_tagline_option
 - Cunks: chunk_contact_form, chunk_email_adress, email_adress_tpl, GalAlbumRowTpl, GalItemThumb, GalleryAlbumTpl, chunk_email_form, logo_tpl, settings_page_id, thank_you_page_id

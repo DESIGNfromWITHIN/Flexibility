@@ -21,7 +21,7 @@ $sources= array (
     'source_core' => $root.'_build/core/components/flexibility',
     'source_assets' => $root.'_build/assets/components/flexibility',
     'docs' => $root.'_build/docs/',
-	'template' => $root.'_build/template/templates',
+	'template' => $root.'_build/templates/',
 	'subpackages' => $root . '_build/subpackages/',
 	'validators' => $root . '_build/validators/',
 );
@@ -39,7 +39,7 @@ $modx->setLogTarget(XPDO_CLI_MODE ? 'ECHO' : 'HTML');
 
 $modx->loadClass('transport.modPackageBuilder','',false, true);
 $builder = new modPackageBuilder($modx);
-$builder->createPackage('flexibility','1.0.1','rl');
+$builder->createPackage('flexibility','1.0.3','rl');
 $builder->registerNamespace('flexibility',false,true,'{core_path}components/flexibility/');
 
 /* create category */

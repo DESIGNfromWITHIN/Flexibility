@@ -1,0 +1,437 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      '9a99c26b694e1e69277bc2f118ecc0b0' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'class' => 'modChunk',
+        'object' => '{"id":1,"name":"chunk_contact_form","description":"Contact form chunk","editor_type":0,"category":0,"cache_type":0,"snippet":"[[!+fi.error_message:notempty=`<p>[[!+fi.error_message]]<\\/p>`]]\\r\\n \\r\\n<form id=\\"contact_form\\" action=\\"[[~[[*id]]]]\\" method=\\"post\\" class=\\"form\\" title=\\"Contact us\\" subtitle=\\"We love to hear from you!\\">\\r\\n    <input type=\\"hidden\\" name=\\"nospam:blank\\" value=\\"\\" \\/>\\r\\n \\r\\n    <div class=\\"contact_form_field\\">\\r\\n\\t\\t<label for=\\"name\\">\\r\\n\\t\\t\\tName:\\r\\n\\t\\t\\t<span class=\\"error\\">[[!+fi.error.name]]<\\/span>\\r\\n\\t\\t<\\/label><br\\/>\\r\\n\\t\\t<input type=\\"text\\" name=\\"name\\" id=\\"name\\" value=\\"[[!+fi.name]]\\" place=\\"Fill in your name\\" \\/>\\r\\n\\t<\\/div>\\r\\n \\r\\n\\t<div class=\\"contact_form_field\\">\\r\\n\\t\\t<label for=\\"email\\">\\r\\n\\t\\t\\tEmail:\\r\\n\\t\\t\\t<span class=\\"error\\">[[!+fi.error.email]]<\\/span>\\r\\n\\t\\t<\\/label><br\\/>\\r\\n\\t\\t<input type=\\"text\\" name=\\"email\\" id=\\"email\\" value=\\"[[!+fi.email]]\\" place=\\"Fill in your e-mail\\" validate=\\"email\\"\\/>\\r\\n\\t<\\/div>\\r\\n \\r\\n\\t<div class=\\"contact_form_field contact_form_field_last\\">\\r\\n\\t\\t<label for=\\"subject\\">\\r\\n\\t\\t\\tSubject:\\r\\n\\t\\t\\t<span class=\\"error\\">[[!+fi.error.subject]]<\\/span>\\r\\n\\t\\t<\\/label><br\\/>\\r\\n\\t\\t<input type=\\"text\\" name=\\"subject\\" id=\\"subject\\" value=\\"[[!+fi.subject]]\\" place=\\"Enter a subject\\" \\/>\\r\\n\\t<\\/div>\\r\\n\\t\\r\\n\\t<div class=\\"contact_form_field_wide\\">\\r\\n\\t\\t <label for=\\"text\\">\\r\\n\\t\\t\\tMessage:\\r\\n\\t\\t\\t<span class=\\"error\\">[[!+fi.error.text]]<\\/span>\\r\\n\\t\\t<\\/label><br\\/>\\r\\n\\t\\t<textarea name=\\"text\\" id=\\"text\\" cols=\\"55\\" rows=\\"7\\" value=\\"[[!+fi.text]]\\">[[!+fi.text]]<\\/textarea>\\r\\n\\t<\\/div>\\r\\n \\r\\n    <div class=\\"form-buttons tagline_link\\">\\r\\n        <input type=\\"submit\\" value=\\"Send\\" \\/>\\r\\n    <\\/div>\\r\\n<\\/form>","locked":0,"properties":null}',
+        'guid' => '59c27404e7ce71eb3526ce3f823f0c13',
+        'native_key' => 1,
+        'signature' => '98386e4686deea4b345171fe9770e845',
+      ),
+      '65a0f548ef2a2ff55acae5bf285788c2' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'class' => 'modChunk',
+        'object' => '{"id":2,"name":"chunk_email_adress","description":"Chunk email adress","editor_type":0,"category":0,"cache_type":0,"snippet":"[[!getResources? &resources=`[[$settings_page_id]]` &includeTVs=`1` &tvPrefix=`` &processTVs=`1` &tpl=`email_adress_tpl`]]","locked":0,"properties":null}',
+        'guid' => '2dd5e6eb14eacf7718d30196372f8501',
+        'native_key' => 2,
+        'signature' => '00219be130522c978ea0ca1bfba357a8',
+      ),
+      '0feca206d6fca2a36023a7cf6a8af37e' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'class' => 'modChunk',
+        'object' => '{"id":3,"name":"chunk_email_form","description":"E-mail reply template","editor_type":0,"category":0,"cache_type":0,"snippet":"<b>[[+name]]<\\/b> ([[+email]]) Wrote:\\r\\n<br \\/><br \\/>\\r\\n \\r\\n[[+text]]\\r\\n\\r\\n<br \\/><br \\/>\\r\\n<small>This is a e-mail coming from the contact form of [[++site_name]].<\\/small>","locked":0,"properties":null}',
+        'guid' => 'a90a7bfbf80a20590e89cd7ebaea9f4f',
+        'native_key' => 3,
+        'signature' => '405251eb8563a6f0cc6b109753dc1850',
+      ),
+      '81cfdf706dd4b4ff2365c0efb79e68ed' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'class' => 'modChunk',
+        'object' => '{"id":4,"name":"chunk_footer_contact","description":"Footer contact chunk","editor_type":0,"category":0,"cache_type":0,"snippet":"[[+tv.contact_adress]]","locked":0,"properties":null}',
+        'guid' => 'd59248e65381574cf6027afa41f83997',
+        'native_key' => 4,
+        'signature' => 'b14ea30594198dd61405163c9c310f9c',
+      ),
+      'b294d33909b12380d792a4b0c5677abe' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'class' => 'modChunk',
+        'object' => '{"id":5,"name":"chunk_footer_left","description":"Footer left chunk","editor_type":0,"category":0,"cache_type":0,"snippet":"[[+tv.footer_content_left]]","locked":0,"properties":null}',
+        'guid' => '6e95bb8fa0a18731d8c8760633c2cdce',
+        'native_key' => 5,
+        'signature' => '20e7cb80986fc70542ec300f996d1f8a',
+      ),
+      '97234ab2a77c410271a17ca05750017d' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'class' => 'modChunk',
+        'object' => '{"id":6,"name":"chunk_footer_right","description":"Footer right chunk","editor_type":0,"category":0,"cache_type":0,"snippet":"[[+tv.footer_content_right]]","locked":0,"properties":null}',
+        'guid' => '6b384e67e8f635ba94b0632ff90cc3d1',
+        'native_key' => 6,
+        'signature' => '8fd24d2efa4066521f3138c4b6ec3893',
+      ),
+      '92d143d0a9a8c03db86b00a1af18c8fa' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'class' => 'modChunk',
+        'object' => '{"id":7,"name":"email_adress_tpl","description":"E-mail adress template chunk","editor_type":0,"category":0,"cache_type":0,"snippet":"[[+tv.email_adress]]","locked":0,"properties":null}',
+        'guid' => '9e844b9bd7e05e0c913b1d3f31972c2e',
+        'native_key' => 7,
+        'signature' => '9384c7d8fc7e5ae920b55e04fea9191a',
+      ),
+      '149ea33717caf0e0c62e1d11c82c6933' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'class' => 'modChunk',
+        'object' => '{"id":11,"name":"logo_tpl","description":"Logo chunk","editor_type":0,"category":0,"cache_type":0,"snippet":"[[+tv.logo]]","locked":0,"properties":null}',
+        'guid' => 'ed9e674f46c5adb6828cbaeddac13349',
+        'native_key' => 11,
+        'signature' => '4d08fd5e76a1f0a2b237105604d7bfa5',
+      ),
+      'fd40b1600f94790a2487807467314dd1' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'class' => 'modChunk',
+        'object' => '{"id":12,"name":"settings_page_id","description":"Enter the ID of your settings page","editor_type":0,"category":0,"cache_type":0,"snippet":"5","locked":0,"properties":null}',
+        'guid' => '8f44fa5705e0acf1d021000e4b37b59e',
+        'native_key' => 12,
+        'signature' => '6cd586a17d4106bcad2f014014470cf3',
+      ),
+      'a6849343f58370c5c755e850b57c1e05' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'class' => 'modChunk',
+        'object' => '{"id":13,"name":"slideTpl","description":"Slider template chunk","editor_type":0,"category":0,"cache_type":0,"snippet":"<div class=\\"slide_content [[+slide_option]] clearfix\\"><div class=\\"slide_img\\"><img src=\\"[[++site_url]][[+image]]\\"\\/><\\/div><div class=\\"slide_text\\">[[+description]]<\\/div><\\/div>","locked":0,"properties":null}',
+        'guid' => 'b35b2479982fd7b8f2f7ae4f2fd38ab7',
+        'native_key' => 13,
+        'signature' => '5c2878aaa50666d0a67be6459c1e3efc',
+      ),
+      '0656a6566c3291cf15b2c8110108a3ac' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'class' => 'modChunk',
+        'object' => '{"id":14,"name":"thank_you_page_id","description":"Enter the ID of your Thank You page","editor_type":0,"category":0,"cache_type":0,"snippet":"6","locked":0,"properties":null}',
+        'guid' => 'b419d37fb6ec5285165feee125dab1a7',
+        'native_key' => 14,
+        'signature' => 'cbceda0510d80fab0f85c39ada244eca',
+      ),
+      '237b3dd140823e6a7fe46891e8e6ec74' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'class' => 'modChunk',
+        'object' => '{"id":15,"name":"FlexGalAlbumRowTpl","description":"GalAlbumRowTpl chunk","editor_type":0,"category":0,"cache_type":0,"snippet":"<div class=\\"albumPreview\\">\\r\\n    <h3><a href=\\"[[~[[*id]]? &[[+albumRequestVar]]=`[[+id]]`]]\\">[[+name]]<\\/a><\\/h3>\\r\\n    <div class=\\"thumb\\">\\r\\n        <a href=\\"[[~[[*id]]? &[[+albumRequestVar]]=`[[+id]]`]]\\"><img src=\\"[[+image]]\\" alt=\\"[[+name]]\\" \\/><\\/a>\\r\\n    <\\/div>\\r\\n    <div class=\\"desc\\">\\r\\n        <p>[[+description]]<\\/p>\\r\\n        <a href=\\"[[~[[*id]]? &[[+albumRequestVar]]=`[[+id]]`]]\\" class=\\"view\\">Galerie betrachten<\\/a>\\r\\n    <\\/div>\\r\\n<\\/div>","locked":0,"properties":null}',
+        'guid' => 'cbc03752b0d8277f7a7b1419859dc598',
+        'native_key' => 15,
+        'signature' => 'a4a6cb2930de005a574153587a208eae',
+      ),
+      '466af2b53da6e1f9d02397bd780cdc94' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'class' => 'modChunk',
+        'object' => '{"id":16,"name":"FlexGalItemThumb","description":"GalItemThumb chunk","editor_type":0,"category":0,"cache_type":0,"snippet":"<div class=\\"[[+cls]]\\">\\r\\n    <a href=\\"[[+image]]\\" rel=\\"colorbox\\" title=\\"[[+description]]\\">\\r\\n    \\t<img data-href=\\"[[+thumbnail]]\\" class=\\"[[+imgCls]]\\" src=\\"[[+thumbnail]]\\" alt=\\"[[+name]]\\" \\/>\\r\\n    <\\/a>\\r\\n  [[+name]]\\r\\n<\\/div>","locked":0,"properties":null}',
+        'guid' => '849fe4c1e5f344c141795660f9492042',
+        'native_key' => 16,
+        'signature' => '3abff1661623bcb22e1d10c0515bff29',
+      ),
+      '84f7fc14757c67b5e6b5a0972865763a' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'class' => 'modChunk',
+        'object' => '{"id":17,"name":"FlexGalAlbumTpl","description":"GalleryAlbumTpl chunk","editor_type":0,"category":0,"cache_type":0,"snippet":"<h1>[[+album_name]]<\\/h1>\\r\\n<p>[[+album_description]]<\\/p>\\r\\n[[+thumbnails]]","locked":0,"properties":null}',
+        'guid' => '523d64eadbd6bf6794cc4ff6b90e0405',
+        'native_key' => 17,
+        'signature' => '1637c7c13caf2790ce9531fa21eeac23',
+      ),
+      '2ebffffc8e1cc0492181048fc5beee4c' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'class' => 'modChunk',
+        'object' => '{"id":18,"name":"headerTpl","description":"Header chunk for all templates","editor_type":0,"category":0,"cache_type":0,"snippet":"<!doctype html>\\r\\n<!--[if !IEMobile]> <html class=\\"no-js iemobile\\" lang=\\"[[++cultureKey]]\\"> <![endif]-->\\r\\n<!--[if lt IE 7 ]> <html class=\\"no-js ie6\\" lang=\\"[[++cultureKey]]\\"> <![endif]-->\\r\\n<!--[if IE 7 ]>    <html class=\\"no-js ie7\\" lang=\\"[[++cultureKey]]\\"> <![endif]-->\\r\\n<!--[if IE 8 ]>    <html class=\\"no-js ie8\\" lang=\\"[[++cultureKey]]\\"> <![endif]-->\\r\\n<!--[if (gte IE 9)|!(IE)]><!--> <html class=\\"no-js\\" lang=\\"[[++cultureKey]]\\"> <!--<![endif]--> \\r\\n<head>\\r\\n\\t<base href=\\"[[++site_url]]\\" \\/>\\r\\n\\t<meta charset=\\"[[++modx_charset:lcase]]\\" \\/>\\r\\n\\t<title>[[++site_name]] - [[*pagetitle]]<\\/title>\\r\\n\\t<meta name=\\"description\\" content=\\"[[*introtext:empty=`[[*content:strip_tags:strip]]`:limit=`200`]]\\">\\r\\n\\t<meta name=\\"author\\" content=\\"[[If? &subject=`[[*publishedby]]` &operator=`>` &operand=`0` &then=`[[*publishedby:userinfo=`fullname`]]` &else=`[[*createdby:userinfo=`fullname`]]`]]\\" \\/>\\r\\n\\t<meta name=\\"keywords\\" content=\\"\\" \\/>\\r\\n\\t\\r\\n\\t<!-- Specify URL to favicon and Apple touch icon if not located in root directory ELSE delete this tags -->\\r\\n\\t<link rel=\\"shortcut icon\\" href=\\"[[++site_url]]assets\\/templates\\/templates\\/main\\/images\\/site\\/favicon.ico\\">\\r\\n\\t<link rel=\\"apple-touch-icon\\" href=\\"[[++site_url]]assets\\/templates\\/templates\\/main\\/images\\/site\\/apple-touch-icon.png\\">\\r\\n\\r\\n\\t<!-- sets viewport to device-with for mobile devices | Android DPI fix for @media-queries  -->\\r\\n\\t<meta name=\\"viewport\\" content=\\"width=device-width, target-densitydpi=device-dpi, initial-scale=1.0\\">\\r\\n\\t<!-- load default CSS file. Implied media=\\"all\\" -->\\r\\n\\t<link rel=\\"stylesheet\\" href=\\"[[++site_url]]assets\\/templates\\/templates\\/main\\/css\\/style.css\\">\\r\\n\\t\\r\\n\\t[[If? &subject=`[[*template_color]]` &operator=`equals` &operand=`black` &then=`\\r\\n\\t\\t<link rel=\\"stylesheet\\" href=\\"[[++site_url]]assets\\/templates\\/templates\\/main\\/css\\/style_black.css\\">\\r\\n\\t`]]\\r\\n\\t[[If? &subject=`[[*template_color]]` &operator=`equals` &operand=`green` &then=`\\r\\n\\t\\t<link rel=\\"stylesheet\\" href=\\"[[++site_url]]assets\\/templates\\/templates\\/main\\/css\\/style_green.css\\">\\r\\n\\t`]]\\r\\n\\t[[If? &subject=`[[*template_color]]` &operator=`equals` &operand=`custom` &then=`\\r\\n\\t\\t<link rel=\\"stylesheet\\" href=\\"[[++site_url]][[$settings_page_id]]\\">\\r\\n\\t`]]\\r\\n\\t\\r\\n\\t<link href=\'http:\\/\\/fonts.googleapis.com\\/css?family=Rokkitt\' rel=\'stylesheet\' type=\'text\\/css\'>\\r\\n\\t\\r\\n\\t<script src=\\"[[++site_url]]assets\\/templates\\/templates\\/main\\/js\\/libs\\/modernizr.min.js\\"><\\/script>\\r\\n<\\/head>\\r\\n<body>\\r\\n<div class=\\"bg_header\\">\\r\\n\\t<header class=\\"container row\\">\\r\\n\\t\\t<div class=\\"col4 logo\\">\\r\\n\\t\\t\\t<a href=\\"[[++site_url]]\\" title=\\"[[++site_name]]\\">[[!getResources? &resources=`[[$settings_page_id]]` &includeTVs=`1` &tvPrefix=`` &processTVs=`1` &tpl=`logo_tpl`]]<\\/a>\\r\\n\\t\\t<\\/div>\\r\\n\\t\\t<nav class=\\"col8 last\\">\\r\\n\\t\\t\\t[[!Wayfinder? &startId=`0` ]]\\r\\n\\t\\t<\\/nav>\\r\\n\\t<\\/header>\\r\\n\\t[[!If? &subject=`[[*tv_slider]]` &operand=`yes` &then=`\\r\\n\\t<div class=\\"container row\\">\\r\\n\\t\\t<div class=\\"col12 last slider\\">\\r\\n\\t\\t\\t<div id=\\"slides\\">\\r\\n\\t\\t\\t\\t<div class=\\"slides_container\\">\\r\\n\\t\\t\\t\\t\\t[[!getImageList? &tvname=`multiItemsGrid` &docid=`[[$settings_page_id]]` &tpl=`slideTpl`]]\\r\\n\\t\\t\\t\\t<\\/div>\\r\\n\\t\\t\\t<\\/div>\\r\\n\\t\\t<\\/div>\\r\\n\\t<\\/div>` &else=``]]\\r\\n<\\/div>\\r\\n<div class=\\"bg_tagline\\">\\r\\n\\t<div class=\\"container row\\" id=\\"content\\">\\r\\n\\t\\t[[!If? &subject=`[[*tv_tagline_option]]` &operator=`EQ` &operand=`tagline_link` &then=`\\r\\n\\t\\t\\t<div class=\\"col8\\">\\r\\n\\t\\t\\t\\t<h1>[[*tv_tagline]]<\\/h1>\\r\\n\\t\\t\\t<\\/div>\\r\\n\\t\\t\\t<div class=\\"col4 last tagline_link\\">\\r\\n\\t\\t\\t\\t<a href=\\"[[*tv_tagline_link]]\\">[[*tv_tagline_link_text]]<\\/a>\\r\\n\\t\\t\\t<\\/div>\\r\\n\\t\\t` &else=``]]\\r\\n\\t\\t[[!If? &subject=`[[*tv_tagline_option]]` &operator=`EQ` &operand=`tagline` &then=`\\r\\n\\t\\t\\t<div class=\\"col12 last\\">\\r\\n\\t\\t\\t\\t<h1>[[*tv_tagline]]<\\/h1>\\r\\n\\t\\t\\t<\\/div>\\r\\n\\t\\t` &else=``]]\\r\\n\\t<\\/div>\\r\\n<\\/div>","locked":0,"properties":null}',
+        'guid' => '6a86103c8a08cea4941a05d2a8b45efa',
+        'native_key' => 18,
+        'signature' => '5da0c6b94918b76d3172f0606a461c16',
+      ),
+      '77fd46464d053a949b2694739644cd04' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'class' => 'modChunk',
+        'object' => '{"id":19,"name":"footerTpl","description":"Footer chunk for all templates","editor_type":0,"category":0,"cache_type":0,"snippet":"<div class=\\"bg_footer\\">\\r\\n\\t<div class=\\"container row\\" id=\\"content\\">\\r\\n\\t\\t<div class=\\"col6\\">\\r\\n\\t\\t\\t[[!getResources? &resources=`[[$settings_page_id]]` &tpl=`chunk_footer_left` &includeTVs=`1` &processTVs=`1` &tvPrefix=``]]\\r\\n\\t\\t<\\/div>\\r\\n\\t\\t<div class=\\"col3\\">\\r\\n\\t\\t\\t[[!getResources? &resources=`[[$settings_page_id]]` &tpl=`chunk_footer_right` &includeTVs=`1` &processTVs=`1` &tvPrefix=``]]\\r\\n\\t\\t<\\/div>\\r\\n\\t\\t<div class=\\"col3 last padding_10\\">\\r\\n\\t\\t\\t[[!getResources? &resources=`[[$settings_page_id]]` &tpl=`chunk_footer_contact` &includeTVs=`1` &processTVs=`1` &tvPrefix=``]]\\r\\n\\t\\t<\\/div>\\r\\n\\t<\\/div>\\r\\n<\\/div>\\r\\n\\r\\n<script>\\r\\n\\tyepnope([{\\r\\n\\t\\tload: \'\\/\\/code.jquery.com\\/jquery-1.6.min.js\',\\r\\n\\t\\tcomplete: function () {\\r\\n\\t\\t\\tif (!window.jQuery) {\\r\\n\\t\\t\\t\\tyepnope(\'[[++base_url]]assets\\/templates\\/templates\\/main\\/js\\/libs\\/jquery-1.6.min.js\');\\r\\n\\t\\t\\t}\\r\\n\\t\\t}\\r\\n\\t}, {\\r\\n\\t\\tload: [\'[[++base_url]]assets\\/templates\\/templates\\/main\\/js\\/plugins.js\', \'[[++base_url]]assets\\/templates\\/templates\\/main\\/js\\/scripts.js\'  ]\\r\\n\\t}]);\\r\\n<\\/script>\\r\\n\\r\\n<!--[if lt IE 7 ]>\\r\\n\\t<script>yepnope(\'[[++base_url]]assets\\/templates\\/templates\\/main\\/js\\/libs\\/dd_belatedpng.js\');<\\/script>\\r\\n\\t<script> DD_belatedPNG.fix(\'img, .png_bg\'); <\\/script>\\r\\n<![endif]-->\\r\\n\\r\\n<\\/body>\\r\\n<\\/html>","locked":0,"properties":null}',
+        'guid' => 'db7e4098ec7f27b159fe0d04203e3e30',
+        'native_key' => 19,
+        'signature' => '0a1faef60fcc71f643ff8f3e72c877d2',
+      ),
+    ),
+    'Templates' => 
+    array (
+      'd0ae4fdd570793a9728b0357e614e03b' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'class' => 'modTemplate',
+        'object' => '{"id":1,"templatename":"Basic page template","description":"Template of a normal page","editor_type":0,"category":0,"icon":"","template_type":0,"content":"[[$headerTpl]]\\n<div class=\\"bg_main\\">\\n\\t<div class=\\"container row\\" id=\\"content\\">\\n\\t\\t[[!If? &subject=`[[*tv_sidebar]]` &operator=`isnotempty` &then=`\\n\\t\\t\\t<div class=\\"col8\\">\\n\\t\\t\\t\\t[[*content]]\\n\\t\\t\\t<\\/div>\\n\\t\\t\\t<div class=\\"col4 last\\">\\n\\t\\t\\t\\t[[*tv_sidebar]]\\n\\t\\t\\t<\\/div>\\n\\t\\t`&else=`\\n\\t\\t\\t<div class=\\"col12 last\\">\\n\\t\\t\\t\\t[[*content]]\\n\\t\\t\\t<\\/div>\\n\\t\\t`]]\\n\\t<\\/div>\\n<\\/div>\\n[[$footerTpl]]","locked":0,"properties":null}',
+        'guid' => '5b761b2677b75cc531e9a8f930676cf2',
+        'native_key' => 1,
+        'signature' => '2ca860ed869b106fa55f84c601da78a9',
+      ),
+      '51f3da30e448a91a07cbd2f22a7bd5a7' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'class' => 'modTemplate',
+        'object' => '{"id":2,"templatename":"Contact page template","description":"Template of a contact page","editor_type":0,"category":0,"icon":"","template_type":0,"content":"[[$headerTpl]]\\r\\n<div class=\\"bg_main\\">\\r\\n\\t<div class=\\"container row\\" id=\\"content\\">\\r\\n\\t\\t[[!FormIt?\\r\\n\\t\\t\\t&hooks=`spam,email,redirect`\\r\\n\\t\\t\\t&emailTpl=`chunk_email_form`\\r\\n\\t\\t\\t&emailTo=`[[$chunk_email_adress]]`\\r\\n\\t\\t\\t&redirectTo=`[[$thank_you_page_id]]`\\r\\n\\t\\t\\t&emailUseFieldForSubject=`1`\\r\\n\\t\\t\\t&validate=`name:required,\\r\\n\\t\\t\\temail:email:required,\\r\\n\\t\\t\\ttext:required:stripTags`\\r\\n\\t\\t]]\\r\\n\\t\\t<div class=\\"col9\\">\\r\\n\\t\\t\\t[[*content]]\\r\\n\\t\\t\\t[[$chunk_contact_form]]\\r\\n\\t\\t\\t<\\/div>\\r\\n\\t\\t\\t<div class=\\"col3 last\\">\\r\\n\\t\\t\\t\\t[[*tv_sidebar]]\\r\\n\\t\\t<\\/div>\\r\\n\\t<\\/div>\\r\\n<\\/div>\\r\\n[[$footerTpl]]","locked":0,"properties":null}',
+        'guid' => 'faf738316bb0c3b42b8a96d031dde4f6',
+        'native_key' => 2,
+        'signature' => '16c1eda9b72a8ba1edb6b6d7408d8c32',
+      ),
+      'ca135af4ffa74aab2775b5464c1b0ee2' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'class' => 'modTemplate',
+        'object' => '{"id":3,"templatename":"Gallery page template","description":"Template of a gallery page","editor_type":0,"category":0,"icon":"","template_type":0,"content":"[[$headerTpl]]\\r\\n<div class=\\"bg_main\\">\\r\\n\\t<div class=\\"container row\\" id=\\"content\\">\\r\\n\\t\\t\\t<div class=\\"col12 last\\">\\r\\n\\t\\t\\t\\t[[*content]]\\r\\n\\t\\t\\t\\t[[!GalleryAlbums? &toPlaceholder=`GalleryAlbums` &limit=`25` &albumCoverSort=`rank` &prominentOnly=`0` &rowTpl=`FlexGalAlbumRowTpl` &thumbWidth=`195` &thumbHeight=`140`]]\\r\\n\\t\\t\\t\\t[[!Gallery? &checkForRequestTagVar=`1` &toPlaceholder=`Gallery` &useCss=`0` &containerTpl=`FlexGalAlbumTpl` &thumbWidth=`195` &thumbHeight=`140` &thumbTpl=`FlexGalItemThumb` &imageWidth=`800` &imageHeight=`800`]]\\r\\n\\t\\t\\t\\t[[!If? &subject=`[[+Gallery]]` &operator=`isempty` &then=`\\r\\n\\t\\t\\t\\t\\t[[+GalleryAlbums]]\\r\\n\\t\\t\\t\\t` &else=`\\r\\n\\t\\t\\t\\t\\t[[+Gallery]]\\r\\n\\t\\t\\t\\t`]]\\r\\n\\r\\n\\t\\t\\t<\\/div>\\r\\n\\t<\\/div>\\r\\n<\\/div>\\r\\n[[$footerTpl]]","locked":0,"properties":null}',
+        'guid' => '02c5d5735909c6e998ecf2cf38ddb24b',
+        'native_key' => 3,
+        'signature' => '58372a8421601daff812214589a2ff96',
+      ),
+      'ad4aa76fc3aba789d1ef695a83c1ffc5' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'class' => 'modTemplate',
+        'object' => '{"id":4,"templatename":"Homepage template","description":"Template of the homepage","editor_type":0,"category":0,"icon":"","template_type":0,"content":"[[$headerTpl]]\\r\\n<div class=\\"bg_main\\">\\r\\n\\t<div class=\\"container row\\" id=\\"content\\">\\r\\n\\t\\t[[!If? &subject=`[[*tv_sidebar]]` &operator=`isnotempty` &then=`\\r\\n\\t\\t\\t<div class=\\"col6\\">\\r\\n\\t\\t\\t\\t[[*content]]\\r\\n\\t\\t\\t<\\/div>\\r\\n\\t\\t\\t<div class=\\"col6 last\\">\\r\\n\\t\\t\\t\\t[[*tv_sidebar]]\\r\\n\\t\\t\\t<\\/div>\\r\\n\\t\\t`&else=`\\r\\n\\t\\t\\t<div class=\\"col12 last\\">\\r\\n\\t\\t\\t\\t[[*content]]\\r\\n\\t\\t\\t<\\/div>\\r\\n\\t\\t`]]\\r\\n\\t<\\/div>\\r\\n<\\/div>\\r\\n[[$footerTpl]]","locked":0,"properties":null}',
+        'guid' => 'b5fef77093604dd2231778c7e38c583b',
+        'native_key' => 4,
+        'signature' => '6930a9baaea9b912ac9eb4bf820249e7',
+      ),
+      '18e46e29d8a04fa004f61ecfa3d0cd52' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'class' => 'modTemplate',
+        'object' => '{"id":5,"templatename":"Page settings template","description":"Template with CSS styles and site settings","editor_type":0,"category":0,"icon":"","template_type":0,"content":"\\/* Custom Styles\\r\\n    Author: Menno Pietersen - DESIGNfromWITHIN - http:\\/\\/designfromwithin.com\\r\\n*\\/\\r\\n\\r\\n\\r\\np, span {\\r\\n\\tcolor: #625d56;\\r\\n}\\r\\na, a:active, a:visited {\\r\\n\\tcolor: [[$get_color_01]];\\r\\n}\\r\\na:hover {\\r\\n\\tcolor: [[$get_color_01]];\\r\\n}\\r\\nh1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {\\r\\n\\tcolor: [[$get_color_01]];\\r\\n}\\r\\n.bg_header {\\r\\n\\tbackground-color: [[$get_color_01]];\\r\\n\\tborder-bottom: 1px solid [[$get_color_01]];\\r\\n}\\r\\n.bg_tagline {\\r\\n\\tbackground: #e6e6e6;\\r\\n\\tborder-top: 1px solid [[$get_color_02]];\\r\\n\\tborder-bottom: 1px solid #ffffff;\\r\\n}\\r\\n.tagline_link a {\\r\\n\\tbackground: -webkit-gradient(linear, 0 0, 0 70%, from([[$get_color_01]]), to([[$get_color_02]]));\\r\\n    background: -moz-linear-gradient([[$get_color_01]], [[$get_color_02]] 70%);\\r\\n    background: linear-gradient([[$get_color_01]], [[$get_color_02]] 70%);\\r\\n    -pie-background: linear-gradient([[$get_color_01]], [[$get_color_02]] 70%);\\r\\n\\t-webkit-box-shadow: #625D56 0.025em -0.05em .3em;\\r\\n    -moz-box-shadow: #625D56  0.025em -0.05em .3em;\\r\\n    box-shadow: #625D56  0.025em -0.05em .3em;\\r\\n\\tbehavior: url(..\\/PIE.htc);\\r\\n\\tcolor: #ffffff;\\r\\n\\tborder: 1px solid [[$get_color_01]];\\r\\n}\\r\\n.tagline_link a:hover {\\r\\n\\tbackground: -webkit-gradient(linear, 0 0, 0 50%, from([[$get_color_02]]), to([[$get_color_01]]));\\r\\n    background: -moz-linear-gradient([[$get_color_02]], [[$get_color_01]] 50%);\\r\\n    background: linear-gradient([[$get_color_02]], [[$get_color_01]] 50%);\\r\\n    -pie-background: linear-gradient([[$get_color_02]], [[$get_color_01]] 50%);\\r\\n\\tbehavior: url(..\\/PIE.htc);\\r\\n\\tborder: 1px solid [[$get_color_01]];\\r\\n}\\r\\n.tagline_link a:active {\\r\\n\\tbackground: -webkit-gradient(linear, 0 0, 0 70%, from([[$get_color_01]]), to([[$get_color_02]]));\\r\\n    background: -moz-linear-gradient([[$get_color_01]], [[$get_color_02]] 70%);\\r\\n    background: linear-gradient([[$get_color_01]], [[$get_color_02]] 70%);\\r\\n    -pie-background: linear-gradient([[$get_color_01]], [[$get_color_02]] 70%);\\r\\n\\tbehavior: url(..\\/PIE.htc);\\r\\n\\tborder: 1px solid [[$get_color_01]];\\r\\n}\\r\\n.bg_main {\\r\\n\\tbackground: #f9f9f9;\\r\\n\\tborder-top: 1px solid #e0e0e0;\\r\\n\\tborder-bottom: 1px solid [[$get_color_02]];\\r\\n}\\r\\n.bg_footer {\\r\\n\\tbackground-color: [[$get_color_01]];\\r\\n\\tborder-top: 1px solid [[$get_color_02]];\\r\\n}\\r\\n.bg_footer, .bg_footer p, .bg_footer a, .bg_footer h3, .bg_footer h4, .bg_footer h5, .bg_footer h6 {\\r\\n\\tcolor: #ffffff;\\r\\n}\\r\\n.slider img {\\r\\n\\tborder: 5px solid #ffffff;\\r\\n\\t-webkit-box-shadow: [[$get_color_03]] 0.2em -0.1em 0.5em;\\r\\n    -moz-box-shadow: [[$get_color_03]]  0.2em -0.1em 0.5em;\\r\\n    box-shadow: [[$get_color_03]]  0.2em -0.1em 0.5em;\\r\\n\\tbehavior: url(..\\/PIE.htc);\\r\\n}\\r\\nnav li a, nav li a:active, nav li a:visited {\\r\\n\\tcolor: #ffffff;\\r\\n}\\r\\nnav li a:hover, nav li a:active {\\r\\n\\tbackground: -webkit-gradient(linear, 0 0, 0 50%, from([[$get_color_02]]), to([[$get_color_01]]));\\r\\n    background: -moz-linear-gradient([[$get_color_02]], [[$get_color_01]] 50%);\\r\\n    background: linear-gradient([[$get_color_02]], [[$get_color_01]] 50%);\\r\\n    -pie-background: linear-gradient([[$get_color_02]], [[$get_color_01]] 50%);\\r\\n\\t-webkit-box-shadow: [[$get_color_03]] 0.05em  -0.1em .3em;\\r\\n    -moz-box-shadow: [[$get_color_03]]  0.05em -0.1em .3em;\\r\\n    box-shadow: [[$get_color_03]]  0.05em -0.1em .3em;\\r\\n\\tbehavior: url(..\\/PIE.htc);\\r\\n\\tcolor: #ffffff;\\r\\n\\tborder: 1px solid [[$get_color_01]];\\r\\n}\\r\\nnav li.active a, nav li.active a:hover {\\r\\n\\tbackground: -webkit-gradient(linear, 0 0, 0 70%, from([[$get_color_01]]), to([[$get_color_02]]));\\r\\n    background: -moz-linear-gradient([[$get_color_01]], [[$get_color_02]] 70%);\\r\\n    background: linear-gradient([[$get_color_01]], [[$get_color_02]] 70%);\\r\\n    -pie-background: linear-gradient([[$get_color_01]], [[$get_color_02]] 70%);\\r\\n\\t-webkit-box-shadow: [[$get_color_03]] 0.05em -0.1em .3em;\\r\\n    -moz-box-shadow: [[$get_color_03]]  0.05em -0.1em .3em;\\r\\n    box-shadow: [[$get_color_03]]  0.05em -0.1em .3em;\\r\\n\\tbehavior: url(..\\/PIE.htc);\\r\\n\\tcolor: #ffffff;\\r\\n\\tborder: 1px solid [[$get_color_01]];\\r\\n}\\r\\nnav li a:active {\\r\\n\\tcolor: [[$get_color_01]];\\r\\n}\\r\\n.tagline_link a {\\r\\n\\tbackground: -webkit-gradient(linear, 0 0, 0 70%, from([[$get_color_01]]), to([[$get_color_02]]));\\r\\n    background: -moz-linear-gradient([[$get_color_01]], [[$get_color_02]] 70%);\\r\\n    background: linear-gradient([[$get_color_01]], [[$get_color_02]] 70%);\\r\\n    -pie-background: linear-gradient([[$get_color_01]], [[$get_color_02]] 70%);\\r\\n\\t-webkit-border-radius: 4px 4px 4px 4px;\\r\\n    -moz-border-radius: 4px 4px 4px 4px;\\r\\n    border-radius: 4px 4px 4px 4px;\\r\\n\\t-webkit-box-shadow: [[$get_color_03]] 0.025em -0.05em .3em;\\r\\n    -moz-box-shadow: [[$get_color_03]]  0.025em -0.05em .3em;\\r\\n    box-shadow: [[$get_color_03]]  0.025em -0.05em .3em;\\r\\n\\tbehavior: url(..\\/PIE.htc);\\r\\n\\tcolor: #ffffff;\\r\\n\\tborder: 1px solid [[$get_color_01]];\\r\\n\\tpadding: 4px 9px 4px 9px;\\r\\n\\tfont-size: 34px;\\r\\n\\tline-height: 44px;\\r\\n\\tfont-family: \'Rokkitt\', arial, serif;\\r\\n\\ttext-decoration: none;\\r\\n}\\r\\n.tagline_link a:hover {\\r\\n\\tbackground: -webkit-gradient(linear, 0 0, 0 50%, from([[$get_color_02]]), to([[$get_color_01]]));\\r\\n    background: -moz-linear-gradient([[$get_color_02]], [[$get_color_01]] 50%);\\r\\n    background: linear-gradient([[$get_color_02]], [[$get_color_01]] 50%);\\r\\n    -pie-background: linear-gradient([[$get_color_02]], [[$get_color_01]] 50%);\\r\\n\\tbehavior: url(..\\/PIE.htc);\\r\\n\\ttext-decoration: none;\\r\\n\\tborder: 1px solid [[$get_color_01]];\\r\\n}\\r\\n.tagline_link a:active {\\r\\n\\tbackground: -webkit-gradient(linear, 0 0, 0 70%, from([[$get_color_01]]), to([[$get_color_02]]));\\r\\n    background: -moz-linear-gradient([[$get_color_01]], [[$get_color_02]] 70%);\\r\\n    background: linear-gradient([[$get_color_01]], [[$get_color_02]] 70%);\\r\\n    -pie-background: linear-gradient([[$get_color_01]], [[$get_color_02]] 70%);\\r\\n\\tbehavior: url(..\\/PIE.htc);\\r\\n\\tborder: 1px solid [[$get_color_01]];\\r\\n}\\r\\n.slides_container div.wide div.slide_text {\\r\\n\\tbackground: [[$get_color_01]];\\r\\n\\t-webkit-box-shadow: [[$get_color_03]] 0.05em -0.1em .3em;\\r\\n    -moz-box-shadow: [[$get_color_03]]  0.05em -0.1em .3em;\\r\\n    box-shadow: [[$get_color_03]]  0.05em -0.1em .3em;\\r\\n\\tbehavior: url(..\\/PIE.htc);\\r\\n}\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n.contact_form_field input {\\r\\n\\tborder: 1px solid [[$get_color_01]];\\r\\n}\\r\\n.contact_form_field_wide textarea {\\r\\n\\tborder: 1px solid [[$get_color_01]];\\r\\n}\\r\\n.tagline_link input {\\r\\n\\tbackground: -webkit-gradient(linear, 0 0, 0 70%, from([[$get_color_01]]), to([[$get_color_02]]));\\r\\n    background: -moz-linear-gradient([[$get_color_01]], [[$get_color_02]] 70%);\\r\\n    background: linear-gradient([[$get_color_01]], [[$get_color_02]] 70%);\\r\\n    -pie-background: linear-gradient([[$get_color_01]], [[$get_color_02]] 70%);\\r\\n\\t-webkit-box-shadow: [[$get_color_03]] 0.025em -0.05em .3em;\\r\\n    -moz-box-shadow: [[$get_color_03]]  0.025em -0.05em .3em;\\r\\n    box-shadow: [[$get_color_03]]  0.025em -0.05em .3em;\\r\\n\\tbehavior: url(..\\/PIE.htc);\\r\\n\\tborder: 1px solid [[$get_color_01]];\\r\\n}\\r\\n.tagline_link input:hover {\\r\\n\\tbackground: -webkit-gradient(linear, 0 0, 0 50%, from([[$get_color_02]]), to([[$get_color_01]]));\\r\\n    background: -moz-linear-gradient([[$get_color_02]], [[$get_color_01]] 50%);\\r\\n    background: linear-gradient([[$get_color_02]], [[$get_color_01]] 50%);\\r\\n    -pie-background: linear-gradient([[$get_color_02]], [[$get_color_01]] 50%);\\r\\n\\tbehavior: url(..\\/PIE.htc);\\r\\n\\tborder: 1px solid [[$get_color_01]];\\r\\n}\\r\\n.tagline_link input:active {\\r\\n\\tbackground: -webkit-gradient(linear, 0 0, 0 70%, from([[$get_color_01]]), to([[$get_color_02]]));\\r\\n    background: -moz-linear-gradient([[$get_color_01]], [[$get_color_02]] 70%);\\r\\n    background: linear-gradient([[$get_color_01]], [[$get_color_02]] 70%);\\r\\n    -pie-background: linear-gradient([[$get_color_01]], [[$get_color_02]] 70%);\\r\\n\\tbehavior: url(..\\/PIE.htc);\\r\\n\\tborder: 1px solid [[$get_color_01]];\\r\\n}","locked":0,"properties":null}',
+        'guid' => '8b0f5b4d9d5a2570e7ee46fc3a00a6fc',
+        'native_key' => 5,
+        'signature' => 'a7ce7eaeb7c6e8cfc6d375b594a68942',
+      ),
+    ),
+    'TemplateVars' => 
+    array (
+      'fb5497afa5ec95440d484a2bf0e324d6' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'class' => 'modTemplateVar',
+        'object' => '{"id":1,"type":"image","name":"image","caption":"image","description":"For a wide slide max 920px wide and 280px high","editor_type":0,"category":0,"locked":0,"elements":null,"rank":0,"display":"text","default_text":"","properties":null,"input_properties":null,"output_properties":null,"display_params":""}',
+        'guid' => '607369922473f44acb0e82a9bcaab7e7',
+        'native_key' => 1,
+        'signature' => 'abf8fcbee63663e2ee4dfd208721b3de',
+      ),
+      'c35f6f2e8f4b165c70bd32b457e114de' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'class' => 'modTemplateVar',
+        'object' => '{"id":2,"type":"migx","name":"multiItemsGrid","caption":"Slider items","description":"The items in the slider","editor_type":0,"category":0,"locked":0,"elements":null,"rank":0,"display":"default","default_text":"","properties":null,"input_properties":"a:2:{s:8:\\"formtabs\\";s:373:\\"\\r\\n[\\r\\n{\\"caption\\":\\"Info\\", \\"fields\\": [\\r\\n    {\\"field\\":\\"title\\",\\"caption\\":\\"Title\\",\\"description\\":\\"Title for the image.\\"},\\r\\n    {\\"field\\":\\"description\\",\\"caption\\":\\"Description\\",\\"inputTV\\":\\"richtext\\"},\\r\\n    {\\"field\\":\\"slide_option\\",\\"caption\\":\\"Slide type\\",\\"inputTV\\":\\"slide_option\\"}\\r\\n]},\\r\\n{\\"caption\\":\\"Image\\", \\"fields\\":[\\r\\n    {\\"field\\":\\"image\\",\\"caption\\":\\"Image\\",\\"inputTV\\":\\"image\\"}\\r\\n]}\\r\\n]\\r\\n\\t\\";s:7:\\"columns\\";s:198:\\"\\r\\n[\\r\\n{\\"header\\": \\"Title\\", \\"width\\": \\"160\\", \\"sortable\\": \\"true\\", \\"dataIndex\\": \\"title\\"},\\r\\n{\\"header\\": \\"Image\\", \\"width\\": \\"50\\", \\"sortable\\": \\"false\\", \\"dataIndex\\": \\"image\\",\\"renderer\\": \\"this.renderImage\\"}\\r\\n]\\r\\n\\";}","output_properties":null,"display_params":""}',
+        'guid' => '2d9c087f8339ec0a3f78e969398c7664',
+        'native_key' => 2,
+        'signature' => '248a4e53cc7d778fd0e99b604215215f',
+      ),
+      '3b8096e23c657362dd85d17b44e14f62' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'class' => 'modTemplateVar',
+        'object' => '{"id":3,"type":"richtext","name":"richtext","caption":"Slide text","description":"Enter the content of the slide","editor_type":0,"category":0,"locked":0,"elements":null,"rank":0,"display":"default","default_text":"","properties":null,"input_properties":null,"output_properties":null,"display_params":""}',
+        'guid' => '4d9524e4bfa5711c209cff10c5894a1b',
+        'native_key' => 3,
+        'signature' => 'c8969e5acb0b4ff39a73b3d3c67ecfd8',
+      ),
+      'e5373d5cb0d7b48180dc1e7e418bace8' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'class' => 'modTemplateVar',
+        'object' => '{"id":4,"type":"option","name":"slide_option","caption":"Slide style","description":"Select the style of this slide","editor_type":0,"category":0,"locked":0,"elements":"Small image==small||Wide image==wide","rank":0,"display":"default","default_text":"small","properties":null,"input_properties":null,"output_properties":null,"display_params":""}',
+        'guid' => '888b24c4ce4ce9f5f2a4df2d2b8fe720',
+        'native_key' => 4,
+        'signature' => 'c020e5d3579097aceea616cc1ff048d8',
+      ),
+      '4b65c6cc20f64d4dd068a7f38a0769f2' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'class' => 'modTemplateVar',
+        'object' => '{"id":6,"type":"richtext","name":"tv.contact_adress","caption":"Adress","description":"Contact information in the footer and on the contact page","editor_type":0,"category":0,"locked":0,"elements":null,"rank":10,"display":"default","default_text":"","properties":null,"input_properties":null,"output_properties":null,"display_params":""}',
+        'guid' => 'ff576888acc83f0fd7a8f0d4795de406',
+        'native_key' => 6,
+        'signature' => 'c9723cc0357b86b826f75433795cf4df',
+      ),
+      '095d54bfea61f52660b810d6515501c4' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'class' => 'modTemplateVar',
+        'object' => '{"id":7,"type":"email","name":"tv.email_adress","caption":"E-mail adress","description":"Fill in your e-mail adress for the contact form","editor_type":0,"category":0,"locked":0,"elements":null,"rank":2,"display":"default","default_text":"","properties":null,"input_properties":null,"output_properties":null,"display_params":""}',
+        'guid' => 'dd4ef1a53cbbfa3edae14fe0acd1130c',
+        'native_key' => 7,
+        'signature' => 'c53fef758c9ef4bf03c259aa640977bb',
+      ),
+      '16e9eab9b6214698aefb0d6da92971a3' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'class' => 'modTemplateVar',
+        'object' => '{"id":8,"type":"richtext","name":"tv.footer_content_left","caption":"Footer content left","description":"The content of the left side of the footer","editor_type":0,"category":0,"locked":0,"elements":null,"rank":7,"display":"default","default_text":"","properties":null,"input_properties":null,"output_properties":null,"display_params":""}',
+        'guid' => 'f3b2ba0e09b95e984da185fe69dbe952',
+        'native_key' => 8,
+        'signature' => 'f8607322ea449d5d6624e4094bdfffc7',
+      ),
+      'a715683446703c7c75f7fb0d0a326d14' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'class' => 'modTemplateVar',
+        'object' => '{"id":9,"type":"richtext","name":"tv.footer_content_right","caption":"Footer content right","description":"The content of the right side of the footer","editor_type":0,"category":0,"locked":0,"elements":null,"rank":8,"display":"default","default_text":"","properties":null,"input_properties":null,"output_properties":null,"display_params":""}',
+        'guid' => '06730b522ed15bb0da027511c87bdb3c',
+        'native_key' => 9,
+        'signature' => '3f8c7fd4ee10a8e820fcccea529cbf9a',
+      ),
+      'de802d64546508f285450aadac8ca01a' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'class' => 'modTemplateVar',
+        'object' => '{"id":10,"type":"image","name":"tv.logo","caption":"Logo","description":"Choose your site logo for the header","editor_type":0,"category":0,"locked":0,"elements":null,"rank":1,"display":"image","default_text":"","properties":null,"input_properties":null,"output_properties":null,"display_params":""}',
+        'guid' => '43a92d2aecf9b11e9d6fe26a0a7d2400',
+        'native_key' => 10,
+        'signature' => 'a115b5a209e65d88778c138447609949',
+      ),
+      '20d5148f24464bef4d45e2704a14931a' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'class' => 'modTemplateVar',
+        'object' => '{"id":11,"type":"richtext","name":"tv_sidebar","caption":"Sidebar content","description":"Enter content for the sidebar (leave empty to have no sidebar)","editor_type":0,"category":0,"locked":0,"elements":null,"rank":7,"display":"default","default_text":"","properties":null,"input_properties":null,"output_properties":null,"display_params":""}',
+        'guid' => '8484ce30615909f8a99de21a97fb1ce7',
+        'native_key' => 11,
+        'signature' => '849cf183f3d99deea53c7e5da797e205',
+      ),
+      'b6b0591c6ded2ef11a2f5e749d694785' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'class' => 'modTemplateVar',
+        'object' => '{"id":12,"type":"option","name":"tv_slider","caption":"Page slider","description":"Want the slider on this page? (creat at least 2 slides under \\"Site settings\\" . \\"Template Variables\\")","editor_type":0,"category":0,"locked":0,"elements":"Yes==yes||No==no","rank":2,"display":"default","default_text":"no","properties":null,"input_properties":null,"output_properties":null,"display_params":""}',
+        'guid' => '518fae1f89d516cc9255e93c958885ab',
+        'native_key' => 12,
+        'signature' => '06db9cfab25a0a5c0222d1e577095db6',
+      ),
+      'e01c0a3851fb21e85d010a22b748f1e1' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'class' => 'modTemplateVar',
+        'object' => '{"id":13,"type":"text","name":"tv_tagline","caption":"Tagline text","description":"Text in the tagline","editor_type":0,"category":0,"locked":0,"elements":null,"rank":4,"display":"default","default_text":"","properties":null,"input_properties":null,"output_properties":null,"display_params":""}',
+        'guid' => '6d503f8b92c83a3333f3e5a883f2a235',
+        'native_key' => 13,
+        'signature' => 'c291f202a7c7247c9e26fd5e96f44306',
+      ),
+      '9a0ed0449b31520bc3e701eaf924962c' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'class' => 'modTemplateVar',
+        'object' => '{"id":14,"type":"url","name":"tv_tagline_link","caption":"Link of the tagline link","description":"Enter URL of the link","editor_type":0,"category":0,"locked":0,"elements":null,"rank":5,"display":"string","default_text":"","properties":null,"input_properties":null,"output_properties":null,"display_params":""}',
+        'guid' => '490a4d741cebd24225bf84269f79052b',
+        'native_key' => 14,
+        'signature' => 'ffb279945589b034054a2e41cbf8a1a5',
+      ),
+      '2d826b93474a32eaaed70d050159e163' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'class' => 'modTemplateVar',
+        'object' => '{"id":15,"type":"text","name":"tv_tagline_link_text","caption":"Tagline link text","description":"Text in the tagline link","editor_type":0,"category":0,"locked":0,"elements":null,"rank":6,"display":"default","default_text":"","properties":null,"input_properties":null,"output_properties":null,"display_params":""}',
+        'guid' => 'ef4300e634d6ae17e660d2b88df14bd2',
+        'native_key' => 15,
+        'signature' => '4d2ef051adeef32b320974b048ece2ad',
+      ),
+      '2ae42a5d066f273550f8938ca576d29b' => 
+      array (
+        'preserve_keys' => true,
+        'update_object' => true,
+        'class' => 'modTemplateVar',
+        'object' => '{"id":16,"type":"option","name":"tv_tagline_option","caption":"Page tagline","description":"Do you want tagline on this page?","editor_type":0,"category":0,"locked":0,"elements":"No tagline==no_tagline||Tagline with link==tagline_link||Tagline without link==tagline","rank":3,"display":"default","default_text":"no_tagline","properties":null,"input_properties":null,"output_properties":null,"display_params":""}',
+        'guid' => '9738bef7a7e2e1dd6205b0d7653fe90d',
+        'native_key' => 16,
+        'signature' => '17095588954948487aaa0c5a664fdde5',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Snippets' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => true,
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => true,
+    ),
+    'Templates' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => true,
+    ),
+    'TemplateVars' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => true,
+    ),
+  ),
+  'namespace' => 'flexibility',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"flexibility-1.0.3-rl\\/modCategory\\/1f1b7e98dd621318d3ba6e0c49e8c93a\\/0\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"flexibility"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"flexibility-1.0.3-rl\\/modCategory\\/1f1b7e98dd621318d3ba6e0c49e8c93a\\/1\\/","target":"return MODX_ASSETS_PATH . \'templates\\/\';","name":"templates"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"flexibility-1.0.3-rl\\/modCategory\\/1f1b7e98dd621318d3ba6e0c49e8c93a.resolve.propertysets.resolver","type":"php","name":"resolve.propertysets"}',
+    ),
+    3 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"flexibility-1.0.3-rl\\/modCategory\\/1f1b7e98dd621318d3ba6e0c49e8c93a.resolve.tv.template.resolver","type":"php","name":"resolve.tv.template"}',
+    ),
+    4 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"flexibility-1.0.3-rl\\/modCategory\\/1f1b7e98dd621318d3ba6e0c49e8c93a.resolve.tv.resource.resolver","type":"php","name":"resolve.tv.resource"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'bda4a0749eb074aae5199906fb7f3e9b',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '1f1b7e98dd621318d3ba6e0c49e8c93a',
+  'native_key' => 1,
+  'object' => '{"id":1,"parent":0,"category":"flexibility"}',
+);
