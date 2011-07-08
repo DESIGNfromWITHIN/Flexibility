@@ -19,19 +19,24 @@ QUICKSTART        PLEASE READ THIS
 
 1. Install MODx Revolution on your website.
 
-2. Backup the "ht.access" file in from root folder to your desktop and remove the "ht.access" file from your website root (your root is probably something like: "your_url/public_html/").
+2. download "flexibility-1.0.3-rl.transport.zip" and upload it to "your_url/core/packages/"
 
-3. Open the "ht.access" file from your desktop (with notepad or any code editor) and save it as ".htaccess".
-
-4. Copy the new "ht.access" file to your website root.
-
-5. Enter your MODX Revolution manager ("your_url/manager"): Go to "System" > "System Settings" > Click on "Filter by area" and select "Friendly URL" > For "Use Friendly URL's" and "Use Friendly Alias Path" choose "Yes".
-
-6. Install the "Flexibility" package: Go to "System" > "Package Management" > "Add New Package" > "Search Locally for Packages" > "Yes".
+3. Install the "Flexibility" package: Go to "System" > "Package Management" > "Add New Package" > "Search Locally for Packages" > "Yes".
 
 THAT IS ALL!
 (to be sure clear your cache > "Site" > "Clear Cache")
 
+-----------------------------------------------------------------------------------------------------------
+Don't forget to setup FriendlyURL's:
+-----------------------------------------------------------------------------------------------------------
+
+1. Backup the "ht.access" file in from root folder to your desktop and remove the "ht.access" file from your website root (your root is probably something like: "your_url/public_html/").
+
+2. Open the "ht.access" file from your desktop (with notepad or any code editor) and save it as ".htaccess".
+
+3. Copy the new "ht.access" file to your website root.
+
+4. Enter your MODX Revolution manager ("your_url/manager"): Go to "System" > "System Settings" > Click on "Filter by area" and select "Friendly URL" > For "Use Friendly URL's" and "Use Friendly Alias Path" choose "Yes".
 
 -----------------------------------------------------------------------------------------------------------
 ADDING AND CHANGING CONTENT
