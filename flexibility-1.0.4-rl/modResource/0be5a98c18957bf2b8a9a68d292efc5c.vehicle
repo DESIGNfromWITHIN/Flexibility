@@ -1,0 +1,26 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'id',
+  'related_objects' => true,
+  'related_object_attributes' => 
+  array (
+    'ContentType' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+  ),
+  'namespace' => 'flexibility',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '98aefd1d7f3191dcd809608d8999a25f',
+  'package' => 'modx',
+  'class' => 'modResource',
+  'signature' => '0be5a98c18957bf2b8a9a68d292efc5c',
+  'native_key' => 1,
+  'object' => '{"id":1,"type":"document","contentType":"text\\/html","pagetitle":"Home","longtitle":"Welcome to the Flexibility homepage","description":"This will be your homepage","alias":"home","link_attributes":"","published":1,"pub_date":0,"unpub_date":0,"parent":0,"isfolder":0,"introtext":"","content":"<h2>What it is<\\/h2>\\r\\n<p>Flexibility is a premium template for MODx Revolution.<br \\/>With Flexibility you can create your own, manageble, costomizable and great looking website in minutes!<\\/p>\\r\\n<h2>Browser support<\\/h2>\\r\\n<p><img style=\\"float: left; margin-left: 0px; margin-right: 20px; margin-bottom: 5px;\\" title=\\"All browsers supported\\" src=\\"assets\\/templates\\/templates\\/main\\/images\\/site\\/browser_support.png\\" alt=\\"All browsers supported\\" width=\\"220\\" height=\\"116\\" \\/>Flexibility supports all common browsers, inculding IE6 and IE7!<\\/p>\\r\\n<p><br \\/><br \\/><\\/p>\\r\\n<h2>What does the template look like?<\\/h2>\\r\\n<p>The same as this website! But remember, it is flexible! You can select custom colors by adding 3 HEX values, this will totally transform the look of the site.<\\/p>\\r\\n<p>Don\'t want a sidebar? Just leave it blank and it will disapear. Add a tagline to a page? Simply fill it in under the page options.<\\/p>","richtext":1,"template":4,"menuindex":1,"searchable":1,"cacheable":1,"createdby":0,"createdon":0,"editedby":0,"editedon":0,"deleted":0,"deletedon":0,"deletedby":0,"publishedon":0,"publishedby":0,"menutitle":"Home","donthit":0,"privateweb":0,"privatemgr":0,"content_dispo":0,"hidemenu":0,"class_key":"modDocument","context_key":"web","content_type":1,"uri":null,"uri_override":0}',
+);
