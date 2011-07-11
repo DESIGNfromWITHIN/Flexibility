@@ -1,16 +1,16 @@
 <div class="bg_main">
-	<div class="container row" id="content">
-		[[!If? &subject=`[[*tv_sidebar]]` &operator=`isnotempty` &then=`
-			<div class="col8">
+	[[!If? &subject=`[[*tv_sidebar]]` &operator=`isnotempty` &then=`
+		<div class="container row" id="content">
+			<div class="col8 padding_20_10">
 				[[*content]]
 			</div>
-			<div class="col4 last">
+			<div class="col4 padding_20_10 last">
 				[[*tv_sidebar]]
 			</div>
-		`&else=`
-			<div class="col12 last">
-				[[*content]]
-			</div>
-		`]]
-	</div>
+		</div>
+	`&else=`
+		<div class="container row padding_20_10" id="content">
+			[[*content]]
+		</div>
+	`]]
 </div>

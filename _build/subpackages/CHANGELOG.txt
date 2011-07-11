@@ -1,6 +1,0 @@
-Changelog for FlexibilitySubPackages
-
-FlexibilitySubPackages - version 1.0-rl (08-07-2011)
-====================================
-- Started this concept: Package needed sub-packages with packman, install this with my own custom script.
-Many thanks to: Romain Tripault (Twitter @rtripault) for the tip!

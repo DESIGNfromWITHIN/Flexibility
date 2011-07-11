@@ -21,6 +21,6 @@
 * Flexibility; if not, write to the Free Software Foundation, Inc., 59
 * Temple Place, Suite 330, Boston, MA 02111-1307 USA
 */
-return '<blink style="color: red"><h3>Please use MODX Revolution 2.1.1-pl (for now MODX 2.1.2-pl is not working with this template)</h3>
+return '<blink style="color: red"><h3>Please use MODX Revolution 2.1.1-pl or higher</h3>
 <p style="color: blue">This package will install a full website! Please use on a clean install only!</p>
 <p>After installing this package you will be able to update the various addons like Wayfinder te normal way.</p></blink>';

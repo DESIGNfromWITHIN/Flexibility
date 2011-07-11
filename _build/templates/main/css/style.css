@@ -81,7 +81,7 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 }
 
 .row {
-	width: 987px;
+	width: 978px;
 	margin: 0 auto;
 	overflow: hidden;
 }
@@ -93,60 +93,46 @@ h1, h2, h3, h4, h5, h6 { font-weight: bold; }
 
 .col1 {
 	width: 34px;
-	padding: 20px 10px 20px 10px;
 }
 
 .col2 {
 	width: 118px;
-	padding: 20px 10px 20px 10px;
 }
 
 .col3 {
 	width: 202px;
-	padding: 20px 10px 20px 10px;
 }
 
 .col4 {
 	width: 286px;
-	padding: 20px 10px 20px 10px;
 }
 
 .col5 {
 	width: 370px;
-	padding: 20px 10px 20px 10px;
 }
 
 .col6 {
 	width: 454px;
-	padding: 20px 10px 20px 10px;
 }
 
 .col7 {
 	width: 538px;
-	padding: 20px 10px 20px 10px;
 }
 
 .col8 {
 	width: 622px;
-	padding: 20px 10px 20px 10px;
 }
 
 .col9 {
 	width: 706px;
-	padding: 20px 10px 20px 10px;
 }
 
 .col10 {
 	width: 790px;
-	padding: 20px 10px 20px 10px;
 }
 
 .col11 {
 	width: 874px;
-	padding: 20px 10px 20px 10px;
-}
-.col12 {
-	padding: 20px 10px 20px 10px;
 }
 
 .last {
@@ -157,6 +143,9 @@ img, object, embed {
 max-width: 100%;
 }
 
+.padding_20_10 {
+	padding: 20px 10px 20px 10px;
+}
 /* Primary Styles
     Author:
 */

@@ -11,11 +11,11 @@
 			email:email:required,
 			text:required:stripTags`
 		]]
-		<div class="col9">
+		<div class="col9 padding_20_10">
 			[[*content]]
 			[[$chunk_contact_form]]
 			</div>
-			<div class="col3 last">
+			<div class="col3 padding_20_10 last">
 				[[*tv_sidebar]]
 		</div>
 	</div>

@@ -1,75 +1,79 @@
 <!doctype html>
-<!--[if !IEMobile]> <html class="no-js iemobile" lang="[[++cultureKey]]"> <![endif]-->
-<!--[if lt IE 7 ]> <html class="no-js ie6" lang="[[++cultureKey]]"> <![endif]-->
-<!--[if IE 7 ]>    <html class="no-js ie7" lang="[[++cultureKey]]"> <![endif]-->
-<!--[if IE 8 ]>    <html class="no-js ie8" lang="[[++cultureKey]]"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="[[++cultureKey]]"> <!--<![endif]--> 
+<!--[if IEMobile]> <html class="no-js iemobile" lang="[[++cultureKey]]" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if lt IE 7 ]> <html class="no-js ie6" lang="[[++cultureKey]]" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if IE 7 ]>    <html class="no-js ie7" lang="[[++cultureKey]]" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if IE 8 ]>    <html class="no-js ie8" lang="[[++cultureKey]]" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html class="no-js" lang="[[++cultureKey]]" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml"> <!--<![endif]--> 
 <head>
+<!-- Initialized DOCTYPE with Facebook FBML implementation. If not needed, please remove following code in <html> element before closing tag: xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" -->
 	<base href="[[++site_url]]" />
 	<meta charset="[[++modx_charset:lcase]]" />
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame | Remove this if you use the MODX-Boilerplate .htaccess file (NOT the MODX Revolution .htaccess!) -->
+	<!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
 	<title>[[++site_name]] - [[*pagetitle]]</title>
+	<!-- change RSS ID or remove next line
+	<link rel="alternate" type="application/rss+xml" title="[[++site_name]] RSS Feed" href="[[~1]]"> -->
 	<meta name="description" content="[[*introtext:empty=`[[*content:strip_tags:strip]]`:limit=`200`]]">
 	<meta name="author" content="[[If? &subject=`[[*publishedby]]` &operator=`>` &operand=`0` &then=`[[*publishedby:userinfo=`fullname`]]` &else=`[[*createdby:userinfo=`fullname`]]`]]" />
 	<meta name="keywords" content="" />
+	<!-- Remove next line if you are NOT using multiple domains OR using Canonical Snippet (http://modxcms.com/extras/package/?package=705). | Google Canonical Tag SEO
+	<link rel="canonical" href="[[++site_url]][[*id:isnot=`[[++site_start]]`:then=`[[~[[*id]]]]`]]" /> -->
 	
-	<!-- Specify URL to favicon and Apple touch icon if not located in root directory ELSE delete this tags -->
-	<link rel="shortcut icon" href="[[++site_url]]assets/templates/templates/main/images/site/favicon.ico">
-	<link rel="apple-touch-icon" href="[[++site_url]]assets/templates/templates/main/images/site/apple-touch-icon.png">
+	<!-- Specify URL to favicon and Apple touch icon if not located in root directory ELSE delete this tags. If you want to support various icon sizes view: http://mathiasbynens.be/notes/touch-icons#sizes or use root directory. Android (as of 2.3) only supports apple-touch-icon-precomposed linked in html as below -->
+	<link rel="shortcut icon" href="[[++site_url]]/assets/templates/templates/main/favicon.ico">
+	<link rel="apple-touch-icon-precomposed" href="[[++site_url]]/assets/templates/templates/main/apple-touch-icon-precomposed.png">
 
+	<!-- If you use Webfonts, you use this script to detect font-smoothing. Please look at documentation how to use it: http://www.michael-van-laar.de/blog/artikel/webfont-load-enhancer/
+	<script src="[[++site_url]]assets/templates/templates/main/js/libs/webfontloadenhancer.min.js"></script> -->
+	<!-- Please load Webfontenhancer BEFORE the Webfont initialization / Webfont-CSS -->
+	
 	<!-- sets viewport to device-with for mobile devices | Android DPI fix for @media-queries  -->
 	<meta name="viewport" content="width=device-width, target-densitydpi=device-dpi, initial-scale=1.0">
 	<!-- load default CSS file. Implied media="all" -->
 	<link rel="stylesheet" href="[[++site_url]]assets/templates/templates/main/css/style.css">
-	
-	[[If? &subject=`[[*template_color]]` &operator=`equals` &operand=`black` &then=`
-		<link rel="stylesheet" href="[[++site_url]]assets/templates/templates/main/css/style_black.css">
-	`]]
-	[[If? &subject=`[[*template_color]]` &operator=`equals` &operand=`green` &then=`
-		<link rel="stylesheet" href="[[++site_url]]assets/templates/templates/main/css/style_green.css">
-	`]]
-	[[If? &subject=`[[*template_color]]` &operator=`equals` &operand=`custom` &then=`
-		<link rel="stylesheet" href="[[++site_url]][[$settings_page_id]]">
-	`]]
-	
-	<link href='http://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
-	
+	<!-- Load CSS files with media-queries
+	<link rel="stylesheet" href="[[++site_url]]assets/templates/templates/main/css/smartphone.css" media="only screen and (min-device-width : 320px) and (max-device-width : 480px)">
+	<link rel="stylesheet" href="[[++site_url]]assets/templates/templates/main/css/ipad-portrait.css" media="only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)">
+	<link rel="stylesheet" href="[[++site_url]]assets/templates/templates/main/css/ipad.css" media="only screen and (min-device-width : 768px) and (max-device-width : 1024px)">
+	<link rel="stylesheet" href="[[++site_url]]assets/templates/templates/main/css/iphone4.css" media="only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5)"> -->
+
+	<!-- Do not remove Modernizr until you don't want to feature detect browser and don't need respond.js -->
 	<script src="[[++site_url]]assets/templates/templates/main/js/libs/modernizr.min.js"></script>
 </head>
 <body>
 <div class="bg_header">
 	<header class="container row">
-		<div class="col4 logo">
-			<a href="[[++site_url]]" title="[[++site_name]]">[[!getResources? &resources=`[[$settings_page_id]]` &includeTVs=`1` &tvPrefix=`` &processTVs=`1` &tpl=`logo_tpl`]]</a>
+		<div class="col4 padding_20_10 logo">
+			<a href="[[++site_url]]" title="[[++site_name]]">[[!getResources? &resources=`[[$settings_page_id]]` &includeTVs=`1` &tvPrefix=`` &processTVs=`1` &tpl=`logo_tpl` &parents=`0` &includeContent=`1` &showHidden=`1`]]</a>
 		</div>
 		<nav class="col8 last">
 			[[!Wayfinder? &startId=`0` ]]
 		</nav>
 	</header>
 	[[!If? &subject=`[[*tv_slider]]` &operand=`yes` &then=`
-	<div class="container row">
-		<div class="col12 last slider">
-			<div id="slides">
-				<div class="slides_container">
-					[[!getImageList? &tvname=`multiItemsGrid` &docid=`[[$settings_page_id]]` &tpl=`slideTpl`]]
-				</div>
+	<div class="container row padding_20_10 slider">
+		<div id="slides">
+			<div class="slides_container">
+				[[!getImageList? &tvname=`multiItemsGrid` &docid=`[[$settings_page_id]]` &tpl=`slideTpl`]]
 			</div>
 		</div>
 	</div>` &else=``]]
 </div>
 <div class="bg_tagline">
-	<div class="container row" id="content">
-		[[!If? &subject=`[[*tv_tagline_option]]` &operator=`EQ` &operand=`tagline_link` &then=`
-			<div class="col8">
+	[[!If? &subject=`[[*tv_tagline_option]]` &operator=`EQ` &operand=`tagline_link` &then=`
+		<div class="container row" id="content">
+			<div class="col8 padding_20_10">
 				<h1>[[*tv_tagline]]</h1>
 			</div>
-			<div class="col4 last tagline_link">
+			<div class="col4 padding_20_10 last tagline_link">
 				<a href="[[*tv_tagline_link]]">[[*tv_tagline_link_text]]</a>
 			</div>
-		` &else=``]]
-		[[!If? &subject=`[[*tv_tagline_option]]` &operator=`EQ` &operand=`tagline` &then=`
-			<div class="col12 last">
-				<h1>[[*tv_tagline]]</h1>
-			</div>
-		` &else=``]]
-	</div>
+		</div>
+	` &else=``]]
+	[[!If? &subject=`[[*tv_tagline_option]]` &operator=`EQ` &operand=`tagline` &then=`
+		<div class="container row padding_20_10" id="content">
+			<h1>[[*tv_tagline]]</h1>
+		</div>
+	` &else=``]]
+</div>
 </div>

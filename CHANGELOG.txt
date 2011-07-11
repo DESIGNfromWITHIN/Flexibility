@@ -1,5 +1,12 @@
 Changelog for Flexibility
 
+flexibility-1.0.4-rl.transport (11-07-2011)
+====================================
+- Removed unneeded col12 classes
+- Removed padding from grid css
+- Added padding_20_10 classes to divs
+- Fixed 978px bug
+
 flexibility-1.0.3-rl.transport (08-07-2011)
 ====================================
 - Sub-packages are now listed and updatable after package install.
