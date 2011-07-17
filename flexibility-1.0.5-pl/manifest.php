@@ -2,7 +2,7 @@
   'manifest-version' => '1.1',
   'manifest-attributes' => 
   array (
-    'readme' => 'Flexibility - version 1.0.2-rl
+    'readme' => 'Flexibility - version 1.0.5-pl
 
 -----------------------------------------------------------------------------------------------------------
 ABOUT
@@ -23,7 +23,7 @@ QUICKSTART        PLEASE READ THIS
 
 1. Install MODx Revolution on your website.
 
-2. download "flexibility-1.0.3-rl.transport.zip" and upload it to "your_url/core/packages/"
+2. download "flexibility-1.0.5-pl.transport.zip" and upload it to "your_url/core/packages/"
 
 3. Install the "Flexibility" package: Go to "System" > "Package Management" > "Add New Package" > "Search Locally for Packages" > "Yes".
 
@@ -78,7 +78,7 @@ I general you can find all website settings under:
 CONTENT:
 -----------------------------------------------------------------------------------------------------------
 
-- Packages: FlexibilitySubPackages (containing: bloggingessentials-1.0-pl, formit-1.7.0-pl, gallery-1.2.1-pl, getresources-1.3.0-pl, if-1.1-pl, login-1.6.4-pl, migx-1.1.0-rc1, tinymce-4.3.0-rc2, wayfinder-2.3.1-pl)
+- Packages: FlexibilitySubPackages (containing: bloggingessentials-1.0-pl, formit-1.7.0-pl, gallery-1.2.1-pl, getresources-1.3.1-pl, if-1.1-pl, login-1.6.5-pl, migx-1.1.0-rc1, tinymce-4.3.0-rc2, wayfinder-2.3.1-pl)
 - Templates: Basic page template, Contact page template, Gallery page template, Homepage template, Page settings template
 - Template Variables: tv.email_adress, tv.logo, tv_sidebar, tv_slider, tv_tagline, tv_tagline_link, tv_taline_link_text, tv_tagline_option
 - Cunks: chunk_contact_form, chunk_email_adress, email_adress_tpl, GalAlbumRowTpl, GalItemThumb, GalleryAlbumTpl, chunk_email_form, logo_tpl, settings_page_id, thank_you_page_id
@@ -132,7 +132,7 @@ BUGS and FEATURE REQUESTS:
 -----------------------------------------------------------------------------------------------------------
 
 Please e-mail me at: info@designfromwithin.com',
-    'setup-options' => 'flexibility-1.0.4-rl/setup-options.php',
+    'setup-options' => 'flexibility-1.0.5-pl/setup-options.php',
   ),
   'manifest-vehicles' => 
   array (
@@ -141,9 +141,9 @@ Please e-mail me at: info@designfromwithin.com',
       'vehicle_package' => 'transport',
       'vehicle_class' => 'xPDOObjectVehicle',
       'class' => 'modNamespace',
-      'guid' => '3613ede98fd344065966ba7a9341b2df',
+      'guid' => 'c4b77ac8e13c57a52692d3364a069ed6',
       'native_key' => 'flexibility',
-      'filename' => 'modNamespace/88b376983e243058b16fd958c063440c.vehicle',
+      'filename' => 'modNamespace/2d22456e817e6efa4a385daf7b22d52a.vehicle',
       'namespace' => 'flexibility',
     ),
     1 => 
@@ -151,9 +151,9 @@ Please e-mail me at: info@designfromwithin.com',
       'vehicle_package' => 'transport',
       'vehicle_class' => 'xPDOTransportVehicle',
       'class' => 'xPDOTransportVehicle',
-      'guid' => 'ed94137200232b18d10fe1c4bcda6419',
-      'native_key' => 'ed94137200232b18d10fe1c4bcda6419',
-      'filename' => 'xPDOTransportVehicle/fbdd54b001cf785547aa6160fc08c717.vehicle',
+      'guid' => '6dd68f24673a0e2c402b3e2164c95ad8',
+      'native_key' => '6dd68f24673a0e2c402b3e2164c95ad8',
+      'filename' => 'xPDOTransportVehicle/877d587dc5b97fc58038e74fcd91230a.vehicle',
       'namespace' => 'flexibility',
     ),
     2 => 
@@ -161,9 +161,9 @@ Please e-mail me at: info@designfromwithin.com',
       'vehicle_package' => 'transport',
       'vehicle_class' => 'xPDOObjectVehicle',
       'class' => 'modResource',
-      'guid' => '98aefd1d7f3191dcd809608d8999a25f',
+      'guid' => '9005e96c4cc3f2e175c00079455e607b',
       'native_key' => 1,
-      'filename' => 'modResource/0be5a98c18957bf2b8a9a68d292efc5c.vehicle',
+      'filename' => 'modResource/d5a4e5b6eb5742ddd6a2d507a8b3c3c7.vehicle',
       'namespace' => 'flexibility',
     ),
     3 => 
@@ -171,9 +171,9 @@ Please e-mail me at: info@designfromwithin.com',
       'vehicle_package' => 'transport',
       'vehicle_class' => 'xPDOObjectVehicle',
       'class' => 'modResource',
-      'guid' => '4d688415fb53a9e3d3d64c05becc7e97',
+      'guid' => 'fcd4a4af5ee443ca9b11096794fed9c4',
       'native_key' => 2,
-      'filename' => 'modResource/4bc90eb9575c2f802a233e70c2a4abaa.vehicle',
+      'filename' => 'modResource/269f59c08dc54a84a0c55c8650155669.vehicle',
       'namespace' => 'flexibility',
     ),
     4 => 
@@ -181,9 +181,9 @@ Please e-mail me at: info@designfromwithin.com',
       'vehicle_package' => 'transport',
       'vehicle_class' => 'xPDOObjectVehicle',
       'class' => 'modResource',
-      'guid' => 'c7ccdf330bbc96018e0746280a3b0510',
+      'guid' => 'ec4ad15b9297f777ed03e47e3771175d',
       'native_key' => 3,
-      'filename' => 'modResource/6241cfc4ed026dc33bde8fc9339a65b4.vehicle',
+      'filename' => 'modResource/1ffacfe7558eea094ce65529aed5df4e.vehicle',
       'namespace' => 'flexibility',
     ),
     5 => 
@@ -191,9 +191,9 @@ Please e-mail me at: info@designfromwithin.com',
       'vehicle_package' => 'transport',
       'vehicle_class' => 'xPDOObjectVehicle',
       'class' => 'modResource',
-      'guid' => '8110e58bd0a220474d07658c657adf3a',
+      'guid' => '43f1e1929ea61f0c85c153c09b5c015b',
       'native_key' => 4,
-      'filename' => 'modResource/946ca42911f07827c35d3ba556702997.vehicle',
+      'filename' => 'modResource/b6554b39c23cda855bfb1d43676dd103.vehicle',
       'namespace' => 'flexibility',
     ),
     6 => 
@@ -201,9 +201,9 @@ Please e-mail me at: info@designfromwithin.com',
       'vehicle_package' => 'transport',
       'vehicle_class' => 'xPDOObjectVehicle',
       'class' => 'modResource',
-      'guid' => 'd40bb21538bd395141e800266e5cccc1',
+      'guid' => '77e1377b6366592ad752b25b6f5ef80b',
       'native_key' => 5,
-      'filename' => 'modResource/766119bf5fc10ae2a3c46023a8495e03.vehicle',
+      'filename' => 'modResource/17d81777df421aa9b40d22e2627d8dc2.vehicle',
       'namespace' => 'flexibility',
     ),
     7 => 
@@ -211,9 +211,9 @@ Please e-mail me at: info@designfromwithin.com',
       'vehicle_package' => 'transport',
       'vehicle_class' => 'xPDOObjectVehicle',
       'class' => 'modResource',
-      'guid' => '17dd2f59286d4ad5e7e598bfe2d516de',
+      'guid' => '3a087073b9678f0c288109b57dec6fe5',
       'native_key' => 6,
-      'filename' => 'modResource/321bb16ed2868983db4dae2512db2cc0.vehicle',
+      'filename' => 'modResource/1f3497eb0a9a69ca069746d2e5e88272.vehicle',
       'namespace' => 'flexibility',
     ),
     8 => 
@@ -221,9 +221,9 @@ Please e-mail me at: info@designfromwithin.com',
       'vehicle_package' => 'transport',
       'vehicle_class' => 'xPDOObjectVehicle',
       'class' => 'modCategory',
-      'guid' => '07882aa882bbbcb80d02d89ff49f4cb5',
+      'guid' => 'f67ff64212abedae979b2c6e6cfaaff6',
       'native_key' => 1,
-      'filename' => 'modCategory/017a09d322e6d0dd410bbdc49f0348d4.vehicle',
+      'filename' => 'modCategory/ab2348f82e6ba3f6a31a2d9acbb8774a.vehicle',
       'namespace' => 'flexibility',
     ),
   ),

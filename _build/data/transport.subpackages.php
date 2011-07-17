@@ -22,7 +22,7 @@
 * Temple Place, Suite 330, Boston, MA 02111-1307 USA
 */
 $subpackages = array(
-    'FlexibilitySubPackages' => 'flexibilitysubpackages-1.0-rl',
+    'FlexibilitySubPackages' => 'flexibilitysubpackages-1.1-rl',
 );
 $spAttr = array('vehicle_class' => 'xPDOTransportVehicle');
 

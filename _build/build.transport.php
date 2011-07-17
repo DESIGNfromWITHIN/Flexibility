@@ -39,7 +39,7 @@ $modx->setLogTarget(XPDO_CLI_MODE ? 'ECHO' : 'HTML');
 
 $modx->loadClass('transport.modPackageBuilder','',false, true);
 $builder = new modPackageBuilder($modx);
-$builder->createPackage('flexibility','1.0.4','rl');
+$builder->createPackage('flexibility','1.0.5','pl');
 $builder->registerNamespace('flexibility',false,true,'{core_path}components/flexibility/');
 
 /* create category */

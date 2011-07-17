@@ -9,10 +9,10 @@
   'validate' => NULL,
   'vehicle_package' => 'transport',
   'vehicle_class' => 'xPDOObjectVehicle',
-  'guid' => '3613ede98fd344065966ba7a9341b2df',
+  'guid' => 'c4b77ac8e13c57a52692d3364a069ed6',
   'package' => 'modx',
   'class' => 'modNamespace',
-  'signature' => '88b376983e243058b16fd958c063440c',
+  'signature' => '2d22456e817e6efa4a385daf7b22d52a',
   'native_key' => 'flexibility',
   'object' => '{"name":"flexibility","path":"{core_path}components\\/flexibility\\/"}',
 );

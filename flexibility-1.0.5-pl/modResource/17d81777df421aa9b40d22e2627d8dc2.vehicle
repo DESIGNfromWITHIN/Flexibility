@@ -17,10 +17,10 @@
   'validate' => NULL,
   'vehicle_package' => 'transport',
   'vehicle_class' => 'xPDOObjectVehicle',
-  'guid' => 'd40bb21538bd395141e800266e5cccc1',
+  'guid' => '77e1377b6366592ad752b25b6f5ef80b',
   'package' => 'modx',
   'class' => 'modResource',
-  'signature' => '766119bf5fc10ae2a3c46023a8495e03',
+  'signature' => '17d81777df421aa9b40d22e2627d8dc2',
   'native_key' => 5,
   'object' => '{"id":5,"type":"document","contentType":"text\\/html","pagetitle":"Site settings","longtitle":"Site settings page","description":"This is the site settings page, change your site options here","alias":"settings","link_attributes":"","published":1,"pub_date":0,"unpub_date":0,"parent":0,"isfolder":0,"introtext":"","content":"","richtext":1,"template":5,"menuindex":0,"searchable":1,"cacheable":1,"createdby":0,"createdon":0,"editedby":0,"editedon":0,"deleted":0,"deletedon":0,"deletedby":0,"publishedon":0,"publishedby":0,"menutitle":"settings","donthit":0,"privateweb":0,"privatemgr":0,"content_dispo":0,"hidemenu":1,"class_key":"modDocument","context_key":"web","content_type":0,"uri":null,"uri_override":0}',
 );

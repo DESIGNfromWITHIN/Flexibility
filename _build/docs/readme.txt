@@ -1,4 +1,4 @@
-Flexibility - version 1.0.4-rl
+Flexibility - version 1.0.5-pl
 
 -----------------------------------------------------------------------------------------------------------
 ABOUT
@@ -19,7 +19,7 @@ QUICKSTART        PLEASE READ THIS
 
 1. Install MODx Revolution on your website.
 
-2. download "flexibility-1.0.4-rl.transport.zip" and upload it to "your_url/core/packages/"
+2. download "flexibility-1.0.5-pl.transport.zip" and upload it to "your_url/core/packages/"
 
 3. Install the "Flexibility" package: Go to "System" > "Package Management" > "Add New Package" > "Search Locally for Packages" > "Yes".
 
@@ -74,7 +74,7 @@ I general you can find all website settings under:
 CONTENT:
 -----------------------------------------------------------------------------------------------------------
 
-- Packages: FlexibilitySubPackages (containing: bloggingessentials-1.0-pl, formit-1.7.0-pl, gallery-1.2.1-pl, getresources-1.3.0-pl, if-1.1-pl, login-1.6.4-pl, migx-1.1.0-rc1, tinymce-4.3.0-rc2, wayfinder-2.3.1-pl)
+- Packages: FlexibilitySubPackages (containing: bloggingessentials-1.0-pl, formit-1.7.0-pl, gallery-1.2.1-pl, getresources-1.3.1-pl, if-1.1-pl, login-1.6.5-pl, migx-1.1.0-rc1, tinymce-4.3.0-rc2, wayfinder-2.3.1-pl)
 - Templates: Basic page template, Contact page template, Gallery page template, Homepage template, Page settings template
 - Template Variables: tv.email_adress, tv.logo, tv_sidebar, tv_slider, tv_tagline, tv_tagline_link, tv_taline_link_text, tv_tagline_option
 - Cunks: chunk_contact_form, chunk_email_adress, email_adress_tpl, GalAlbumRowTpl, GalItemThumb, GalleryAlbumTpl, chunk_email_form, logo_tpl, settings_page_id, thank_you_page_id

@@ -37,7 +37,7 @@ if ($transport && $transport->xpdo) {
             $modx =& $transport->xpdo;
 
             /* define formit version */
-            $newVersion = '1.0-rl';
+            $newVersion = '1.1-rl';
             $newVersionMajor = '1';
             $name = 'FlexibilitySubPackages';
 
