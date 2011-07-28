@@ -1,5 +1,10 @@
 Changelog for Flexibility
 
+flexibility-1.0.6-pl.transport (28-07-2011)
+====================================
+- Fixed a components/flexibility path error (thx Les Pfister)
+- Fixed the email not being send bug (need MODX 2.1.3-pl)
+
 flexibility-1.0.5-pl.transport (17-07-2011)
 ====================================
 - Updated getResources to 1.3.1-pl

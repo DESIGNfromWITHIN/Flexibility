@@ -7,7 +7,9 @@ $(function(){
 		effect: 'slide, fade',
 		slideSpeed: 600,
 		fadeSpeed: 400,
-		slideEasing: "easeOutQuad"
+		slideEasing: "easeOutQuad",
+		pagination: true,
+		generatePagination: true
 	});
 });
 

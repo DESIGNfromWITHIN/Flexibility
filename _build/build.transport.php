@@ -15,11 +15,8 @@ $root = dirname(dirname(__FILE__)).'/';
 $sources= array (
     'root' => $root,
     'build' => $root .'_build/',
-    'lexicon' => $root . '_build/lexicon/',
     'resolvers' => $root . '_build/resolvers/',
     'data' => $root . '_build/data/',
-    'source_core' => $root.'_build/core/components/flexibility',
-    'source_assets' => $root.'_build/assets/components/flexibility',
     'docs' => $root.'_build/docs/',
 	'template' => $root.'_build/templates/',
 	'subpackages' => $root . '_build/subpackages/',
@@ -39,7 +36,7 @@ $modx->setLogTarget(XPDO_CLI_MODE ? 'ECHO' : 'HTML');
 
 $modx->loadClass('transport.modPackageBuilder','',false, true);
 $builder = new modPackageBuilder($modx);
-$builder->createPackage('flexibility','1.0.5','pl');
+$builder->createPackage('flexibility','1.0.6','pl');
 $builder->registerNamespace('flexibility',false,true,'{core_path}components/flexibility/');
 
 /* create category */
@@ -133,10 +130,6 @@ $attr = array(
     )
 );
 $vehicle = $builder->createVehicle($category,$attr);
-$vehicle->resolve('file',array(
-    'source' => $sources['source_assets'],
-    'target' => "return MODX_ASSETS_PATH . 'components/';",
-));
 $vehicle->resolve('file',array(
     'source' => $sources['template'],
     'target' => "return MODX_ASSETS_PATH . 'templates/';",
