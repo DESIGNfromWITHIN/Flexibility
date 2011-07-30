@@ -17,10 +17,10 @@
   'validate' => NULL,
   'vehicle_package' => 'transport',
   'vehicle_class' => 'xPDOObjectVehicle',
-  'guid' => '3b7ec1bb618fe3124ad27fe275d657e1',
+  'guid' => 'e9557609b27731832321f7d2ffc585c7',
   'package' => 'modx',
   'class' => 'modResource',
-  'signature' => 'bd7043b58dc568e63f8f8fdf3d7b5e30',
+  'signature' => '5f5fc27c7996967016f01452b78d4f4f',
   'native_key' => 1,
   'object' => '{"id":1,"type":"document","contentType":"text\\/html","pagetitle":"Home","longtitle":"Welcome to the Flexibility homepage","description":"This will be your homepage","alias":"home","link_attributes":"","published":1,"pub_date":0,"unpub_date":0,"parent":0,"isfolder":0,"introtext":"","content":"<h2>What it is<\\/h2>\\r\\n<p>Flexibility is a premium template for MODx Revolution.<br \\/>With Flexibility you can create your own, manageble, costomizable and great looking website in minutes!<\\/p>\\r\\n<h2>Browser support<\\/h2>\\r\\n<p><img style=\\"float: left; margin-left: 0px; margin-right: 20px; margin-bottom: 5px;\\" title=\\"All browsers supported\\" src=\\"assets\\/templates\\/templates\\/main\\/images\\/site\\/browser_support.png\\" alt=\\"All browsers supported\\" width=\\"220\\" height=\\"116\\" \\/>Flexibility supports all common browsers, inculding IE6 and IE7!<\\/p>\\r\\n<p><br \\/><br \\/><\\/p>\\r\\n<h2>What does the template look like?<\\/h2>\\r\\n<p>The same as this website! But remember, it is flexible! You can select custom colors by adding 3 HEX values, this will totally transform the look of the site.<\\/p>\\r\\n<p>Don\'t want a sidebar? Just leave it blank and it will disapear. Add a tagline to a page? Simply fill it in under the page options.<\\/p>","richtext":1,"template":4,"menuindex":1,"searchable":1,"cacheable":1,"createdby":0,"createdon":0,"editedby":0,"editedon":0,"deleted":0,"deletedon":0,"deletedby":0,"publishedon":0,"publishedby":0,"menutitle":"Home","donthit":0,"privateweb":0,"privatemgr":0,"content_dispo":0,"hidemenu":0,"class_key":"modDocument","context_key":"web","content_type":1,"uri":null,"uri_override":0}',
 );

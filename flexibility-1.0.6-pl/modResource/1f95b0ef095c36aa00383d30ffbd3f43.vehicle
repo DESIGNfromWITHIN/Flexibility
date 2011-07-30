@@ -17,10 +17,10 @@
   'validate' => NULL,
   'vehicle_package' => 'transport',
   'vehicle_class' => 'xPDOObjectVehicle',
-  'guid' => 'a7776b58d7c5c8a192ed573c2977b30a',
+  'guid' => '209dade43be17095346e057b763418e2',
   'package' => 'modx',
   'class' => 'modResource',
-  'signature' => '3790acdff6ecb2013186839e19da1695',
+  'signature' => '1f95b0ef095c36aa00383d30ffbd3f43',
   'native_key' => 4,
   'object' => '{"id":4,"type":"document","contentType":"text\\/html","pagetitle":"Contact","longtitle":"Contact page","description":"This is a contact page","alias":"contact","link_attributes":"","published":1,"pub_date":0,"unpub_date":0,"parent":0,"isfolder":0,"introtext":"","content":"<h1>Contact<\\/h1>","richtext":1,"template":2,"menuindex":4,"searchable":1,"cacheable":1,"createdby":0,"createdon":0,"editedby":0,"editedon":0,"deleted":0,"deletedon":0,"deletedby":0,"publishedon":0,"publishedby":0,"menutitle":"contact","donthit":0,"privateweb":0,"privatemgr":0,"content_dispo":0,"hidemenu":0,"class_key":"modDocument","context_key":"web","content_type":1,"uri":null,"uri_override":0}',
 );

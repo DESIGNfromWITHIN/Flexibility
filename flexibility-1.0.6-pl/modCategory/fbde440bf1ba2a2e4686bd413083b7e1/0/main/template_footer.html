@@ -18,16 +18,16 @@ yepnope([{
 	load: '//code.jquery.com/jquery-1.6.1.min.js',
 	complete: function () {
 		if (!window.jQuery) {
-			yepnope('[[++base_url]]assets/templates/templates/main/js/libs/jquery-1.6.1.min.js');
+			yepnope('[[++base_url]]assets/templates/main/js/libs/jquery-1.6.1.min.js');
 		}
 	}
 }, {
-	load: ['[[++base_url]]assets/templates/templates/main/js/plugins.js', '[[++base_url]]assets/templates/templates/main/js/scripts.js'  ]
+	load: ['[[++base_url]]assets/templates/main/js/plugins.js', '[[++base_url]]assets/templates/main/js/scripts.js'  ]
 }]);
 </script>
 
 <!--[if lt IE 7 ]>
-	<script>yepnope('[[++base_url]]assets/templates/templates/main/js/libs/dd_belatedpng.js');</script>
+	<script>yepnope('[[++base_url]]assets/templates/main/js/libs/dd_belatedpng.js');</script>
 	<script> DD_belatedPNG.fix('img, .png_bg'); </script>
 <![endif]-->
 

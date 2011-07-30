@@ -20,25 +20,25 @@
 	<link rel="canonical" href="[[++site_url]][[*id:isnot=`[[++site_start]]`:then=`[[~[[*id]]]]`]]" /> -->
 	
 	<!-- Specify URL to favicon and Apple touch icon if not located in root directory ELSE delete this tags. If you want to support various icon sizes view: http://mathiasbynens.be/notes/touch-icons#sizes or use root directory. Android (as of 2.3) only supports apple-touch-icon-precomposed linked in html as below -->
-	<link rel="shortcut icon" href="[[++site_url]]/assets/templates/templates/main/favicon.ico">
-	<link rel="apple-touch-icon-precomposed" href="[[++site_url]]/assets/templates/templates/main/apple-touch-icon-precomposed.png">
+	<link rel="shortcut icon" href="[[++site_url]]/assets/templates/main/favicon.ico">
+	<link rel="apple-touch-icon-precomposed" href="[[++site_url]]/assets/templates/main/apple-touch-icon-precomposed.png">
 
 	<!-- If you use Webfonts, you use this script to detect font-smoothing. Please look at documentation how to use it: http://www.michael-van-laar.de/blog/artikel/webfont-load-enhancer/
-	<script src="[[++site_url]]assets/templates/templates/main/js/libs/webfontloadenhancer.min.js"></script> -->
+	<script src="[[++site_url]]assets/templates/main/js/libs/webfontloadenhancer.min.js"></script> -->
 	<!-- Please load Webfontenhancer BEFORE the Webfont initialization / Webfont-CSS -->
 	
 	<!-- sets viewport to device-with for mobile devices | Android DPI fix for @media-queries  -->
 	<meta name="viewport" content="width=device-width, target-densitydpi=device-dpi, initial-scale=1.0">
 	<!-- load default CSS file. Implied media="all" -->
-	<link rel="stylesheet" href="[[++site_url]]assets/templates/templates/main/css/style.css">
+	<link rel="stylesheet" href="[[++site_url]]assets/templates/main/css/style.css">
 	<!-- Load CSS files with media-queries
-	<link rel="stylesheet" href="[[++site_url]]assets/templates/templates/main/css/smartphone.css" media="only screen and (min-device-width : 320px) and (max-device-width : 480px)">
-	<link rel="stylesheet" href="[[++site_url]]assets/templates/templates/main/css/ipad-portrait.css" media="only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)">
-	<link rel="stylesheet" href="[[++site_url]]assets/templates/templates/main/css/ipad.css" media="only screen and (min-device-width : 768px) and (max-device-width : 1024px)">
-	<link rel="stylesheet" href="[[++site_url]]assets/templates/templates/main/css/iphone4.css" media="only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5)"> -->
+	<link rel="stylesheet" href="[[++site_url]]assets/templates/main/css/smartphone.css" media="only screen and (min-device-width : 320px) and (max-device-width : 480px)">
+	<link rel="stylesheet" href="[[++site_url]]assets/templates/main/css/ipad-portrait.css" media="only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait)">
+	<link rel="stylesheet" href="[[++site_url]]assets/templates/main/css/ipad.css" media="only screen and (min-device-width : 768px) and (max-device-width : 1024px)">
+	<link rel="stylesheet" href="[[++site_url]]assets/templates/main/css/iphone4.css" media="only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5)"> -->
 
 	<!-- Do not remove Modernizr until you don't want to feature detect browser and don't need respond.js -->
-	<script src="[[++site_url]]assets/templates/templates/main/js/libs/modernizr.min.js"></script>
+	<script src="[[++site_url]]assets/templates/main/js/libs/modernizr.min.js"></script>
 </head>
 <body>
 <div class="bg_header">

@@ -17,10 +17,10 @@
   'validate' => NULL,
   'vehicle_package' => 'transport',
   'vehicle_class' => 'xPDOObjectVehicle',
-  'guid' => '70605ff262ab3d1b31cbb84aee4a2e25',
+  'guid' => '8f2533504af85f8ff62b31e7262fa17f',
   'package' => 'modx',
   'class' => 'modResource',
-  'signature' => '44b6a7f82e8d689fac510ae453264b97',
+  'signature' => '7d5da8fe913b98ecc0aa9e3e504cb331',
   'native_key' => 2,
   'object' => '{"id":2,"type":"document","contentType":"text\\/html","pagetitle":"About","longtitle":"About page","description":"This is a general page","alias":"about","link_attributes":"","published":1,"pub_date":0,"unpub_date":0,"parent":0,"isfolder":0,"introtext":"","content":"<h1>About<\\/h1>\\r\\n<p>This is the content<\\/p>","richtext":1,"template":1,"menuindex":2,"searchable":1,"cacheable":1,"createdby":0,"createdon":0,"editedby":0,"editedon":0,"deleted":0,"deletedon":0,"deletedby":0,"publishedon":0,"publishedby":0,"menutitle":"About","donthit":0,"privateweb":0,"privatemgr":0,"content_dispo":0,"hidemenu":0,"class_key":"modDocument","context_key":"web","content_type":1,"uri":null,"uri_override":0}',
 );

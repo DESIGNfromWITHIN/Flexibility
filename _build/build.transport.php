@@ -18,7 +18,7 @@ $sources= array (
     'resolvers' => $root . '_build/resolvers/',
     'data' => $root . '_build/data/',
     'docs' => $root.'_build/docs/',
-	'template' => $root.'_build/templates/',
+	'template' => $root.'_build/main/',
 	'subpackages' => $root . '_build/subpackages/',
 	'validators' => $root . '_build/validators/',
 );
