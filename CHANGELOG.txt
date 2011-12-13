@@ -1,44 +1,5 @@
 Changelog for Flexibility
 
-flexibility-1.0.6-pl.transport (28-07-2011)
+flexibility-2.0.1-beta.transport (13-12-2011)
 ====================================
-- Fixed a components/flexibility path error (thx Les Pfister)
-- Fixed the email not being send bug (need MODX 2.1.3-pl)
-- Thx for all the support guys!
-
-flexibility-1.0.5-pl.transport (17-07-2011)
-====================================
-- Updated getResources to 1.3.1-pl
-- Updated Login to 1.6.5-pl
-- tested getResources settings for MODX 2.1.2-pl 
-
-flexibility-1.0.4-rl.transport (11-07-2011)
-====================================
-- Removed unneeded col12 classes
-- Removed padding from grid css
-- Added padding_20_10 classes to divs
-- Fixed 978px bug
-
-flexibility-1.0.3-rl.transport (08-07-2011)
-====================================
-- Sub-packages are now listed and updatable after package install.
-- Updated README.txt.
-- Add warning about MODX Revo 2.1.2-pl not working with this package.
-
-flexibility-1.0.1-rl.transport (24-06-2011)
-====================================
-- Changed js files for slider and gallery support
-
-flexibility-1.0-rl.transport (20-06-2011)
-====================================
-DONE:
------------------------------------------------------------------
-- Started with GitHub
-- MODx HTML5 Boilerplate used as a base for the template
-- Main content hidden if no content added (using If add-on)
-- Homepage blocks added, manageble with TV's
-- Homepage blocks hidden if no block title added (using If add-on)
-- Wayfinder navigation added
-- jQuery slider added (NIVO Slider - http://nivo.dev7studios.com/)
-- Slider with image, title, text, link and link-text TV's
-- Hide/show slider TV added
+- First version online!

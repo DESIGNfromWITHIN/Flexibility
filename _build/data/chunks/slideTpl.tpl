@@ -1,1 +1,0 @@
-<div class="slide_content [[+slide_option]] clearfix"><div class="slide_img"><img src="[[++site_url]][[+image]]"/></div><div class="slide_text">[[+description]]</div></div>

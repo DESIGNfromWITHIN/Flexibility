@@ -1,275 +1,323 @@
 <?php
 /**
-* Flexibility
+* Template variable objects for the Flexibilitys package
+* @author Menno Pietersen <info@designfromwithin.com>
+* 13/12/2011
 *
-* Copyright 2011 by Menno Pietersen <info@designfromwithin.com>, excepting
-* subpackages installed by the component.
-*
-* This file is part of Flexibility, a packaged template site for MODX Revolution.
-*
-* Flexibility is free software; you can redistribute it and/or modify it
-* under the terms of the GNU General Public License as published by the Free
-* Software Foundation; either version 2 of the License, or (at your option) any
-* later version.
-*
-* Flexibility is distributed in the hope that it will be useful, but
-* WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
-* FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
-* details.
-*
-* You should have received a copy of the GNU General Public License along with
-* Flexibility; if not, write to the Free Software Foundation, Inc., 59
-* Temple Place, Suite 330, Boston, MA 02111-1307 USA
+* @package flexibilitys
+* @subpackage build
 */
-$tvs = array();
 
-$tvs[1]= $modx->newObject('modTemplateVar');
-$tvs[1]->fromArray(array(
+/* Common 'type' options:
+ * textfield (text line)
+ * textbox
+ * richtext
+ * textarea
+ * textareamini
+ * email
+ * html
+ * image
+ * date
+ * option (radio buttons)
+ * listbox
+ * listbox-multiple
+ * number
+ * checkbox
+ * tag
+ * hidden
+ */
+
+/* Example template variables */
+
+$templateVariables = array();
+
+$templateVariables[1]= $modx->newObject('modTemplateVar');
+$templateVariables[1]->fromArray(array(
     'id' => 1,
-    'name' => 'image',
-    'caption' => 'image',
-    'description' => 'For a wide slide max 920px wide and 280px high',
-	'category' => 'Flexibility',
-    'type' => 'image',
-    'display' => 'text',
-    'locked' => 0,
-    'rank' => 0,
-    'default_text' => '',
-    'display_params' => '',
-),'',true,true);
-
-$tvs[2]= $modx->newObject('modTemplateVar');
-$tvs[2]->fromArray(array(
-    'id' => 2,
-    'name' => 'multiItemsGrid',
-    'caption' => 'Slider items',
-    'description' => 'The items in the slider',
-	'category' => 'Flexibility',
-    'type' => 'migx',
-    'display' => 'default',
-    'locked' => 0,
-    'rank' => 0,
-    'default_text' => '',
-    'display_params' => '',
-),'',true,true);
-
-$input_properties=array(
-    'formtabs' => '
-[
-{"caption":"Info", "fields": [
-    {"field":"title","caption":"Title","description":"Title for the image."},
-    {"field":"description","caption":"Description","inputTV":"richtext"},
-    {"field":"slide_option","caption":"Slide type","inputTV":"slide_option"}
-]},
-{"caption":"Image", "fields":[
-    {"field":"image","caption":"Image","inputTV":"image"}
-]}
-]
-	',
-    'columns' => '
-[
-{"header": "Title", "width": "160", "sortable": "true", "dataIndex": "title"},
-{"header": "Image", "width": "50", "sortable": "false", "dataIndex": "image","renderer": "this.renderImage"}
-]
-');
-$tvs[2]->set('input_properties',$input_properties);
-
-$tvs[3]= $modx->newObject('modTemplateVar');
-$tvs[3]->fromArray(array(
-    'id' => 3,
-    'name' => 'richtext',
-    'caption' => 'Slide text',
-    'description' => 'Enter the content of the slide',
-	'category' => 'Flexibility',
     'type' => 'richtext',
+    'name' => 'footer_box_01',
+    'caption' => 'Footer-content box 1',
+    'description' => 'The content of the first footer-content box',
     'display' => 'default',
-    'locked' => 0,
-    'rank' => 0,
-    'default_text' => '',
-    'display_params' => '',
-),'',true,true);
-
-$tvs[4]= $modx->newObject('modTemplateVar');
-$tvs[4]->fromArray(array(
-    'id' => 4,
-    'name' => 'slide_option',
-    'caption' => 'Slide style',
-    'description' => 'Select the style of this slide',
-	'category' => 'Flexibility',
-    'type' => 'option',
-	'elements' => 'Small image==small||Wide image==wide',
-    'display' => 'default',
-    'locked' => 0,
-    'rank' => 0,
-    'default_text' => 'small',
-    'display_params' => '',
-),'',true,true);
-
-$tvs[6]= $modx->newObject('modTemplateVar');
-$tvs[6]->fromArray(array(
-    'id' => 6,
-    'name' => 'tv.contact_adress',
-    'caption' => 'Adress',
-    'description' => 'Contact information in the footer and on the contact page',
-	'category' => 'Flexibility',
-    'type' => 'richtext',
-    'display' => 'default',
-    'locked' => 0,
-    'rank' => 10,
-    'default_text' => '',
-    'display_params' => '',
-),'',true,true);
-
-$tvs[7]= $modx->newObject('modTemplateVar');
-$tvs[7]->fromArray(array(
-    'id' => 7,
-    'name' => 'tv.email_adress',
-    'caption' => 'E-mail adress',
-    'description' => 'Fill in your e-mail adress for the contact form',
-	'category' => 'Flexibility',
-    'type' => 'email',
-    'display' => 'default',
+    'elements' => '',  /* input option values */
     'locked' => 0,
     'rank' => 2,
-    'default_text' => '',
+	'category' => 'Footer content',
     'display_params' => '',
+    'default_text' => '',
+    'properties' => array(),
 ),'',true,true);
 
-$tvs[8]= $modx->newObject('modTemplateVar');
-$tvs[8]->fromArray(array(
+$templateVariables[2]= $modx->newObject('modTemplateVar');
+$templateVariables[2]->fromArray(array(
+    'id' => 2,
+    'type' => 'richtext',
+    'name' => 'footer_box_02',
+    'caption' => 'Footer-content box 2',
+    'description' => 'The content of the second footer-content box',
+    'display' => 'default',
+    'elements' => '',  /* input option values */
+    'locked' => 0,
+    'rank' => 3,
+	'category' => 'Footer content',
+    'display_params' => '',
+    'default_text' => '',
+    'properties' => array(),
+),'',true,true);
+
+$templateVariables[3]= $modx->newObject('modTemplateVar');
+$templateVariables[3]->fromArray(array(
+    'id' => 3,
+    'type' => 'richtext',
+    'name' => 'footer_box_03',
+    'caption' => 'Footer-content box 3',
+    'description' => 'The content of the third footer-content box',
+    'display' => 'default',
+    'elements' => '',  /* input option values */
+    'locked' => 0,
+    'rank' => 4,
+	'category' => 'Footer content',
+    'display_params' => '',
+    'default_text' => '',
+    'properties' => array(),
+),'',true,true);
+
+$templateVariables[4]= $modx->newObject('modTemplateVar');
+$templateVariables[4]->fromArray(array(
+    'id' => 4,
+    'type' => 'richtext',
+    'name' => 'footer_box_04',
+    'caption' => 'Footer-content box 4',
+    'description' => 'The content of the fourth footer-content box',
+    'display' => 'default',
+    'elements' => '',  /* input option values */
+    'locked' => 0,
+    'rank' => 5,
+	'category' => 'Footer content',
+    'display_params' => '',
+    'default_text' => '',
+    'properties' => array(),
+),'',true,true);
+
+$templateVariables[5]= $modx->newObject('modTemplateVar');
+$templateVariables[5]->fromArray(array(
+    'id' => 5,
+    'type' => 'richtext',
+    'name' => 'page_box_01',
+    'caption' => 'Sub-content box 1',
+    'description' => 'The content of the first sub-content box',
+    'display' => 'default',
+    'elements' => '',  /* input option values */
+    'locked' => 0,
+    'rank' => 2,
+	'category' => 'Page content',
+    'display_params' => '',
+    'default_text' => '',
+    'properties' => array(),
+),'',true,true);
+
+$templateVariables[6]= $modx->newObject('modTemplateVar');
+$templateVariables[6]->fromArray(array(
+    'id' => 6,
+    'type' => 'richtext',
+    'name' => 'page_box_02',
+    'caption' => 'Sub-content box 2',
+    'description' => 'The content of the second sub-content box',
+    'display' => 'default',
+    'elements' => '',  /* input option values */
+    'locked' => 0,
+    'rank' => 3,
+	'category' => 'Page content',
+    'display_params' => '',
+    'default_text' => '',
+    'properties' => array(),
+),'',true,true);
+
+$templateVariables[7]= $modx->newObject('modTemplateVar');
+$templateVariables[7]->fromArray(array(
+    'id' => 7,
+    'type' => 'richtext',
+    'name' => 'page_box_03',
+    'caption' => 'Sub-content box 3',
+    'description' => 'The content of the third sub-content box',
+    'display' => 'default',
+    'elements' => '',  /* input option values */
+    'locked' => 0,
+    'rank' => 4,
+	'category' => 'Page content',
+    'display_params' => '',
+    'default_text' => '',
+    'properties' => array(),
+),'',true,true);
+
+$templateVariables[8]= $modx->newObject('modTemplateVar');
+$templateVariables[8]->fromArray(array(
     'id' => 8,
-    'name' => 'tv.footer_content_left',
-    'caption' => 'Footer content left',
-    'description' => 'The content of the left side of the footer',
-	'category' => 'Flexibility',
     'type' => 'richtext',
+    'name' => 'page_box_04',
+    'caption' => 'Sub-content box 4',
+    'description' => 'The content of the fourth sub-content box',
     'display' => 'default',
+    'elements' => '',  /* input option values */
     'locked' => 0,
-    'rank' => 7,
-    'default_text' => '',
+    'rank' => 5,
+	'category' => 'Page content',
     'display_params' => '',
+    'default_text' => '',
+    'properties' => array(),
 ),'',true,true);
 
-$tvs[9]= $modx->newObject('modTemplateVar');
-$tvs[9]->fromArray(array(
+$templateVariables[9]= $modx->newObject('modTemplateVar');
+$templateVariables[9]->fromArray(array(
     'id' => 9,
-    'name' => 'tv.footer_content_right',
-    'caption' => 'Footer content right',
-    'description' => 'The content of the right side of the footer',
-	'category' => 'Flexibility',
     'type' => 'richtext',
+    'name' => 'page_lightbox',
+    'caption' => 'Lightbox',
+    'description' => 'The content of the optional lightbox for this page (leave empty to have no lightbox)',
     'display' => 'default',
+    'elements' => '',  /* input option values */
     'locked' => 0,
-    'rank' => 8,
-    'default_text' => '',
+    'rank' => 6,
+	'category' => 'Page content',
     'display_params' => '',
+    'default_text' => '',
+    'properties' => array(),
 ),'',true,true);
 
-$tvs[10]= $modx->newObject('modTemplateVar');
-$tvs[10]->fromArray(array(
+$templateVariables[10]= $modx->newObject('modTemplateVar');
+$templateVariables[10]->fromArray(array(
     'id' => 10,
-    'name' => 'tv.logo',
-    'caption' => 'Logo',
-    'description' => 'Choose your site logo for the header',
-	'category' => 'Flexibility',
-    'type' => 'image',
-    'display' => 'image',
+    'type' => 'richtext',
+    'name' => 'sidebar',
+    'caption' => 'Sidebar option',
+    'description' => 'Content of the sidebar (leave empty if you want no sidebar)',
+    'display' => 'default',
+    'elements' => '',  /* input option values */
     'locked' => 0,
     'rank' => 1,
-    'default_text' => '',
+	'category' => 'Page content',
     'display_params' => '',
+    'default_text' => '',
+    'properties' => array(),
 ),'',true,true);
 
-$tvs[11]= $modx->newObject('modTemplateVar');
-$tvs[11]->fromArray(array(
+$templateVariables[11]= $modx->newObject('modTemplateVar');
+$templateVariables[11]->fromArray(array(
     'id' => 11,
-    'name' => 'tv_sidebar',
-    'caption' => 'Sidebar content',
-    'description' => 'Enter content for the sidebar (leave empty to have no sidebar)',
-	'category' => 'Flexibility',
-    'type' => 'richtext',
+    'name' => 'optional_contactform',
+    'caption' => 'Contactform',
+    'description' => 'Do you want a contactform on this page?',
+	'category' => 'Page options',
+    'type' => 'option',
+	'elements' => 'yes==yes||no==no',
     'display' => 'default',
     'locked' => 0,
-    'rank' => 7,
-    'default_text' => '',
+    'rank' => 4,
+    'default_text' => 'no',
     'display_params' => '',
+	'properties' => array(),
 ),'',true,true);
 
-$tvs[12]= $modx->newObject('modTemplateVar');
-$tvs[12]->fromArray(array(
+$templateVariables[12]= $modx->newObject('modTemplateVar');
+$templateVariables[12]->fromArray(array(
     'id' => 12,
-    'name' => 'tv_slider',
-    'caption' => 'Page slider',
-    'description' => 'Want the slider on this page? (creat at least 2 slides under "Site settings" . "Template Variables")',
-	'category' => 'Flexibility',
+    'name' => 'optional_gallery',
+    'caption' => 'Gallery',
+    'description' => 'Do you want a picture gallery on this page?',
+	'category' => 'Page options',
     'type' => 'option',
-	'elements' => 'Yes==yes||No==no',
+	'elements' => 'yes==yes||no==no',
+    'display' => 'default',
+    'locked' => 0,
+    'rank' => 3,
+    'default_text' => 'no',
+    'display_params' => '',
+	'properties' => array(),
+),'',true,true);
+
+$templateVariables[13]= $modx->newObject('modTemplateVar');
+$templateVariables[13]->fromArray(array(
+    'id' => 13,
+    'name' => 'optional_slider',
+    'caption' => 'Slider',
+    'description' => 'Do you want a slider on this page?',
+	'category' => 'Page options',
+    'type' => 'option',
+	'elements' => 'yes==yes||no==no',
     'display' => 'default',
     'locked' => 0,
     'rank' => 2,
     'default_text' => 'no',
     'display_params' => '',
+	'properties' => array(),
 ),'',true,true);
 
-$tvs[13]= $modx->newObject('modTemplateVar');
-$tvs[13]->fromArray(array(
-    'id' => 13,
-    'name' => 'tv_tagline',
-    'caption' => 'Tagline text',
-    'description' => 'Text in the tagline',
-	'category' => 'Flexibility',
-    'type' => 'text',
-    'display' => 'default',
-    'locked' => 0,
-    'rank' => 4,
-    'default_text' => '',
-    'display_params' => '',
-),'',true,true);
-
-$tvs[14]= $modx->newObject('modTemplateVar');
-$tvs[14]->fromArray(array(
-    'id' => 14,
-    'name' => 'tv_tagline_link',
-    'caption' => 'Link of the tagline link',
-    'description' => 'Enter URL of the link',
-	'category' => 'Flexibility',
-    'type' => 'url',
-    'display' => 'string',
-    'locked' => 0,
-    'rank' => 5,
-    'default_text' => '',
-    'display_params' => '',
-),'',true,true);
-
-$tvs[15]= $modx->newObject('modTemplateVar');
-$tvs[15]->fromArray(array(
-    'id' => 15,
-    'name' => 'tv_tagline_link_text',
-    'caption' => 'Tagline link text',
-    'description' => 'Text in the tagline link',
-	'category' => 'Flexibility',
-    'type' => 'text',
-    'display' => 'default',
-    'locked' => 0,
-    'rank' => 6,
-    'default_text' => '',
-    'display_params' => '',
-),'',true,true);
-
-$tvs[16]= $modx->newObject('modTemplateVar');
-$tvs[16]->fromArray(array(
-    'id' => 16,
-    'name' => 'tv_tagline_option',
-    'caption' => 'Page tagline',
-    'description' => 'Do you want tagline on this page?',
-	'category' => 'Flexibility',
+$templateVariables[17]= $modx->newObject('modTemplateVar');
+$templateVariables[17]->fromArray(array(
+    'id' => 17,
+    'name' => 'page_boxes',
+    'caption' => 'Sub-content boxes',
+    'description' => 'How many sub-content boxes do you want on this page?',
+	'category' => 'Page options',
     'type' => 'option',
-	'elements' => 'No tagline==no_tagline||Tagline with link==tagline_link||Tagline without link==tagline',
+	'elements' => '0==0||2==2||3==3||4==4',
     'display' => 'default',
     'locked' => 0,
-    'rank' => 3,
-    'default_text' => 'no_tagline',
+    'rank' => 1,
+    'default_text' => '0',
     'display_params' => '',
+	'properties' => array(),
 ),'',true,true);
 
-return $tvs;
+$templateVariables[14]= $modx->newObject('modTemplateVar');
+$templateVariables[14]->fromArray(array(
+    'id' => 14,
+    'name' => 'email_adress',
+    'caption' => 'Email adress for the contactform',
+    'description' => 'Select the email adress where the contactform should mail to',
+	'category' => 'Site options',
+    'type' => 'email',
+	'elements' => '',
+    'display' => 'default',
+    'locked' => 0,
+    'rank' => 1,
+    'default_text' => '',
+    'display_params' => '',
+	'properties' => array(),
+),'',true,true);
+
+$templateVariables[15]= $modx->newObject('modTemplateVar');
+$templateVariables[15]->fromArray(array(
+    'id' => 15,
+    'name' => 'FooterBoxNumber',
+    'caption' => 'Footer boxes',
+    'description' => 'Select the number of footer boxes',
+	'category' => 'Site options',
+    'type' => 'option',
+	'elements' => '2==2||3==3||4==4',
+    'display' => 'default',
+    'locked' => 0,
+    'rank' => 2,
+    'default_text' => '2',
+    'display_params' => '',
+	'properties' => array(),
+),'',true,true);
+
+$templateVariables[16]= $modx->newObject('modTemplateVar');
+$templateVariables[16]->fromArray(array(
+    'id' => 16,
+    'name' => 'siteLogo',
+    'caption' => 'Logo',
+    'description' => 'Select the website logo',
+	'category' => 'Site options',
+    'type' => 'image',
+	'elements' => '',
+    'display' => 'default',
+    'locked' => 0,
+    'rank' => 1,
+    'default_text' => '',
+    'display_params' => '',
+	'properties' => array(),
+),'',true,true);
+
+return $templateVariables;

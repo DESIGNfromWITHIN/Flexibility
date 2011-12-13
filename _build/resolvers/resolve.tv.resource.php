@@ -1,8 +1,8 @@
 <?php
 /**
-* Associate Template Variables to Templates
+* Associate Template Variables to Resources
 *
-* @package MODULAR
+* @package Flexibility
 * @subpackage build
 */
 if ($object && $object->xpdo) {
@@ -13,71 +13,164 @@ if ($object && $object->xpdo) {
 
             /* list of tvs and resourceIDs/values for each */
             $tvs = array(	
-				'tv_sidebar' => array(
-                    '1' => '<h1>Sidebar title</h1><p>Some content for the sidebar</p>',
-                    '2' => '<h1>Sidebar title</h1><p>Some content for the sidebar</p>',
-					'3' => '',
-					'4' => '',
+				'footer_box_01' => array(
+					'11' => '<h3>Footer box 1</h3><p>Some content for this box.</p>',
                 ),
 				
-				'tv_slider' => array(
+				'footer_box_02' => array(
+					'11' => '<h3>Footer box 2</h3><p>Some content for this box.</p>',
+                ),
+				
+				'footer_box_03' => array(
+					'11' => '<h3>Footer box 3</h3><p>Some content for this box.</p>',
+                ),
+				'footer_box_04' => array(
+					'11' => '<h3>Footer box 4</h3><p>Some content for this box.</p>',
+                ),
+				
+				'page_box_01' => array(
+                    '1' => '<h3>Added in the Sub-content box 1 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+                    '2' => '<h3>Added in the Sub-content box 1 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+					'3' => '<h3>Added in the Sub-content box 1 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+					'4' => '<h3>Added in the Sub-content box 1 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+					'5' => '<h3>Added in the Sub-content box 1 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+					'6' => '<h3>Added in the Sub-content box 1 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+					'7' => '<h3>Added in the Sub-content box 1 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+					'8' => '<h3>Added in the Sub-content box 1 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+					'9' => '<h3>Added in the Sub-content box 1 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+					'10' => '<h3>Added in the Sub-content box 1 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+                ),
+				
+				'page_box_02' => array(
+                    '1' => '<h3>Added in the Sub-content box 2 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+                    '2' => '<h3>Added in the Sub-content box 2 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+					'3' => '<h3>Added in the Sub-content box 2 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+					'4' => '<h3>Added in the Sub-content box 2 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+					'5' => '<h3>Added in the Sub-content box 2 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+					'6' => '<h3>Added in the Sub-content box 2 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+					'7' => '<h3>Added in the Sub-content box 2 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+					'8' => '<h3>Added in the Sub-content box 2 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+					'9' => '<h3>Added in the Sub-content box 2 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+					'10' => '<h3>Added in the Sub-content box 2 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+                ),
+				
+				'page_box_03' => array(
+                    '1' => '<h3>Added in the Sub-content box 3 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+                    '2' => '<h3>Added in the Sub-content box 3 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+					'3' => '<h3>Added in the Sub-content box 3 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+					'4' => '<h3>Added in the Sub-content box 3 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+					'5' => '<h3>Added in the Sub-content box 3 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+					'6' => '<h3>Added in the Sub-content box 3 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+					'7' => '<h3>Added in the Sub-content box 3 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+					'8' => '<h3>Added in the Sub-content box 3 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+					'9' => '<h3>Added in the Sub-content box 3 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+					'10' => '<h3>Added in the Sub-content box 3 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+                ),
+				
+				'page_box_04' => array(
+                    '1' => '<h3>Added in the Sub-content box 4 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+                    '2' => '<h3>Added in the Sub-content box 4 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+					'3' => '<h3>Added in the Sub-content box 4 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+					'4' => '<h3>Added in the Sub-content box 4 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+					'5' => '<h3>Added in the Sub-content box 4 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+					'6' => '<h3>Added in the Sub-content box 4 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+					'7' => '<h3>Added in the Sub-content box 4 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+					'8' => '<h3>Added in the Sub-content box 4 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+					'9' => '<h3>Added in the Sub-content box 4 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+					'10' => '<h3>Added in the Sub-content box 4 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+                ),
+				
+				'page_lightbox' => array(
+                    '1' => '<h3>Title lightbox 1</h3>
+<p>This is just some content.</p>',
+                ),
+				
+				'sidebar' => array(
+                    '1' => '<h3>Sidebar title</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+                    '2' => '',
+					'3' => '',
+					'4' => '',
+					'5' => '',
+					'6' => '',
+					'7' => '',
+					'8' => '',
+					'9' => '',
+					'10' => '',
+					'11' => '',
+					'12' => '',
+					'13' => '',
+                ),
+				
+				'optional_contactform' => array(
                     '1' => 'no',
                     '2' => 'no',
 					'3' => 'no',
 					'4' => 'no',
+					'5' => 'yes',
+					'6' => 'no',
+					'7' => 'no',
+					'8' => 'no',
+					'9' => 'no',
+					'10' => 'no',
+					'12' => 'no',
+					'13' => 'no',
                 ),
 				
-				'tv_tagline' => array(
-                    '1' => 'This is a tagline',
-                    '2' => 'This is a tagline without a link',
-					'3' => '',
-					'4' => '',
+				'optional_gallery' => array(
+                    '1' => 'no',
+                    '2' => 'no',
+					'3' => 'yes',
+					'4' => 'no',
+					'5' => 'no',
+					'6' => 'no',
+					'7' => 'no',
+					'8' => 'no',
+					'9' => 'no',
+					'10' => 'no',
+					'13' => 'no',
                 ),
 				
-				'tv_tagline_link' => array(
-                    '1' => '',
-                    '2' => '',
-					'3' => '',
-					'4' => '',
+				'optional_slider' => array(
+                    '1' => 'yes',
+                    '2' => 'no',
+					'3' => 'no',
+					'4' => 'no',
+					'5' => 'no',
+					'6' => 'no',
+					'7' => 'no',
+					'8' => 'no',
+					'9' => 'no',
+					'10' => 'no',
+					'13' => 'no',
                 ),
 				
-				'tv_tagline_link_text' => array(
-                    '1' => 'Link text',
-                    '2' => '',
-					'3' => '',
-					'4' => '',
+				'page_boxes' => array(
+                    '1' => '3',
+                    '2' => '0',
+					'3' => '0',
+					'4' => '0',
+					'5' => '0',
+					'6' => '0',
+					'7' => '0',
+					'8' => '0',
+					'9' => '0',
+					'10' => '0',
+					'12' => '0',
+					'13' => '0',
                 ),
 				
-				'tv_tagline_option' => array(
-                    '1' => 'tagline_link',
-                    '2' => 'tagline',
-					'3' => 'no_tagline',
-					'4' => 'no_tagline',
+				'email_adress' => array(
+					'11' => 'your@email.com',
                 ),
 				
-				'multiItemsGrid' => array(
-                    '5' => 'Page settings template',
+				'FooterBoxNumber' => array(
+					'11' => '4',
                 ),
 				
-				'tv.contact_adress' => array(
-                    '5' => 'Fill in you adress',
+				'siteLogo' => array(
+					'11' => 'assets/templates/flexibility/images/logo.png',
                 ),
 				
-				'tv.email_adress' => array(
-                    '5' => 'your@email.com',
-                ),
-				
-				'tv.footer_content_left' => array(
-                    '5' => 'Left footer content',
-                ),
-				
-				'tv.footer_content_right' => array(
-                    '5' => 'Right footer content',
-                ),
-				
-				'tv.logo' => array(
-                    '5' => 'assets/templates/templates/main/images/site/logo.png',
-                ),
             );
 
             foreach ($tvs as $tvName => $resources) {

@@ -2,7 +2,7 @@
 /**
 * Associate Template Variables to Templates
 *
-* @package MODULAR
+* @package Flexibility
 * @subpackage build
 */
 if ($object && $object->xpdo) {
@@ -13,19 +13,23 @@ if ($object && $object->xpdo) {
 
             /* list of tvs and templates for each */
             $tvs = array(
-				'tv_sidebar' => array('Homepage template','Basic page template','Contact page template','Gallery page template'),
-				'tv_slider' => array('Homepage template','Basic page template','Contact page template','Gallery page template'),
-				'tv_tagline' => array('Homepage template','Basic page template','Contact page template','Gallery page template'),
-				'tv_tagline_link' => array('Homepage template','Basic page template','Contact page template','Gallery page template'),
-				'tv_tagline_link_text' => array('Homepage template','Basic page template','Contact page template','Gallery page template'),
-				'tv_tagline_option' => array('Homepage template','Basic page template','Contact page template','Gallery page template'),
-				
-				'multiItemsGrid' => array('Page settings template'),
-				'tv.contact_adress' => array('Page settings template'),
-				'tv.email_adress' => array('Page settings template'),
-				'tv.footer_content_left' => array('Page settings template'),
-				'tv.footer_content_right' => array('Page settings template'),
-				'tv.logo' => array('Page settings template'),
+				'footer_box_01' => array('settings_template'),
+				'footer_box_02' => array('settings_template'),
+				'footer_box_03' => array('settings_template'),
+				'footer_box_04' => array('settings_template'),
+				'page_box_01' => array('Flexibility', 'Search results'),
+				'page_box_02' => array('Flexibility', 'Search results'),
+				'page_box_03' => array('Flexibility', 'Search results'),
+				'page_box_04' => array('Flexibility', 'Search results'),
+				'page_lightbox' => array('Flexibility', 'Search results'),
+				'sidebar' => array('Flexibility', 'Search results'),
+				'optional_contactform' => array('Flexibility', 'Search results'),
+				'optional_gallery' => array('Flexibility'),
+				'optional_slider' => array('Flexibility'),
+				'page_boxes' => array('Flexibility', 'Search results'),
+				'email_adress' => array('settings_template'),
+				'FooterBoxNumber' => array('settings_template'),
+				'siteLogo' => array('settings_template'),
             );
 
             foreach ($tvs as $tvName => $templateNames) {

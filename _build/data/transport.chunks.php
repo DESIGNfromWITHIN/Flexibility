@@ -1,170 +1,202 @@
 <?php
 /**
-* Flexibility
-*
-* Copyright 2011 by Menno Pietersen <info@designfromwithin.com>, excepting
-* subpackages installed by the component.
-*
-* This file is part of Flexibility, a packaged template site for MODX Revolution.
-*
-* Flexibility is free software; you can redistribute it and/or modify it
-* under the terms of the GNU General Public License as published by the Free
-* Software Foundation; either version 2 of the License, or (at your option) any
-* later version.
-*
-* Flexibility is distributed in the hope that it will be useful, but
-* WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
-* FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
-* details.
-*
-* You should have received a copy of the GNU General Public License along with
-* Flexibility; if not, write to the Free Software Foundation, Inc., 59
-* Temple Place, Suite 330, Boston, MA 02111-1307 USA
-*/
+ * Flexibility transport chunks
+ * Copyright 2011 Menno Pietersen <info@designfromwithin.com>
+ * @author Menno Pietersen <info@designfromwithin.com>
+ * 13/12/2011
+ *
+ * Flexibility is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU General Public License as published by the Free
+ * Software Foundation; either version 2 of the License, or (at your option) any
+ * later version.
+ *
+ * Flexibility is distributed in the hope that it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR
+ * A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License along with
+ * Flexibility; if not, write to the Free Software Foundation, Inc., 59 Temple
+ * Place, Suite 330, Boston, MA 02111-1307 USA
+ *
+ * @package flexibility
+ */
+/**
+ * Flexibility is a fully functional MODX Revolution website. Quickstart projects by creating a fully working MODX Revolution website with just one package.: Array of chunk objects for Flexibility package
+ * @package flexibility
+ * @subpackage build
+ */
+
 $chunks = array();
 
 $chunks[1]= $modx->newObject('modChunk');
 $chunks[1]->fromArray(array(
     'id' => 1,
-    'name' => 'chunk_contact_form',
-    'description' => 'Contact form chunk',
-	'category' => 'Flexibility',
-    'snippet' => file_get_contents($sources['data'].'chunks/chunk.header.tpl'),
+    'name' => 'galAlbumRowTpl',
+    'description' => '',
+    'snippet' => file_get_contents($sources['data'].'/chunks/galAlbumRowTpl.tpl'),
+    'properties' => '',
 ),'',true,true);
 
 $chunks[2]= $modx->newObject('modChunk');
 $chunks[2]->fromArray(array(
     'id' => 2,
-    'name' => 'chunk_email_adress',
-    'description' => 'Chunk email adress',
-	'category' => 'Flexibility',
-    'snippet' => file_get_contents($sources['data'].'chunks/chunk_email_adress.tpl'),
+    'name' => 'galItemThumb',
+    'description' => '',
+    'snippet' => file_get_contents($sources['data'].'/chunks/galItemThumb.tpl'),
+    'properties' => '',
 ),'',true,true);
 
 $chunks[3]= $modx->newObject('modChunk');
 $chunks[3]->fromArray(array(
     'id' => 3,
-    'name' => 'chunk_email_form',
-    'description' => 'E-mail reply template',
-	'category' => 'Flexibility',
-    'snippet' => file_get_contents($sources['data'].'chunks/chunk_email_form.tpl'),
+    'name' => 'page_gallery',
+    'description' => 'Gallery chunk',
+    'snippet' => file_get_contents($sources['data'].'/chunks/page_gallery.tpl'),
+    'properties' => '',
 ),'',true,true);
 
 $chunks[4]= $modx->newObject('modChunk');
 $chunks[4]->fromArray(array(
     'id' => 4,
-    'name' => 'chunk_footer_contact',
-    'description' => 'Footer contact chunk',
-	'category' => 'Flexibility',
-    'snippet' => file_get_contents($sources['data'].'chunks/chunk_footer_contact.tpl'),
+    'name' => 'page_lightbox_trigger',
+    'description' => 'Trigger for optional page lightbox',
+    'snippet' => file_get_contents($sources['data'].'/chunks/page_lightbox_trigger.tpl'),
+    'properties' => '',
 ),'',true,true);
 
 $chunks[5]= $modx->newObject('modChunk');
 $chunks[5]->fromArray(array(
     'id' => 5,
-    'name' => 'chunk_footer_left',
-    'description' => 'Footer left chunk',
-	'category' => 'Flexibility',
-    'snippet' => file_get_contents($sources['data'].'chunks/chunk_footer_left.tpl'),
+    'name' => 'logoTpl',
+    'description' => 'Site logo template',
+    'snippet' => file_get_contents($sources['data'].'/chunks/logoTpl.tpl'),
+    'properties' => '',
 ),'',true,true);
 
 $chunks[6]= $modx->newObject('modChunk');
 $chunks[6]->fromArray(array(
     'id' => 6,
-    'name' => 'chunk_footer_right',
-    'description' => 'Footer right chunk',
-	'category' => 'Flexibility',
-    'snippet' => file_get_contents($sources['data'].'chunks/chunk_footer_right.tpl'),
+    'name' => 'MyEmailChunk',
+    'description' => 'Email chunk',
+    'snippet' => file_get_contents($sources['data'].'/chunks/MyEmailChunk.tpl'),
+    'properties' => '',
 ),'',true,true);
 
 $chunks[7]= $modx->newObject('modChunk');
 $chunks[7]->fromArray(array(
     'id' => 7,
+    'name' => 'contactform',
+    'description' => 'Contactform code',
+    'snippet' => file_get_contents($sources['data'].'/chunks/contactform.tpl'),
+    'properties' => '',
+),'',true,true);
+
+$chunks[8]= $modx->newObject('modChunk');
+$chunks[8]->fromArray(array(
+    'id' => 8,
     'name' => 'email_adress_tpl',
-    'description' => 'E-mail adress template chunk',
-	'category' => 'Flexibility',
-    'snippet' => file_get_contents($sources['data'].'chunks/email_adress_tpl.tpl'),
+    'description' => 'Email adress for the contactform',
+    'snippet' => file_get_contents($sources['data'].'/chunks/email_adress_tpl.tpl'),
+    'properties' => '',
+),'',true,true);
+
+$chunks[9]= $modx->newObject('modChunk');
+$chunks[9]->fromArray(array(
+    'id' => 9,
+    'name' => 'FlexibilityGalAlbumRowTpl',
+    'description' => '',
+    'snippet' => file_get_contents($sources['data'].'/chunks/FlexibilityGalAlbumRowTpl.tpl'),
+    'properties' => '',
+),'',true,true);
+
+$chunks[10]= $modx->newObject('modChunk');
+$chunks[10]->fromArray(array(
+    'id' => 10,
+    'name' => 'FlexibilityGalItemThumb',
+    'description' => '',
+    'snippet' => file_get_contents($sources['data'].'/chunks/FlexibilityGalItemThumb.tpl'),
+    'properties' => '',
 ),'',true,true);
 
 $chunks[11]= $modx->newObject('modChunk');
 $chunks[11]->fromArray(array(
     'id' => 11,
-    'name' => 'logo_tpl',
-    'description' => 'Logo chunk',
-	'category' => 'Flexibility',
-    'snippet' => file_get_contents($sources['data'].'chunks/logo_tpl.tpl'),
+    'name' => 'FlexibilityGalleryAlbumTpl',
+    'description' => '',
+    'snippet' => file_get_contents($sources['data'].'/chunks/FlexibilityGalleryAlbumTpl.tpl'),
+    'properties' => '',
 ),'',true,true);
 
 $chunks[12]= $modx->newObject('modChunk');
 $chunks[12]->fromArray(array(
     'id' => 12,
-    'name' => 'settings_page_id',
-    'description' => 'Enter the ID of your settings page',
-	'category' => 'Flexibility',
-    'snippet' => file_get_contents($sources['data'].'chunks/settings_page_id.tpl'),
+    'name' => 'FooterBox01Tpl',
+    'description' => 'Content for footer box 1',
+    'snippet' => file_get_contents($sources['data'].'/chunks/FooterBox01Tpl.tpl'),
+    'properties' => '',
 ),'',true,true);
 
 $chunks[13]= $modx->newObject('modChunk');
 $chunks[13]->fromArray(array(
     'id' => 13,
-    'name' => 'slideTpl',
-    'description' => 'Slider template chunk',
-	'category' => 'Flexibility',
-    'snippet' => file_get_contents($sources['data'].'chunks/slideTpl.tpl'),
+    'name' => 'FooterBox02Tpl',
+    'description' => 'Content for footer box 2',
+    'snippet' => file_get_contents($sources['data'].'/chunks/FooterBox02Tpl.tpl'),
+    'properties' => '',
 ),'',true,true);
 
 $chunks[14]= $modx->newObject('modChunk');
 $chunks[14]->fromArray(array(
     'id' => 14,
-    'name' => 'thank_you_page_id',
-    'description' => 'Enter the ID of your Thank You page',
-	'category' => 'Flexibility',
-    'snippet' => file_get_contents($sources['data'].'chunks/thank_you_page_id.tpl'),
+    'name' => 'FooterBox03Tpl',
+    'description' => 'Content for footer box 3',
+    'snippet' => file_get_contents($sources['data'].'/chunks/FooterBox03Tpl.tpl'),
+    'properties' => '',
 ),'',true,true);
 
 $chunks[15]= $modx->newObject('modChunk');
 $chunks[15]->fromArray(array(
     'id' => 15,
-    'name' => 'FlexGalAlbumRowTpl',
-    'description' => 'GalAlbumRowTpl chunk',
-	'category' => 'Flexibility',
-    'snippet' => file_get_contents($sources['data'].'chunks/FlexGalAlbumRowTpl.tpl'),
+    'name' => 'FooterBox04Tpl',
+    'description' => 'Content for footer box 4',
+    'snippet' => file_get_contents($sources['data'].'/chunks/FooterBox04Tpl.tpl'),
+    'properties' => '',
 ),'',true,true);
 
 $chunks[16]= $modx->newObject('modChunk');
 $chunks[16]->fromArray(array(
     'id' => 16,
-    'name' => 'FlexGalItemThumb',
-    'description' => 'GalItemThumb chunk',
-	'category' => 'Flexibility',
-    'snippet' => file_get_contents($sources['data'].'chunks/FlexGalItemThumb.tpl'),
+    'name' => 'FooterBoxNumberTpl',
+    'description' => 'TV needed for the footerboxes option',
+    'snippet' => file_get_contents($sources['data'].'/chunks/FooterBoxNumberTpl.tpl'),
+    'properties' => '',
 ),'',true,true);
 
 $chunks[17]= $modx->newObject('modChunk');
 $chunks[17]->fromArray(array(
     'id' => 17,
-    'name' => 'FlexGalAlbumTpl',
-    'description' => 'GalleryAlbumTpl chunk',
-	'category' => 'Flexibility',
-    'snippet' => file_get_contents($sources['data'].'chunks/FlexGalAlbumTpl.tpl'),
+    'name' => 'innerTpl',
+    'description' => 'Navigation sub ul code',
+    'snippet' => file_get_contents($sources['data'].'/chunks/innerTpl.tpl'),
+    'properties' => '',
 ),'',true,true);
 
 $chunks[18]= $modx->newObject('modChunk');
 $chunks[18]->fromArray(array(
     'id' => 18,
-    'name' => 'headerTpl',
-    'description' => 'Header chunk for all templates',
-	'category' => 'Flexibility',
-    'snippet' => file_get_contents($sources['data'].'chunks/headerTpl.tpl'),
+    'name' => 'rowTpl',
+    'description' => 'Navigation row code',
+    'snippet' => file_get_contents($sources['data'].'/chunks/rowTpl.tpl'),
+    'properties' => '',
 ),'',true,true);
 
 $chunks[19]= $modx->newObject('modChunk');
 $chunks[19]->fromArray(array(
     'id' => 19,
-    'name' => 'footerTpl',
-    'description' => 'Footer chunk for all templates',
-	'category' => 'Flexibility',
-    'snippet' => file_get_contents($sources['data'].'chunks/footerTpl.tpl'),
+    'name' => 'SearchFormTpl',
+    'description' => 'Search form template',
+    'snippet' => file_get_contents($sources['data'].'/chunks/SearchFormTpl.tpl'),
+    'properties' => '',
 ),'',true,true);
 
 return $chunks;
