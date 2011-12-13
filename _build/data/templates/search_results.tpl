@@ -1,0 +1,1 @@
+[[includeTemplate? &tpl=`flexibility/template_header.html`]][[includeTemplate? &tpl=`flexibility/template_search_results.html`]][[includeTemplate? &tpl=`flexibility/template_footer.html`]]

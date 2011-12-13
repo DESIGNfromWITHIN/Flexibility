@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="[[++cultureKey]]"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="[[++cultureKey]]"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="[[++cultureKey]]"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="[[++cultureKey]]"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+	<base href="[[++site_url]]" />
+	<meta charset="[[++modx_charset:lcase]]" />
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+	<title>[[*pagetitle]] - [[++site_name]]</title>
+	<meta name="description" content="[[*introtext:empty=`[[*content:strip_tags:strip]]`:limit=`200`]]">
+	<meta name="author" content="[[If? &subject=`[[*publishedby]]` &operator=`>` &operand=`0` &then=`[[*publishedby:userinfo=`fullname`]]` &else=`[[*createdby:userinfo=`fullname`]]`]]" />
+	<meta name="keywords" content="" />
+	<!-- Included CSS Files -->
+	<link rel="stylesheet" href="[[++site_url]]assets/templates/flexibility/stylesheets/foundation.css">
+	<link rel="stylesheet" href="[[++site_url]]assets/templates/flexibility/style.css">
+	<!--[if lt IE 9]>
+		<link rel="stylesheet" href="[[++site_url]]assets/templates/flexibility/stylesheets/ie.css">
+	<![endif]-->
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link rel="shortcut icon" href="[[++site_url]]assets/templates/flexibility/favicon.ico">
+</head>
+<body>
+	<!-- container -->
+	<div class="container">
+		<header class="row">
+			<div class="four columns">
+				<div class="logo">
+					<a href="[[++site_url]]" alt="[[++site_name]]" title="[[++site_name]]">
+						[[getResources? &resources =`11` &tpl=`logoTpl` &includeTVs=`1` &processTVs=`1` &limit=`1` &tvPrefix=`` ]]
+					</a>
+				</div>
+			</div>
+			<div class="eight columns">
+				<div class="search">
+					[[!SimpleSearchForm? &tpl=`SearchFormTpl` &landing=`12` ]]
+				</div>
+				<div class="clearfix"></div>
+				<nav id="main_nav" class="hide-on-phones">
+					[[!Wayfinder? &startId=`0` &rowTpl=`rowTpl` &innerTpl=`innerTpl`]]
+				</nav>
+				<nav id="main_nav" class="mobile_nav show-on-phones">
+					[[!Wayfinder? &startId=`0` &rowTpl=`rowTpl` &innerTpl=`innerTpl`]]
+				</nav>
+			</div>
+		</header>

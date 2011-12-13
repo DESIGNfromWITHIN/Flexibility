@@ -1,0 +1,1 @@
+<img src="[[+siteLogo]]" alt="[[++site_name]] logo" />

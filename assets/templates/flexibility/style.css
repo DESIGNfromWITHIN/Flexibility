@@ -1,0 +1,335 @@
+header.row {
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+header nav#main_nav ul {
+	margin:0;
+	padding:0;
+	z-index: 10000;
+	float: right;
+}
+header nav#main_nav ul li {
+	float:left;
+	position:relative;
+	font-size:10px;
+	list-style:none;
+	margin:0;
+	min-width:70px;
+	padding:0px 10px 0px 10px;
+	text-align:center;
+	text-transform:uppercase;
+	border-right:1px solid #ccc;
+	background:#222;
+	line-height:30px;
+}
+header nav#main_nav ul li:first-child {
+	border-left:1px solid #ccc;
+}
+header nav#main_nav ul li a {
+	color:rgba(255,255,255,0.6);
+	text-decoration:none;
+	display:block;
+}
+header nav#main_nav ul li.active {
+	background: #00A6FC;
+}
+header nav#main_nav ul li.active a {
+	color: #ffffff;
+}
+header nav#main_nav ul li a:hover {
+	color:#fff;
+}
+header nav#main_nav ul li:hover > a {
+	color:#fff;
+}
+header nav#main_nav ul li span {
+	background:url(arrow.png) center no-repeat;
+	height:10px;
+	position:absolute;
+	text-indent:-9999px;
+	top:10px;
+	right:5px;
+	width:10px;
+}
+header nav#main_nav ul li span.arrow {
+	background-position:0 2px;
+}
+header nav#main_nav ul li span.arrow-right {
+	background-position:-10px 2px;
+}
+header nav#main_nav ul li ul.sublist {
+	float:left;
+	list-style:none;
+	margin:0;
+	padding:0;
+	position:absolute;
+	left:0px;
+	top:31px;
+	background:#222;
+	width:90px;
+	opacity:0;
+	visibility:hidden;
+	-moz-transition:opacity 0.2s 0.1s ease-out, visibility 0.1s 0.1s linear;
+	-webkit-transition:opacity 0.3s ease-out, visibility 0.1s 0.1s linear;
+	-o-transition:opacity 0.3s ease-out, visibility 0.1s 0.1s linear;
+	transition:opacity 0.3s ease-out, visibility 0.1s 0.1s linear;
+}
+header nav#main_nav ul li ul.sublist li {
+	border:none;
+	border-bottom:1px solid #ccc;
+	clear:both;
+	margin-top:-15px;
+	padding:0;
+	width:90px;
+	-moz-transition:opacity 0.1s 0.15s ease-out, margin 0.3s 0.1s ease-out;
+	-webkit-transition:opacity 0.1s 0.15s ease-out, margin 0.3s 0.1s ease-out;
+	-o-transition:opacity 0.15s 0.15s ease-out, margin 0.3s 0.1s ease-out;
+	transition:opacity 0.15s 0.15s ease-out, margin 0.3s 0.1s ease-out;
+}
+
+header nav#main_nav ul li ul.sublist li a {
+	color:rgba(255,255,255,0);
+}
+header nav#main_nav ul li:hover ul.sublist {
+	opacity:1;
+	visibility:visible;
+}
+header nav#main_nav ul li:hover ul.sublist li {
+	margin-top:0;
+	opacity:1;
+}
+header nav#main_nav ul li:hover ul.sublist li a {
+	color:rgba(255,255,255,0.6);	
+	-moz-transition:color 0.1s ease-out;
+	-webkit-transition:color 0.1s ease-out;
+	-o-transition:color 0.1s ease-out;
+	transition:color 0.1s ease-out;
+}
+header nav#main_nav ul li:hover ul.sublist li a:hover {
+	color:rgba(255,255,255,1);	
+	-moz-transition:color 0.3s ease-out;
+	-webkit-transition:color 0.3s ease-out;
+	-o-transition:color 0.3s ease-out;
+	transition:color 0.3s ease-out;
+}
+header nav#main_nav ul li:hover ul.sublist li:hover > a {
+	color:#fff;
+}
+/* SUB SUB LIST */
+header nav#main_nav ul li ul.sublist li ul.sublist {
+	float:left;
+	list-style:none;
+	margin:0;
+	padding:0;
+	position:absolute;
+	left:61px;
+	top:0px;
+	background:#222;
+	width:90px;
+	opacity:0;
+	visibility:hidden;
+	-moz-transition:opacity 0.2s 0.01s ease-in-out, left 0.2s 0.1s ease-out, visibility 0.1s 0.1s linear;
+	-webkit-transition:opacity 0.2s 0.01s ease-in-out, left 0.2s 0.1s ease-out, visibility 0.1s 0.1s linear;
+	-o-transition:opacity 0.2s 0.01s ease-in-out, left 0.2s 0.1s ease-out, visibility 0.1s 0.1s linear;
+	transition:opacity 0.2s 0.01s ease-in-out, left 0.2s 0.1s ease-out, visibility 0.1s 0.1s linear;
+}
+header nav#main_nav ul li ul.sublist li ul.sublist li{
+	border:none;
+	border-bottom:1px solid #ccc;
+	clear:both;
+	margin:0;
+	padding:0;
+	width:90px;
+	opacity:1;
+}
+header nav#main_nav ul li ul.sublist li:hover ul.sublist {
+	opacity:1;
+	left:91px;
+	visibility:visible;
+}
+header nav#main_nav.mobile_nav li {
+	float: left;
+	width: 50%;
+	text-align: center;
+	border-right:none;
+	padding: 0px;
+	background:#222;
+	line-height:30px;
+}
+header nav#main_nav.mobile_nav ul {
+	float: none;
+}
+header nav#main_nav.mobile_nav ul li:first-child {
+	border-left:none;
+}
+header nav#main_nav.mobile_nav li ul {
+	display: none;
+}
+.search {
+	float: right;
+	margin-bottom: 20px;
+}
+input#searchIcon {
+	width: 29px;
+	height: 24px;
+	background: url(images/misc/searchButton.png) no-repeat 0 0;
+}
+input#searchIcon:hover {
+	background: url(images/misc/searchButton.png) no-repeat 0 -24px;
+}
+
+
+fieldset.search {
+	border: none;
+	margin: 0 auto;
+	padding-right: 0px;
+}
+.search input, .search button {
+	border: none;
+	float: left;
+}
+.search input.box {
+	color: #000000;
+	font-size: 1.2em;
+	width: 190px;
+	height: 24px;
+	padding: 0px 3px 0px 3px;
+	background: #ffffff;
+	margin-right: 5px;
+	border: 1px solid #000000;
+}
+.search input.box:focus {
+	background: #ebebeb;
+	outline: none;
+}
+.search button.btn {
+	width: 29px;
+	height: 24px;
+	cursor: pointer;
+	text-indent: -9999px;
+	background: url(images/misc/searchButton.png) no-repeat top right;
+}
+.search button.btn:hover {
+	background: url(images/misc/searchButton.png) no-repeat bottom right;
+}
+/* Gallery */
+.gal-item{
+	float: left;
+	margin: 10px 10px 10px 0px;
+	text-align: center;
+}
+        
+.gal-item a{
+	display: block;
+}
+
+.gal-item img{
+	border: solid 4px #CCC;
+	width: 227px;
+}
+
+.gal-item img:hover{
+	border: solid 4px #666;
+}
+/*
+    ColorBox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+#colorbox, #cboxOverlay, #cboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}
+#cboxOverlay{position:fixed; width:100%; height:100%;}
+#cboxMiddleLeft, #cboxBottomLeft{clear:left;}
+#cboxContent{position:relative;}
+#cboxLoadedContent{overflow:auto;}
+#cboxTitle{margin:0;}
+#cboxLoadingOverlay, #cboxLoadingGraphic{position:absolute; top:0; left:0; width:100%;}
+#cboxPrevious, #cboxNext, #cboxClose, #cboxSlideshow{cursor:pointer;}
+.cboxPhoto{float:left; margin:auto; border:0; display:block;}
+.cboxIframe{width:100%; height:100%; display:block; border:0;}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of ColorBox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#cboxOverlay{background:#000;}
+#colorbox{}
+    #cboxContent{margin-top:20px;}
+        .cboxIframe{background:#fff;}
+        #cboxError{padding:50px; border:1px solid #ccc;}
+        #cboxLoadedContent{border:5px solid #000; background:#fff;}
+        #cboxTitle{position:absolute; top:-20px; left:0; color:#ccc;}
+        #cboxCurrent{position:absolute; top:-20px; right:0px; color:#ccc;}
+        #cboxSlideshow{position:absolute; top:-20px; right:90px; color:#fff;}
+        #cboxPrevious{position:absolute; top:50%; left:5px; margin-top:-32px; background:url(images/controls.png) no-repeat top left; width:28px; height:65px; text-indent:-9999px;}
+        #cboxPrevious:hover{background-position:bottom left;}
+        #cboxNext{position:absolute; top:50%; right:5px; margin-top:-32px; background:url(images/controls.png) no-repeat top right; width:28px; height:65px; text-indent:-9999px;}
+        #cboxNext:hover{background-position:bottom right;}
+        #cboxLoadingOverlay{background:#000;}
+        #cboxLoadingGraphic{background:url(images/loading.gif) no-repeat center center;}
+        #cboxClose{position:absolute; top:5px; right:5px; display:block; background:url(images/controls.png) no-repeat top center; width:38px; height:19px; text-indent:-9999px;}
+        #cboxClose:hover{background-position:bottom center;}
+/* Contactform*/
+form legend {
+	color: #333;
+	padding: 0 0 20px 0;
+	text-transform: uppercase;
+}
+
+input, textarea, label {
+	padding: 2px 3px 2px 3px;
+	width: 300px;
+}
+input, textarea {
+	margin-bottom: 10px;
+}
+form p { position: relative; margin: 10px 0;}
+form p label { position: absolute; top: 0; left: 0;}
+form p br {display: none;}
+
+
+form fieldset p input,
+form fieldset p textarea {
+	display: block;
+	padding: 4px;
+	width: 400px;
+	margin: 0;
+}
+
+form fieldset p label {
+	width: 380px;
+	display: block;
+	margin: 5px 5px 5px 6px;
+	padding: 0;
+}
+
+form fieldset p textarea {
+	padding: 2px;
+	width: 404px;
+}
+
+form fieldset p textarea,
+form fieldset p input {
+	border: solid 1px #ccc;
+}
+form fieldset p label {
+	color: #777;
+}
+span.error {
+	color: #dc2027;
+}
+/* Mobile */
+	@media only screen and (max-width: 682px) {
+	.search {
+		float: none;
+		margin: 0 auto 20px;
+		width: 232px;
+	}
+	.gal-item img{
+		width: 150px;
+	}
+	.logo {
+		float: none;
+		margin: 0 auto 5px;
+		width: 320px;
+	}
+}
