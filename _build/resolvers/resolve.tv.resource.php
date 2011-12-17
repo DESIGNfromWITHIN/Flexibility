@@ -12,7 +12,7 @@ if ($object && $object->xpdo) {
             $modx =& $object->xpdo;
 
             /* list of tvs and resourceIDs/values for each */
-            $tvs = array(	
+            $templateVariables = array(	
 				'footer_box_01' => array(
 					'11' => '<h3>Footer box 1</h3><p>Some content for this box.</p>',
                 ),
@@ -173,7 +173,7 @@ if ($object && $object->xpdo) {
 				
             );
 
-            foreach ($tvs as $tvName => $resources) {
+            foreach ($templateVariables as $tvName => $resources) {
                 if (!is_array($resources) || empty($resources)) continue;
 
                 $tv = $modx->getObject('modTemplateVar',array('name' => $tvName));

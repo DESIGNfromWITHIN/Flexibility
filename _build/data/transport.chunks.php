@@ -199,4 +199,13 @@ $chunks[19]->fromArray(array(
     'properties' => '',
 ),'',true,true);
 
+$chunks[20]= $modx->newObject('modChunk');
+$chunks[20]->fromArray(array(
+    'id' => 20,
+    'name' => 'slideTpl',
+    'description' => 'Code for slider slide.',
+    'snippet' => file_get_contents($sources['data'].'/chunks/slideTpl.tpl'),
+    'properties' => '',
+),'',true,true);
+
 return $chunks;

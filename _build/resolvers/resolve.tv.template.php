@@ -12,7 +12,7 @@ if ($object && $object->xpdo) {
             $modx =& $object->xpdo;
 
             /* list of tvs and templates for each */
-            $tvs = array(
+            $templateVariables = array(
 				'footer_box_01' => array('settings_template'),
 				'footer_box_02' => array('settings_template'),
 				'footer_box_03' => array('settings_template'),
@@ -30,9 +30,10 @@ if ($object && $object->xpdo) {
 				'email_adress' => array('settings_template'),
 				'FooterBoxNumber' => array('settings_template'),
 				'siteLogo' => array('settings_template'),
+				'multiItemsGrid' => array('settings_template'),
             );
 
-            foreach ($tvs as $tvName => $templateNames) {
+            foreach ($templateVariables as $tvName => $templateNames) {
                 if (!is_array($templateNames) || empty($templateNames)) continue;
 
                 $tv = $modx->getObject('modTemplateVar',array('name' => $tvName));

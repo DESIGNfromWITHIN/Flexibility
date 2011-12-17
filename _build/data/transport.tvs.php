@@ -320,4 +320,69 @@ $templateVariables[16]->fromArray(array(
 	'properties' => array(),
 ),'',true,true);
 
+$templateVariables[17]= $modx->newObject('modTemplateVar');
+$templateVariables[17]->fromArray(array(
+    'id' => 17,
+    'name' => 'richtext',
+    'caption' => 'Slide text',
+    'description' => 'Enter the content of the slide',
+	'category' => 'Site options',
+    'type' => 'richtext',
+    'display' => 'default',
+    'locked' => 0,
+    'rank' => 0,
+    'default_text' => '',
+    'display_params' => '',
+),'',true,true);
+
+$templateVariables[18]= $modx->newObject('modTemplateVar');
+$templateVariables[18]->fromArray(array(
+    'id' => 18,
+    'name' => 'image',
+    'caption' => 'image',
+    'description' => 'Slider image',
+	'category' => 'Site options',
+    'type' => 'image',
+    'display' => 'text',
+    'locked' => 0,
+    'rank' => 0,
+    'default_text' => '',
+    'display_params' => '',
+),'',true,true);
+
+$templateVariables[19]= $modx->newObject('modTemplateVar');
+$templateVariables[19]->fromArray(array(
+    'id' => 19,
+    'name' => 'multiItemsGrid',
+    'caption' => 'Slider items',
+    'description' => 'The items in the slider',
+	'category' => 'Site options',
+    'type' => 'migx',
+    'display' => 'default',
+    'locked' => 0,
+    'rank' => 0,
+    'default_text' => '',
+    'display_params' => '',
+),'',true,true);
+
+$input_properties=array(
+    'formtabs' => '
+[
+{"caption":"Info", "fields": [
+    {"field":"title","caption":"Title","description":"Title for the image."},
+    {"field":"description","caption":"Description","inputTV":"richtext"}
+]},
+{"caption":"Image", "fields":[
+    {"field":"image","caption":"Image","inputTV":"image"}
+]}
+]
+	',
+    'columns' => '
+[
+{"header": "Title", "width": "160", "sortable": "true", "dataIndex": "title"},
+{"header": "Image", "width": "50", "sortable": "false", "dataIndex": "image","renderer": "this.renderImage"}
+]
+');
+$templateVariables[19]->set('input_properties',$input_properties);
+
 return $templateVariables;

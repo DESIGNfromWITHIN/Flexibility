@@ -1,5 +1,9 @@
 Changelog for Flexibility
 
+flexibility-2.0.2-beta.transport (17-12-2011)
+====================================
+- Added MIGX TV's for adding slides to the image slider.
+
 flexibility-2.0.1-beta.transport (13-12-2011)
 ====================================
 - First version online!

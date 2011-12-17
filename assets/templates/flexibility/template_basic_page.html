@@ -5,13 +5,9 @@
 		&do1=`
 		<div class="row">
 			<div class="twelve columns">
-				<div id="slider"> 
-					<img src="[[++site_url]]assets/templates/flexibility/images/overflow.jpg" />
-					<img src="[[++site_url]]assets/templates/flexibility/images/captions.jpg" data-caption="#htmlCaption" />
-					<img src="[[++site_url]]assets/templates/flexibility/images/features.jpg"  />
+				<div id="slider">
+					[[!getImageList? &tvname=`multiItemsGrid` &docid=`11` &tpl=`slideTpl`]]
 				</div>
-				<!-- Captions for Orbit -->
-				<span class="orbit-caption" id="htmlCaption"><strong>I'm A Badass Caption:</strong> I can haz <a href="#">links</a>, <em>style</em> or anything that is valid markup :)</span>
 			</div>
 		</div>
 		`&default=``]]

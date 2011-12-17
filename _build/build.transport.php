@@ -49,7 +49,7 @@
 /* Set package info be sure to set all of these */
 define('PKG_NAME','Flexibility');
 define('PKG_NAME_LOWER','flexibility');
-define('PKG_VERSION','2.0.1');
+define('PKG_VERSION','2.0.2');
 define('PKG_RELEASE','beta');
 define('PKG_CATEGORY','Flexibility');
 
@@ -143,33 +143,39 @@ $builder->registerNamespace(PKG_NAME_LOWER,false,true,'{core_path}components/'.P
  * have the name of your package
  */
 
+/*
 $category= $modx->newObject('modCategory');
 $category->set('id',1);
-$category->set('category',PKG_CATEGORY);
+$category->set('category','Flexibility');
 
 $category= $modx->newObject('modCategory');
 $category->set('id',2);
-$category->set('category', 'Site options');
+$category->set('category','Site options');
 
 $category= $modx->newObject('modCategory');
 $category->set('id',3);
-$category->set('category', 'Page options');
+$category->set('category','Page options');
 
 $category= $modx->newObject('modCategory');
 $category->set('id',4);
-$category->set('category', 'Footer');
+$category->set('category','Footer');
 
 $category= $modx->newObject('modCategory');
 $category->set('id',5);
-$category->set('category', 'Footer content');
+$category->set('category','Footer content');
 
 $category= $modx->newObject('modCategory');
 $category->set('id',6);
-$category->set('category', 'Page content');
+$category->set('category','Page content');
 
 $category= $modx->newObject('modCategory');
 $category->set('id',7);
-$category->set('category', 'Template');
+$category->set('category','Template');
+*/
+
+$category= $modx->newObject('modCategory');
+$category->set('id',1);
+$category->set('category','Flexibility');
 
 /* add subpackages */
 $success = include $sources['data'].'transport.subpackages.php';
