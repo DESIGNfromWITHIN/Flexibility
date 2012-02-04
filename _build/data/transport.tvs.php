@@ -252,23 +252,6 @@ $templateVariables[13]->fromArray(array(
 	'properties' => array(),
 ),'',true,true);
 
-$templateVariables[17]= $modx->newObject('modTemplateVar');
-$templateVariables[17]->fromArray(array(
-    'id' => 17,
-    'name' => 'page_boxes',
-    'caption' => 'Sub-content boxes',
-    'description' => 'How many sub-content boxes do you want on this page?',
-	'category' => 'Page options',
-    'type' => 'option',
-	'elements' => '0==0||2==2||3==3||4==4',
-    'display' => 'default',
-    'locked' => 0,
-    'rank' => 1,
-    'default_text' => '0',
-    'display_params' => '',
-	'properties' => array(),
-),'',true,true);
-
 $templateVariables[14]= $modx->newObject('modTemplateVar');
 $templateVariables[14]->fromArray(array(
     'id' => 14,
@@ -323,10 +306,10 @@ $templateVariables[16]->fromArray(array(
 $templateVariables[17]= $modx->newObject('modTemplateVar');
 $templateVariables[17]->fromArray(array(
     'id' => 17,
-    'name' => 'richtext',
-    'caption' => 'Slide text',
-    'description' => 'Enter the content of the slide',
-	'category' => 'Site options',
+    'name' => 'slidetext',
+    'caption' => 'Richtext',
+    'description' => 'Slide text',
+    'category' => 'Enter the content of the slide',
     'type' => 'richtext',
     'display' => 'default',
     'locked' => 0,
@@ -353,6 +336,23 @@ $templateVariables[18]->fromArray(array(
 $templateVariables[19]= $modx->newObject('modTemplateVar');
 $templateVariables[19]->fromArray(array(
     'id' => 19,
+    'name' => 'page_boxes',
+    'caption' => 'Sub-content boxes',
+    'description' => 'How many sub-content boxes do you want on this page?',
+	'category' => 'Page options',
+    'type' => 'option',
+	'elements' => '0==0||2==2||3==3||4==4',
+    'display' => 'default',
+    'locked' => 0,
+    'rank' => 1,
+    'default_text' => '0',
+    'display_params' => '',
+	'properties' => array(),
+),'',true,true);
+
+$templateVariables[20]= $modx->newObject('modTemplateVar');
+$templateVariables[20]->fromArray(array(
+    'id' => 20,
     'name' => 'multiItemsGrid',
     'caption' => 'Slider items',
     'description' => 'The items in the slider',
@@ -370,7 +370,7 @@ $input_properties=array(
 [
 {"caption":"Info", "fields": [
     {"field":"title","caption":"Title","description":"Title for the image."},
-    {"field":"description","caption":"Description","inputTV":"richtext"}
+    {"field":"description","caption":"Description","inputTV":"slidetext"}
 ]},
 {"caption":"Image", "fields":[
     {"field":"image","caption":"Image","inputTV":"image"}
@@ -383,6 +383,6 @@ $input_properties=array(
 {"header": "Image", "width": "50", "sortable": "false", "dataIndex": "image","renderer": "this.renderImage"}
 ]
 ');
-$templateVariables[19]->set('input_properties',$input_properties);
+$templateVariables[20]->set('input_properties',$input_properties);
 
 return $templateVariables;

@@ -49,7 +49,7 @@
 /* Set package info be sure to set all of these */
 define('PKG_NAME','Flexibility');
 define('PKG_NAME_LOWER','flexibility');
-define('PKG_VERSION','2.0.2');
+define('PKG_VERSION','2.0.3');
 define('PKG_RELEASE','beta');
 define('PKG_CATEGORY','Flexibility');
 
@@ -111,7 +111,6 @@ $sources= array (
     /* note that the next two must not have a trailing slash */
     'source_core' => $root.'core/components/'.PKG_NAME_LOWER,
 	'source_templates' => $root.'assets/templates/'.PKG_NAME_LOWER,
-    'source_assets' => $root.'assets/components/'.PKG_NAME_LOWER,
     'resolvers' => $root . '_build/resolvers/',
 	'subpackages' => $root . '_build/subpackages/',
     'validators'=> $root . '_build/validators/',
@@ -143,39 +142,9 @@ $builder->registerNamespace(PKG_NAME_LOWER,false,true,'{core_path}components/'.P
  * have the name of your package
  */
 
-/*
-$category= $modx->newObject('modCategory');
+$category = $modx->newObject('modCategory');
 $category->set('id',1);
-$category->set('category','Flexibility');
-
-$category= $modx->newObject('modCategory');
-$category->set('id',2);
-$category->set('category','Site options');
-
-$category= $modx->newObject('modCategory');
-$category->set('id',3);
-$category->set('category','Page options');
-
-$category= $modx->newObject('modCategory');
-$category->set('id',4);
-$category->set('category','Footer');
-
-$category= $modx->newObject('modCategory');
-$category->set('id',5);
-$category->set('category','Footer content');
-
-$category= $modx->newObject('modCategory');
-$category->set('id',6);
-$category->set('category','Page content');
-
-$category= $modx->newObject('modCategory');
-$category->set('id',7);
-$category->set('category','Template');
-*/
-
-$category= $modx->newObject('modCategory');
-$category->set('id',1);
-$category->set('category','Flexibility');
+$category->set('category', 'Flexibility');
 
 /* add subpackages */
 $success = include $sources['data'].'transport.subpackages.php';
@@ -187,7 +156,6 @@ unset($success);
 if ($hasSnippets) {
     $modx->log(modX::LOG_LEVEL_INFO,'Adding in snippets.');
     $snippets = include $sources['data'].'transport.snippets.php';
-    /* note: Snippets' default properties are set in transport.snippets.php */
     if (is_array($snippets)) {
         $category->addMany($snippets, 'Snippets');
     } else { $modx->log(modX::LOG_LEVEL_FATAL,'Adding snippets failed.'); }
@@ -201,6 +169,7 @@ if ($hasPropertySets) { /* add property sets */
         $category->addMany($propertysets, 'PropertySets');
     } else { $modx->log(modX::LOG_LEVEL_FATAL,'Adding property sets failed.'); }
 }
+
 if ($hasChunks) { /* add chunks  */
     $modx->log(modX::LOG_LEVEL_INFO,'Adding in chunks.');
     /* note: Chunks' default properties are set in transport.chunks.php */    
@@ -209,7 +178,6 @@ if ($hasChunks) { /* add chunks  */
         $category->addMany($chunks, 'Chunks');
     } else { $modx->log(modX::LOG_LEVEL_FATAL,'Adding chunks failed.'); }
 }
-
 
 if ($hasTemplates) { /* add templates  */
     $modx->log(modX::LOG_LEVEL_INFO,'Adding in templates.');
@@ -222,13 +190,14 @@ if ($hasTemplates) { /* add templates  */
     } else { $modx->log(modX::LOG_LEVEL_FATAL,'Adding templates failed.'); }
 }
 
-if ($hasTemplateVariables) { /* add templatevariables  */
-    $modx->log(modX::LOG_LEVEL_INFO,'Adding in Template Variables.');
-    /* note: Template Variables' default properties are set in transport.tvs.php */
-    $templatevariables = include $sources['data'].'transport.tvs.php';
-    if (is_array($templatevariables)) {
-        $category->addMany($templatevariables, 'TemplateVars');
-    } else { $modx->log(modX::LOG_LEVEL_FATAL,'Adding templatevariables failed.'); }
+/* add tvs */
+
+if ($hasTemplateVariables) {
+	/* add tvs */
+	$tvs = include $sources['data'].'transport.tvs.php';
+	if (is_array($tvs)) {
+		$category->addMany($tvs,'TemplateVars');
+	}
 }
 
 
@@ -328,13 +297,9 @@ if ($hasResolver) {
 		'source' => $sources['resolvers'] . 'resolve.tv.resource.php',
     ));
 }
-/* package in script resolver if any */
-if ($hasResolver) {
-    $modx->log(modX::LOG_LEVEL_INFO,'Adding in TV Template Resolver.');
-    $vehicle->resolve('php',array(
-		'source' => $sources['resolvers'] . 'resolve.tv.template.php',
-    ));
-}
+$vehicle->resolve('php',array(
+    'source' => $sources['resolvers'] . 'resolve.tv.template.php',
+));
 
 
 /* This section transfers every file in the local
@@ -350,20 +315,6 @@ if ($hasTemplates) {
             'target' => "return MODX_ASSETS_PATH . 'templates/';",
         ));
 }
-
-/* This section transfers every file in the local 
- flexibilitys/flexibility/core directory to the
- target site's core/flexibility directory on install.
- If the core has been renamed or moved, they will still
- go to the right place.
- */
-
-    if ($hasAssets) {
-        $vehicle->resolve('file',array(
-            'source' => $sources['source_assets'],
-            'target' => "return MODX_ASSETS_PATH . 'components/';",
-        ));
-    }
 
 /* Add subpackages */
 /* The transport.zip files will be copied to core/packages

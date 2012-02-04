@@ -52,7 +52,7 @@ $modx =& $object->xpdo;
  */
 
 $pluginEvents = array('OnBeforeUserFormSave','OnUserFormSave');
-$plugins = array('MyPlugin1', 'MyPlugin2');
+//$plugins = array('MyPlugin1', 'MyPlugin2');
 //$templates = array('myTemplate1','myTemplate2');
 //$tvs = array('MyTv1','MyTv2');
 $category = 'Flexibility';
@@ -219,7 +219,7 @@ switch($options[xPDOTransport::PACKAGE_ACTION]) {
          *     }
          * }
          *
-         */
+
          $snippetName = 'MySnippet1';
          $propertySetName = 'MyPropertySet1';
          $snippet = $modx->getObject('modSnippet', array('name'=>$snippetName));
@@ -244,7 +244,7 @@ switch($options[xPDOTransport::PACKAGE_ACTION]) {
                  $modx->log(xPDO::LOG_LEVEL_INFO,'Could not retrieve snippet: ' . $snippetName);
          }
 
-        break;
+        break;*/
 
     /* This code will execute during an upgrade */
     case xPDOTransport::ACTION_UPGRADE:

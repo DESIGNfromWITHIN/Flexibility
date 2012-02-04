@@ -9,7 +9,7 @@
 */
 $success= true;
 if ($transport && $transport->xpdo) {
-    $signature = 'migx-1.1.0-rc2';
+    $signature = 'migx-2.0.0-beta1';
     $modx =& $transport->xpdo;
     $modx->addPackage('modx.transport',$modx->getOption('core_path').'model/');
     

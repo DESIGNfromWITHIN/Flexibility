@@ -35,8 +35,8 @@ if ($transport && $transport->xpdo) {
             $modx =& $transport->xpdo;
 
             /* define getResources version */
-            $newVersion = '1.1.0-rc2';
-            $newVersionMajor = '1';
+            $newVersion = '2.0.0-beta1';
+            $newVersionMajor = '2';
             $name = 'migx';
 
             /* now loop through packages and check for newer versions
