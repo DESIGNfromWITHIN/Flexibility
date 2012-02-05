@@ -115,7 +115,7 @@ switch($options[xPDOTransport::PACKAGE_ACTION]) {
          * will be connected to all package templates. If you
          * want to connect different TVs to different templates
          * you need to rewrite this.
-         */
+         
 
         if ($hasTemplates && $hasTemplateVariables) {
             $categoryObj = $modx->getObject('modCategory',array('category'=> $category));
@@ -166,7 +166,7 @@ switch($options[xPDOTransport::PACKAGE_ACTION]) {
             } else {
                 $modx->log(xPDO::LOG_LEVEL_INFO,'Failed to attach TVs to Templates');
             }
-        }
+        }*/
         /* This section will set the site_name system setting based on the checkbox and
          * input field in the user.input.php form presented during the install.
          */

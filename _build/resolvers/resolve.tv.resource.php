@@ -131,7 +131,7 @@ if ($object && $object->xpdo) {
                 ),
 				
 				'optional_slider' => array(
-                    '1' => 'yes',
+                    '1' => 'no',
                     '2' => 'no',
 					'3' => 'no',
 					'4' => 'no',

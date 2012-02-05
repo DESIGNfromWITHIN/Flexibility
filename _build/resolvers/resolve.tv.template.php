@@ -1,30 +1,5 @@
 <?php
 /**
- * MODx Sample Site
- *
- * Copyright 2010 by Shaun McCormick <shaun@collabpad.com>, excepting
- * subpackages installed by the component.
- *
- * This file is part of MODx Sample Site, a packaged sample site for MODx
- * Revolution.
- *
- * MODx Sample Site is free software; you can redistribute it and/or modify it
- * under the terms of the GNU General Public License as published by the Free
- * Software Foundation; either version 2 of the License, or (at your option) any
- * later version.
- *
- * MODx Sample Site is distributed in the hope that it will be useful, but
- * WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
- * FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
- * details.
- *
- * You should have received a copy of the GNU General Public License along with
- * MODx Sample Site; if not, write to the Free Software Foundation, Inc., 59
- * Temple Place, Suite 330, Boston, MA 02111-1307 USA
- *
- * @package modxss
- */
-/**
  * Associate Template Variables to Templates
  *
  * @package modxss
@@ -39,6 +14,23 @@ if ($object && $object->xpdo) {
             /* list of tvs and templates for each */
             $tvs = array(
                 'footer_box_01' => array('settings_template'),
+                'footer_box_02' => array('settings_template'),
+                'footer_box_03' => array('settings_template'),
+                'footer_box_04' => array('settings_template'),
+                'page_box_01' => array('Flexibility', 'Search results'),
+                'page_box_02' => array('Flexibility', 'Search results'),
+                'page_box_03' => array('Flexibility', 'Search results'),
+                'page_box_04' => array('Flexibility', 'Search results'),
+                'page_lightbox' => array('Flexibility', 'Search results'),
+                'sidebar' => array('Flexibility', 'Search results'),
+                'optional_contactform' => array('Flexibility', 'Search results'),
+                'optional_gallery' => array('Flexibility'),
+                'optional_slider' => array('Flexibility'),
+                'page_boxes' => array('Flexibility', 'Search results'),
+                'email_adress' => array('settings_template'),
+                'FooterBoxNumber' => array('settings_template'),
+                'siteLogo' => array('settings_template'),
+                'multiItemsGrid' => array('settings_template'),
             );
 
             foreach ($tvs as $tvName => $templateNames) {

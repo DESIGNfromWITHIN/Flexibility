@@ -2,7 +2,7 @@
 /**
  * Flexibility Build Script
  *
- * Copyright 2011 Menno Pietersen <info@designfromwithin.com>
+ * Copyright 2012 Menno Pietersen <info@designfromwithin.com>
  *
  * Flexibility is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the Free
@@ -28,29 +28,11 @@
  * @subpackage build
  */
 
-/* See the flexibility/core/docs/tutorial.html file for
- * more detailed information about using the package
- *
-  * Search and replace tasks:
- * (edit the resource and element names first if they have
- * different names than your package.)
- *
- * Flexibility -> Name of your package
- * flexibility -> lowercase name of your package
- * Menno Pietersen -> Your Actual Name
- * DESIGNfromWITHIN -> Name of your site
- * http://designfromwithin.com -> domain name of your site
- * info@designfromwithin.com -> your email address
- * Fully functional MODX Revolution website. Quickstart projects by creating a fully working MODX Revolution website with just one package. -> Fully functional MODX Revolution website. Quickstart projects by creating a fully working MODX Revolution website with just one package. of file or component
- *
- * 13/12/11 -> Current date
- * 2011 
-
 /* Set package info be sure to set all of these */
 define('PKG_NAME','Flexibility');
 define('PKG_NAME_LOWER','flexibility');
-define('PKG_VERSION','2.0.3');
-define('PKG_RELEASE','beta');
+define('PKG_VERSION','2.0.4');
+define('PKG_RELEASE','alpha');
 define('PKG_CATEGORY','Flexibility');
 
 /* Set package options - you can turn these on one-by-one
