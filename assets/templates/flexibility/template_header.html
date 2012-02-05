@@ -11,7 +11,7 @@
 	<!-- Set the viewport width to device width for mobile -->
 	<meta name="viewport" content="width=device-width" />
 	<title>[[*pagetitle]] - [[++site_name]]</title>
-	<meta name="description" content="[[*introtext:empty=`[[*content:strip_tags:strip]]`:limit=`200`]]">
+	<meta name="description" content="[[*introtext:empty=`[[*content:strip_tags]]`:limit=`200`]]" />
 	<meta name="author" content="[[If? &subject=`[[*publishedby]]` &operator=`>` &operand=`0` &then=`[[*publishedby:userinfo=`fullname`]]` &else=`[[*createdby:userinfo=`fullname`]]`]]" />
 	<meta name="keywords" content="" />
 	<!-- Included CSS Files -->
@@ -33,7 +33,7 @@
 			<div class="four columns">
 				<div class="logo">
 					<a href="[[++site_url]]" alt="[[++site_name]]" title="[[++site_name]]">
-						[[getResources? &resources =`11` &tpl=`logoTpl` &includeTVs=`1` &processTVs=`1` &limit=`1` &tvPrefix=`` ]]
+						[[getResources? &resources =`11` &tpl=`logoTpl` &includeTVs=`1` &processTVs=`1` &parents=`-1` &limit=`1` &tvPrefix=`` ]]
 					</a>
 				</div>
 			</div>
