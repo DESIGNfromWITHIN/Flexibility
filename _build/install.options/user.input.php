@@ -48,7 +48,7 @@
  */
 
 $output = '<p>&nbsp;</p>
-<label for="sitename">The value here will be used to set the site_name system setting on install.</label>
+<label for="sitename">Enter the website name (you can change this later)</label>
 <p>&nbsp;</p>
 <input type="text" name="sitename" id="sitename" value="" align="left" size="40" maxlength="60" />
 <p>&nbsp;</p>

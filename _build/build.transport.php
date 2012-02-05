@@ -265,13 +265,13 @@ if ($hasValidator) {
     ));
 }
 
-/* package in script resolver if any */
+/* package in script resolver if any
 if ($hasResolver) {
     $modx->log(modX::LOG_LEVEL_INFO,'Adding in Script Resolver.');
     $vehicle->resolve('php',array(
         'source' => $sources['resolvers'] . 'install.script.php',
     ));
-}
+} */
 /* package in script resolver if any */
 if ($hasResolver) {
     $modx->log(modX::LOG_LEVEL_INFO,'Adding in TV Resource Resolver.');
