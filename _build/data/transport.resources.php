@@ -178,7 +178,7 @@ $resources[7]->fromArray(array(
     'longtitle' => 'Sub page 2',
     'description' => 'Sub page 2',
     'alias' => 'sub-page-2',
-    'published' => '2',
+    'published' => '1',
 	'template' => 2,
     'parent' => '4',
     'isfolder' => '1',

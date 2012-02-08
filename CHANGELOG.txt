@@ -1,5 +1,9 @@
 Changelog for Flexibility
 
+flexibility-2.0.5-alpha.transport (8-2-2012)
+====================================
+- Fixed sub-page-2 bug (thanks Showa!)
+
 flexibility-2.0.4-alpha.transport (5-2-2012)
 ====================================
 - Template variables are now added to the correct template.
