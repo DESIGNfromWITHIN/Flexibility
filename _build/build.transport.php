@@ -31,7 +31,7 @@
 /* Set package info be sure to set all of these */
 define('PKG_NAME','Flexibility');
 define('PKG_NAME_LOWER','flexibility');
-define('PKG_VERSION','2.0.5');
+define('PKG_VERSION','2.0.6');
 define('PKG_RELEASE','alpha');
 define('PKG_CATEGORY','Flexibility');
 
@@ -261,27 +261,51 @@ $vehicle = $builder->createVehicle($category,$attr);
 if ($hasValidator) {
     $modx->log(modX::LOG_LEVEL_INFO,'Adding in Script Validator.');
     $vehicle->validate('php',array(
-        'source' => $sources['validators'] . 'preinstall.script.php',
+        'source' => $sources['validators'] . 'validate.formit.php',
+    ));
+    $vehicle->validate('php',array(
+        'source' => $sources['validators'] . 'validate.gallery.php',
+    ));
+    $vehicle->validate('php',array(
+        'source' => $sources['validators'] . 'validate.getresources.php',
+    ));
+    $vehicle->validate('php',array(
+        'source' => $sources['validators'] . 'validate.if.php',
+    ));
+    $vehicle->validate('php',array(
+        'source' => $sources['validators'] . 'validate.migx.php',
+    ));
+    $vehicle->validate('php',array(
+        'source' => $sources['validators'] . 'validate.simplesearch.php',
+    ));
+    $vehicle->validate('php',array(
+        'source' => $sources['validators'] . 'validate.switch.php',
+    ));
+    $vehicle->validate('php',array(
+        'source' => $sources['validators'] . 'validate.tinymce.php',
+    ));
+    $vehicle->validate('php',array(
+        'source' => $sources['validators'] . 'validate.wayfinder.php',
     ));
 }
-
-/* package in script resolver if any
+/* package in script resolver if any */
 if ($hasResolver) {
     $modx->log(modX::LOG_LEVEL_INFO,'Adding in Script Resolver.');
     $vehicle->resolve('php',array(
         'source' => $sources['resolvers'] . 'install.script.php',
     ));
-} */
+} 
+
 /* package in script resolver if any */
 if ($hasResolver) {
     $modx->log(modX::LOG_LEVEL_INFO,'Adding in TV Resource Resolver.');
     $vehicle->resolve('php',array(
 		'source' => $sources['resolvers'] . 'resolve.tv.resource.php',
     ));
+    $vehicle->resolve('php',array(
+        'source' => $sources['resolvers'] . 'resolve.tv.template.php',
+    ));
 }
-$vehicle->resolve('php',array(
-    'source' => $sources['resolvers'] . 'resolve.tv.template.php',
-));
 
 
 /* This section transfers every file in the local

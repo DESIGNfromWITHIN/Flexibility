@@ -3,7 +3,7 @@
 /**
  * Flexibility resolver script - runs on install.
  *
- * Copyright 2011 Menno Pietersen <info@designfromwithin.com>
+ * Copyright 2012 Menno Pietersen <info@designfromwithin.com>
  * @author Menno Pietersen <info@designfromwithin.com>
  * 13/12/2011
  *

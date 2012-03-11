@@ -35,7 +35,7 @@ if ($transport && $transport->xpdo) {
             $modx =& $transport->xpdo;
 
             /* define getResources version */
-            $newVersion = '4.3.1-pl';
+            $newVersion = '4.3.2-pl';
             $newVersionMajor = '4';
             $name = 'tinymce';
 

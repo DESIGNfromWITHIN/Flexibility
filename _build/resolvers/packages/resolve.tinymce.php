@@ -9,7 +9,7 @@
 */
 $success= true;
 if ($transport && $transport->xpdo) {
-    $signature = 'tinymce-4.3.1-pl';
+    $signature = 'tinymce-4.3.2-pl';
     $modx =& $transport->xpdo;
     $modx->addPackage('modx.transport',$modx->getOption('core_path').'model/');
     

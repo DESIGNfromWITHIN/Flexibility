@@ -15,10 +15,8 @@ header nav#main_nav ul li {
 	list-style:none;
 	margin:0;
 	min-width:70px;
-	padding:0px 10px 0px 10px;
 	text-align:center;
 	text-transform:uppercase;
-	border-right:1px solid #ccc;
 	background:#222;
 	line-height:30px;
 }
@@ -29,6 +27,8 @@ header nav#main_nav ul li a {
 	color:rgba(255,255,255,0.6);
 	text-decoration:none;
 	display:block;
+	border-right:1px solid #ccc;
+	padding:0px 10px 0px 10px;
 }
 header nav#main_nav ul li.active {
 	background: #00A6FC;
@@ -64,9 +64,8 @@ header nav#main_nav ul li ul.sublist {
 	padding:0;
 	position:absolute;
 	left:0px;
-	top:31px;
+	top:30px;
 	background:#222;
-	width:90px;
 	opacity:0;
 	visibility:hidden;
 	-moz-transition:opacity 0.2s 0.1s ease-out, visibility 0.1s 0.1s linear;
@@ -76,7 +75,6 @@ header nav#main_nav ul li ul.sublist {
 }
 header nav#main_nav ul li ul.sublist li {
 	border:none;
-	border-bottom:1px solid #ccc;
 	clear:both;
 	margin-top:-15px;
 	padding:0;
@@ -89,6 +87,9 @@ header nav#main_nav ul li ul.sublist li {
 
 header nav#main_nav ul li ul.sublist li a {
 	color:rgba(255,255,255,0);
+	border-top:1px solid #ccc;
+	line-height: 20px;
+	border-bottom:none;
 }
 header nav#main_nav ul li:hover ul.sublist {
 	opacity:1;
@@ -125,7 +126,6 @@ header nav#main_nav ul li ul.sublist li ul.sublist {
 	left:61px;
 	top:0px;
 	background:#222;
-	width:90px;
 	opacity:0;
 	visibility:hidden;
 	-moz-transition:opacity 0.2s 0.01s ease-in-out, left 0.2s 0.1s ease-out, visibility 0.1s 0.1s linear;
@@ -135,16 +135,20 @@ header nav#main_nav ul li ul.sublist li ul.sublist {
 }
 header nav#main_nav ul li ul.sublist li ul.sublist li{
 	border:none;
-	border-bottom:1px solid #ccc;
 	clear:both;
 	margin:0;
 	padding:0;
 	width:90px;
 	opacity:1;
 }
+header nav#main_nav ul li ul.sublist li ul.sublist li a {
+	border-top:1px solid #ccc;
+	line-height: 20px;
+	border-bottom:none;
+}
 header nav#main_nav ul li ul.sublist li:hover ul.sublist {
 	opacity:1;
-	left:91px;
+	left:90px;
 	visibility:visible;
 }
 header nav#main_nav.mobile_nav li {
@@ -268,6 +272,7 @@ fieldset.search {
         #cboxLoadingGraphic{background:url(images/loading.gif) no-repeat center center;}
         #cboxClose{position:absolute; top:5px; right:5px; display:block; background:url(images/controls.png) no-repeat top center; width:38px; height:19px; text-indent:-9999px;}
         #cboxClose:hover{background-position:bottom center;}
+		#colorbox img { max-width: none; }
 /* Contactform*/
 form legend {
 	color: #333;

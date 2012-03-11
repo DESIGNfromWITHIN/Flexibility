@@ -5,7 +5,7 @@
  * 
  * In some cases, you may have to hard-code the full paths */
 
-define('MODX_BASE_PATH', 'D:/Dropbox/DESIGNfromWITHIN/SITES/BUILD2/');
+define('MODX_BASE_PATH', 'D:/Dropbox/DESIGNfromWITHIN/SITES/Flexibility/');
 define('MODX_CORE_PATH', MODX_BASE_PATH . '/core/');
 define('MODX_MANAGER_PATH', MODX_BASE_PATH . 'manager/');
 define('MODX_CONNECTORS_PATH', MODX_BASE_PATH . 'connectors/');

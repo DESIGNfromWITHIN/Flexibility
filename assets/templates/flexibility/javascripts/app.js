@@ -1,48 +1,103 @@
-$(document).ready(function() {
-	/* Gallery */
-	$(document).ready(function () {
-		$('.gal-item img').asynchImageLoader({placeholder : "assets/templates/flexibility/images/loading-thumb.gif"});
-		$("a[rel='colorbox']").colorbox();
+/* Foundation v2.2 http://foundation.zurb.com */
+jQuery(document).ready(function ($) {
+
+	/* Use this js doc for all application specific JS */
+
+	$('#slider').orbit({
+		animation: 'fade',                  // fade, horizontal-slide, vertical-slide, horizontal-push
+		animationSpeed: 800,                // how fast animtions are
+		timer: true,                        // true or false to have the timer
+		advanceSpeed: 4000,                 // if timer is enabled, time between transitions 
+		pauseOnHover: false,                // if you hover pauses the slider
 	});
-	/* CONTACTFORM labels */
-	$(function(){ $("label").inFieldLabels(); });
 	
 	/* TABS --------------------------------- */
 	/* Remove if you don't need :) */
-	
-	var tabs = $('dl.tabs');
-		tabsContent = $('ul.tabs-content')
-	
-	tabs.each(function(i) {
+
+	function activateTab($tab) {
+		var $activeTab = $tab.closest('dl').find('a.active'),
+				contentLocation = $tab.attr("href") + 'Tab';
+
+		//Make Tab Active
+		$activeTab.removeClass('active');
+		$tab.addClass('active');
+
+    	//Show Tab Content
+		$(contentLocation).closest('.tabs-content').children('li').hide();
+		$(contentLocation).css('display', 'block');
+	}
+
+	$('dl.tabs').each(function () {
 		//Get all tabs
-		var tab = $(this).children('dd').children('a');
-		tab.click(function(e) {
-			
-			//Get Location of tab's content
-			var contentLocation = $(this).attr("href")
-			contentLocation = contentLocation + "Tab";
-			
-			//Let go if not a hashed one
-			if(contentLocation.charAt(0)=="#") {
-			
-				e.preventDefault();
-			
-				//Make Tab Active
-				tab.removeClass('active');
-				$(this).addClass('active');
-				
-				//Show Tab Content
-				$(contentLocation).parent('.tabs-content').children('li').css({"display":"none"});
-				$(contentLocation).css({"display":"block"});
-				
-			} 
+		var tabs = $(this).children('dd').children('a');
+		tabs.click(function (e) {
+			activateTab($(this));
 		});
 	});
-	
-	
+
+	if (window.location.hash) {
+		activateTab($('a[href="' + window.location.hash + '"]'));
+	}
+
+	/* ALERT BOXES ------------ */
+	$(".alert-box").delegate("a.close", "click", function(event) {
+    event.preventDefault();
+	  $(this).closest(".alert-box").fadeOut(function(event){
+	    $(this).remove();
+	  });
+	});
+
+
 	/* PLACEHOLDER FOR FORMS ------------- */
 	/* Remove this and jquery.placeholder.min.js if you don't need :) */
-	
+
 	$('input, textarea').placeholder();
-	
+
+	/* TOOLTIPS ------------ */
+	$(this).tooltips();
+
+
+
+	/* UNCOMMENT THE LINE YOU WANT BELOW IF YOU WANT IE6/7/8 SUPPORT AND ARE USING .block-grids */
+//	$('.block-grid.two-up>li:nth-child(2n+1)').css({clear: 'left'});
+//	$('.block-grid.three-up>li:nth-child(3n+1)').css({clear: 'left'});
+//	$('.block-grid.four-up>li:nth-child(4n+1)').css({clear: 'left'});
+//	$('.block-grid.five-up>li:nth-child(5n+1)').css({clear: 'left'});
+
+
+
+	/* DROPDOWN NAV ------------- */
+
+	var lockNavBar = false;
+	$('.nav-bar a.flyout-toggle').live('click', function(e) {
+		e.preventDefault();
+		var flyout = $(this).siblings('.flyout');
+		if (lockNavBar === false) {
+			$('.nav-bar .flyout').not(flyout).slideUp(500);
+			flyout.slideToggle(500, function(){
+				lockNavBar = false;
+			});
+		}
+		lockNavBar = true;
+	});
+  if (Modernizr.touch) {
+    $('.nav-bar>li.has-flyout>a.main').css({
+      'padding-right' : '75px'
+    });
+    $('.nav-bar>li.has-flyout>a.flyout-toggle').css({
+      'border-left' : '1px dashed #eee'
+    });
+  } else {
+    $('.nav-bar>li.has-flyout').hover(function() {
+      $(this).children('.flyout').show();
+    }, function() {
+      $(this).children('.flyout').hide();
+    })
+  }
+
+
+	/* DISABLED BUTTONS ------------- */
+	/* Gives elements with a class of 'disabled' a return: false; */
+  
+
 });

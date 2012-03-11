@@ -1,5 +1,15 @@
 Changelog for Flexibility
 
+flexibility-2.0.6-alpha.transport (11-3-2012)
+====================================
+- Changed TV order
+- Removed unwanted code
+- Added Public License
+- Remove includeTemplate code, now using Media Sources
+- Updated packages (FormIt, getResources, simplesearch, TinyMCE)
+- Updated Foundation Framework to 2.2
+- Fixed small dropdown issue
+
 flexibility-2.0.5-alpha.transport (8-2-2012)
 ====================================
 - Fixed sub-page-2 bug (thanks Showa!)

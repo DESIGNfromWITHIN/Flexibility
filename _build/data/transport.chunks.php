@@ -208,4 +208,24 @@ $chunks[20]->fromArray(array(
     'properties' => '',
 ),'',true,true);
 
+$chunks[21]= $modx->newObject('modChunk');
+$chunks[21]->fromArray(array(
+    'id' => 21,
+    'name' => 'flexibility_header',
+    'description' => 'Header for the Flexibility template',
+    'static' => 1,
+    'source' => 1,
+    'static_file' => 'assets/templates/flexibility/flexibility_header.html',
+),'',true,true);
+
+$chunks[22]= $modx->newObject('modChunk');
+$chunks[22]->fromArray(array(
+    'id' => 22,
+    'name' => 'flexibility_footer',
+    'description' => 'Footer for the Flexibility template',
+    'static' => 1,
+    'source' => 1,
+    'static_file' => 'assets/templates/flexibility/flexibility_footer.html',
+),'',true,true);
+
 return $chunks;

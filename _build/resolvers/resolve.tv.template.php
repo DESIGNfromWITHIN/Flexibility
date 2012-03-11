@@ -2,7 +2,7 @@
 /**
  * Associate Template Variables to Templates
  *
- * @package modxss
+ * @package Flexibility
  * @subpackage build
  */
 if ($object && $object->xpdo) {

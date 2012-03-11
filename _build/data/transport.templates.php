@@ -33,8 +33,9 @@ $templates[1]->fromArray(array(
     'id' => 1,
     'templatename' => 'Flexibility',
     'description' => 'Basic template for any page',
-	'category' => 'Template',
-    'content' => file_get_contents($sources['data'].'/templates/flexibility.tpl'),
+    'static' => 1,
+    'source' => 1,
+    'static_file' => 'assets/templates/flexibility/flexibility_basic_page.html',
     'properties' => '',
 ),'',true,true);
 
@@ -43,8 +44,9 @@ $templates[2]->fromArray(array(
     'id' => 2,
     'templatename' => 'Search results',
     'description' => 'Search results Template',
-	'category' => 'Template',
-    'content' => file_get_contents($sources['data'].'/templates/search_results.tpl'),
+    'static' => 1,
+    'source' => 1,
+    'static_file' => 'assets/templates/flexibility/flexibility_search_results.html',
     'properties' => '',
 ),'',true,true);
 
@@ -53,8 +55,6 @@ $templates[3]->fromArray(array(
     'id' => 3,
     'templatename' => 'settings_template',
     'description' => 'Template for site settings',
-	'category' => 'Template',
-    'content' => file_get_contents($sources['data'].'/templates/settings_template.tpl'),
     'properties' => '',
 ),'',true,true);
 

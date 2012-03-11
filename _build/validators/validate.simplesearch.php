@@ -35,7 +35,7 @@ if ($transport && $transport->xpdo) {
             $modx =& $transport->xpdo;
 
             /* define getResources version */
-            $newVersion = '1.5.1-pl';
+            $newVersion = '1.5.2-pl';
             $newVersionMajor = '1';
             $name = 'simplesearch';
 
