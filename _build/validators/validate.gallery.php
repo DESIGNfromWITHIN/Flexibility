@@ -35,7 +35,7 @@ if ($transport && $transport->xpdo) {
             $modx =& $transport->xpdo;
 
             /* define getResources version */
-            $newVersion = '1.4.0-rc1';
+            $newVersion = '1.5.0-pl';
             $newVersionMajor = '1';
             $name = 'gallery';
 

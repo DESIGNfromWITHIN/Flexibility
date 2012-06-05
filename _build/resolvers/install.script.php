@@ -69,16 +69,13 @@ $hasTemplateVariables = true;
   *  the changes will remain even if the component is uninstalled
   */
 
- $hasExistingSettings = false;
+ $hasExistingSettings = true;
 
 /* These existing system settings will always be set during the install */
 if ($hasExistingSettings) {
     $settings = array(
-        'feed_modx_news_enabled'=> false,
-        'feed_modx_security_enabled'=> false,
-        'auto_check_pkg_updates' => false,
-        'default_per_page' => '100',
-        'automatic_alias' => true,
+        'gallery.thumbs_prepend_site_url' => true,
+        'phpthumb_allow_src_above_docroot' => true,
     );
 }
 

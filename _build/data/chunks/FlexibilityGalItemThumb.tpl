@@ -1,6 +1,6 @@
-<div class="[[+cls]]">
-    <a href="[[+image]]" rel="colorbox" title="[[+description]]">
-    	<img data-href="[[+thumbnail]]" class="[[+imgCls]]" src="assets/templates/site/images/loading-thumb.gif" alt="[[+name]]"/>
+<div class="[[+cls]] gallery_item">
+    <a href="[[+image]]" rel="fancybox" title="[[+description]]">
+        <img class="[[+imgCls]]" src="[[+thumbnail]]" alt="[[+name]]" />
     </a>
-  [[+name]]
+    [[+name]]
 </div>

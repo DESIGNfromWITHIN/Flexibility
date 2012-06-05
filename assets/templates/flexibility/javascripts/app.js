@@ -3,6 +3,10 @@ jQuery(document).ready(function ($) {
 
 	/* Use this js doc for all application specific JS */
 
+	/* Active gallery lightbox */
+	$("a[rel='fancybox']").fancybox();
+
+	/* Active slider */
 	$('#slider').orbit({
 		animation: 'fade',                  // fade, horizontal-slide, vertical-slide, horizontal-push
 		animationSpeed: 800,                // how fast animtions are

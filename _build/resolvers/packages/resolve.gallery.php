@@ -9,7 +9,7 @@
 */
 $success= true;
 if ($transport && $transport->xpdo) {
-    $signature = 'gallery-1.4.0-rc1';
+    $signature = 'gallery-1.5.0-pl';
     $modx =& $transport->xpdo;
     $modx->addPackage('modx.transport',$modx->getOption('core_path').'model/');
     
