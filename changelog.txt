@@ -1,5 +1,11 @@
 Changelog for Flexibility
 
+flexibility-2.0.9-alpha.transport (7 july 2012)
+====================================
+- Added the first commit adding the In-Field-Labels jquery plugin (many thanks to: frogabog)
+- Changed the .js structure in the footer
+- Updated the .js files from the Foundation 2 final
+
 flexibility-2.0.8-alpha.transport (5 june 2012)
 ====================================
 - Fixed the php thumb bug and gallery
