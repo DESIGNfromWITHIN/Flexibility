@@ -103,5 +103,8 @@ jQuery(document).ready(function ($) {
 	/* DISABLED BUTTONS ------------- */
 	/* Gives elements with a class of 'disabled' a return: false; */
   
+	/* CONTACTFORM labels */
+	/* Reduces opacity of form labels on click, removes label on entry */
+	$(function(){ $("label").inFieldLabels(); });
 
 });
