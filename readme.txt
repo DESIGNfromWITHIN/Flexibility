@@ -1,4 +1,4 @@
-Flexibility - version 2.0.9-alpha
+Flexibility - version 2.1.0-alpha
 
 -----------------------------------------------------------------------------------------------------------
 ABOUT
@@ -18,7 +18,7 @@ QUICKSTART        PLEASE READ THIS
 
 1. Install MODx Revolution on your website.
 
-2. download the package and upload the "flexibility-2.0.9-alpha.transport.zip" file to "<your_modx_install>/core/packages/" (You only need the transport.zip file, do not unzip it yourself)
+2. download the package and upload the "flexibility-2.1.0-alpha.transport.zip" file to "<your_modx_install>/core/packages/" (You only need the transport.zip file, do not unzip it yourself)
 
 3. Install the "Flexibility" package: Go to "System" > "Package Management" > "Add New Package" > "Search Locally for Packages" > "Yes".
 
