@@ -31,7 +31,7 @@
 /* Set package info be sure to set all of these */
 define('PKG_NAME','Flexibility');
 define('PKG_NAME_LOWER','flexibility');
-define('PKG_VERSION','2.1.1');
+define('PKG_VERSION','3.0.0');
 define('PKG_RELEASE','alpha');
 define('PKG_CATEGORY','Flexibility');
 
@@ -97,7 +97,7 @@ $sources= array (
 	'subpackages' => $root . '_build/subpackages/',
     'validators'=> $root . '_build/validators/',
     'data' => $root . '_build/data/',
-    'docs' => $root . '_build/',
+    'docs' => $root,
     'install_options' => $root . '_build/install.options/',
     'packages'=> $root . 'core/packages',
 );

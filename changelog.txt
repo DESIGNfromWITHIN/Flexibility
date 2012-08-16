@@ -1,5 +1,9 @@
 Changelog for Flexibility
 
+flexibility-3.0.0-alpha.transport (16 august 2012)
+====================================
+- Updated to Foundation 3.0
+
 flexibility-2.1.1-alpha.transport (16 august 2012)
 ====================================
 - Updated FormIt to formit-2.1.1-pl.transport
