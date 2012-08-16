@@ -35,7 +35,7 @@ if ($transport && $transport->xpdo) {
             $modx =& $transport->xpdo;
 
             /* define getResources version */
-            $newVersion = '2.0.3-pl';
+            $newVersion = '2.1.1-pl';
             $newVersionMajor = '2';
             $name = 'formit';
 

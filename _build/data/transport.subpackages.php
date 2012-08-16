@@ -28,14 +28,14 @@
 * @package articles
 */
 $subpackages = array(
-    'formit' => 'formit-2.0.3-pl',
-    'gallery' => 'gallery-1.4.0-rc1',
-    'getresources' => 'getresources-1.4.2-pl',
+    'formit' => 'formit-2.1.1-pl',
+    'gallery' => 'gallery-1.5.2-pl',
+    'getresources' => 'getresources-1.5.0-pl',
     'if' => 'if-1.1-pl',
-    'migx' => 'migx-2.2.3-pl',
-	'simplesearch' => 'simplesearch-1.5.2-pl',
+    'migx' => 'migx-2.3.0-pl',
+	'simplesearch' => 'simplesearch-1.6.0-pl',
 	'switch' => 'switch-1.0-beta1',
-	'tinymce' => 'tinymce-4.3.2-pl',
+	'tinymce' => 'tinymce-4.3.3-pl',
 	'wayfinder' => 'wayfinder-2.3.3-pl',
 );
 $spAttr = array('vehicle_class' => 'xPDOTransportVehicle');

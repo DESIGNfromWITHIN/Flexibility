@@ -9,7 +9,7 @@
 */
 $success= true;
 if ($transport && $transport->xpdo) {
-    $signature = 'getresources-1.4.2-pl';
+    $signature = 'getresources-1.5.0-pl';
     $modx =& $transport->xpdo;
     $modx->addPackage('modx.transport',$modx->getOption('core_path').'model/');
     

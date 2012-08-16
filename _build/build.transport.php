@@ -31,7 +31,7 @@
 /* Set package info be sure to set all of these */
 define('PKG_NAME','Flexibility');
 define('PKG_NAME_LOWER','flexibility');
-define('PKG_VERSION','2.1.0');
+define('PKG_VERSION','2.1.1');
 define('PKG_RELEASE','alpha');
 define('PKG_CATEGORY','Flexibility');
 
@@ -65,7 +65,7 @@ $hasPropertySets = false;
 /* Note: property sets are connected to elements in the script
  * resolver (see _build/data/resolvers/install.script.php)
  */
-$hasSubPackages = true; /* add in other component packages (transport.zip files)*/
+$hasSubPackages = false; /* add in other component packages (transport.zip files)*/
 /* Note: The package files will be copied to core/packages but will
  * have to be installed manually with "Add New Package" and "Search
  * Locally for Packages" in Package Manager. Be aware that the
@@ -92,12 +92,12 @@ $sources= array (
     'build' => $root . '_build/',
     /* note that the next two must not have a trailing slash */
     'source_core' => $root.'core/components/'.PKG_NAME_LOWER,
-	'source_templates' => $root.'assets/templates/'.PKG_NAME_LOWER,
+	'source_templates' => $root.'_build/assets/templates/'.PKG_NAME_LOWER,
     'resolvers' => $root . '_build/resolvers/',
 	'subpackages' => $root . '_build/subpackages/',
     'validators'=> $root . '_build/validators/',
     'data' => $root . '_build/data/',
-    'docs' => $root,
+    'docs' => $root . '_build/',
     'install_options' => $root . '_build/install.options/',
     'packages'=> $root . 'core/packages',
 );
