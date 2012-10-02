@@ -1,44 +1,48 @@
-(function($){
-    /* Active slider */
-    $('#slider').orbit({
-        animation: 'fade',                  // fade, horizontal-slide, vertical-slide, horizontal-push
-        animationSpeed: 800,                // how fast animtions are
-        timer: true,                        // true or false to have the timer
-        advanceSpeed: 4000,                 // if timer is enabled, time between transitions 
-        pauseOnHover: false,                // if you hover pauses the slider
+;(function ($, window, undefined) {
+  'use strict';
+
+  var $doc = $(document),
+      Modernizr = window.Modernizr;
+
+  
+  $.fn.foundationAlerts           ? $doc.foundationAlerts() : null;
+  $.fn.foundationAccordion        ? $doc.foundationAccordion() : null;
+  $.fn.foundationTooltips         ? $doc.foundationTooltips() : null;
+  $('input, textarea').placeholder();
+  
+  
+  $.fn.foundationButtons          ? $doc.foundationButtons() : null;
+  
+  
+  $.fn.foundationNavigation       ? $doc.foundationNavigation() : null;
+  
+  
+  $.fn.foundationTopBar           ? $doc.foundationTopBar() : null;
+  
+  $.fn.foundationCustomForms      ? $doc.foundationCustomForms() : null;
+  $.fn.foundationMediaQueryViewer ? $doc.foundationMediaQueryViewer() : null;
+  
+    
+    $.fn.foundationTabs             ? $doc.foundationTabs() : null;
+    
+  
+  
+    $("#featured").orbit();
+  
+
+  // UNCOMMENT THE LINE YOU WANT BELOW IF YOU WANT IE8 SUPPORT AND ARE USING .block-grids
+  // $('.block-grid.two-up>li:nth-child(2n+1)').css({clear: 'both'});
+  // $('.block-grid.three-up>li:nth-child(3n+1)').css({clear: 'both'});
+  // $('.block-grid.four-up>li:nth-child(4n+1)').css({clear: 'both'});
+  // $('.block-grid.five-up>li:nth-child(5n+1)').css({clear: 'both'});
+
+  // Hide address bar on mobile devices
+  if (Modernizr.touch) {
+    $(window).load(function () {
+      setTimeout(function () {
+        window.scrollTo(0, 1);
+      }, 0);
     });
-    /* Active gallery lightbox */
-    $(".fancybox").fancybox({
-        autoDimension: false,
-        overlayShow: false,
-        width: '75%',
-        height: '75%',
-        titlePosition: 'outside',
-        titleShow: true,
-        centerOnScroll: true,
-        hideOnContentClick: true,
-        closeBtn: false,
-        autoScale: false,
-        helpers: {
-            title: { type : 'inside' },
-            buttons: {}
-        }
-    });
-    $(function(){
-        $(document).foundationMediaQueryViewer();
-        $(document).foundationAlerts();
-        $(document).foundationAccordion();
-        $(document).tooltips();
-        $('input, textarea').placeholder();
-        $(document).foundationButtons();
-        $(document).foundationNavigation();
-        $(document).foundationCustomForms();
-        $(document).foundationTabs({callback:$.foundation.customForms.appendCustomMarkup});
-        $("#featured").orbit();
-        // UNCOMMENT THE LINE YOU WANT BELOW IF YOU WANT IE8 SUPPORT AND ARE USING .block-grids
-        // $('.block-grid.two-up>li:nth-child(2n+1)').css({clear: 'left'});
-        // $('.block-grid.three-up>li:nth-child(3n+1)').css({clear: 'left'});
-        // $('.block-grid.four-up>li:nth-child(4n+1)').css({clear: 'left'});
-        // $('.block-grid.five-up>li:nth-child(5n+1)').css({clear: 'left'});
-    });
-})(jQuery);
+  }
+
+})(jQuery, this);

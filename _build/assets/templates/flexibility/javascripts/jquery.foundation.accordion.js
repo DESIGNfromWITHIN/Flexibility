@@ -1,10 +1,12 @@
-(function ($){
+;(function ($, window, undefined){
+  'use strict';
 
   $.fn.foundationAccordion = function (options) {
 
-    $(document).on('click.fndtn', '.accordion li', function () {
+    $('.accordion li', this).on('click.fndtn', function () {
+    var p = $(this).parent(); //changed this
       var flyout = $(this).children('.content').first();
-      $('.accordion .content').not(flyout).hide().parent('li').removeClass('active');
+      $('.content', p).not(flyout).hide().parent('li').removeClass('active'); //changed this
       flyout.show(0, function () {
         flyout.parent('li').addClass('active');
       });
@@ -12,4 +14,4 @@
 
   };
 
-})( jQuery );
+})( jQuery, this );
