@@ -353,6 +353,21 @@ $templateVariables[19]->fromArray(array(
 $templateVariables[20]= $modx->newObject('modTemplateVar');
 $templateVariables[20]->fromArray(array(
     'id' => 20,
+    'name' => 'slide_content',
+    'caption' => 'Content for this slide',
+    'description' => 'Optional (leave blank to have no content for this slide)',
+    'category' => 'Site options',
+    'type' => 'richtext',
+    'display' => 'default',
+    'locked' => 0,
+    'rank' => 4,
+    'default_text' => '',
+    'display_params' => '',
+),'',true,true);
+
+$templateVariables[21]= $modx->newObject('modTemplateVar');
+$templateVariables[21]->fromArray(array(
+    'id' => 21,
     'name' => 'multiItemsGrid',
     'caption' => 'Slider items',
     'description' => 'The items in the slider',
@@ -370,6 +385,7 @@ $input_properties=array(
 [
 {"caption":"Info", "fields": [
     {"field":"title","caption":"Title","description":"Title for the image."},
+    {"field":"content","caption":"Content","description":"Content of the slide (optional).","inputTV":"slide_content"},
     {"field":"description","caption":"Description","inputTV":"slidetext"}
 ]},
 {"caption":"Image", "fields":[
@@ -383,6 +399,6 @@ $input_properties=array(
 {"header": "Image", "width": "50", "sortable": "false", "dataIndex": "image","renderer": "this.renderImage"}
 ]
 ');
-$templateVariables[20]->set('input_properties',$input_properties);
+$templateVariables[21]->set('input_properties',$input_properties);
 
 return $templateVariables;

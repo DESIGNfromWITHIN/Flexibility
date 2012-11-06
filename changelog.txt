@@ -1,5 +1,15 @@
 Changelog for Flexibility
 
+flexibility-3.0.2-rc.transport (6 november 2012)
+====================================
+- Flexibility is a Release Candidate now!
+- Updated to Foundation 3.2
+- Changed UPDATE_OBJECT to FALSE (xPDOTransport::UPDATE_OBJECT => false), should prevent overwriting content on existing Flexibility installs.
+- Added slide content
+- Updated formit to 2.1.2-pl
+- Updated getresources to 1.5.1-pl
+- Updated migx to 2.3.2-pl
+
 flexibility-3.0.1-alpha.transport (3 september 2012)
 ====================================
 - Updated to Foundation 3.1.1

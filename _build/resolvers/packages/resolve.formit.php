@@ -9,7 +9,7 @@
 */
 $success= true;
 if ($transport && $transport->xpdo) {
-    $signature = 'formit-2.1.1-pl';
+    $signature = 'formit-2.1.2-pl';
     $modx =& $transport->xpdo;
     $modx->addPackage('modx.transport',$modx->getOption('core_path').'model/');
     

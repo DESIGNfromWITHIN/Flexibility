@@ -31,8 +31,8 @@
 /* Set package info be sure to set all of these */
 define('PKG_NAME','Flexibility');
 define('PKG_NAME_LOWER','flexibility');
-define('PKG_VERSION','3.0.1');
-define('PKG_RELEASE','alpha');
+define('PKG_VERSION','3.0.2');
+define('PKG_RELEASE','rc');
 define('PKG_CATEGORY','Flexibility');
 
 /* Set package options - you can turn these on one-by-one
@@ -352,7 +352,7 @@ if ($hasResources) {
     } else {
         $attributes= array(
     xPDOTransport::PRESERVE_KEYS => false,
-    xPDOTransport::UPDATE_OBJECT => true,
+    xPDOTransport::UPDATE_OBJECT => false,
     xPDOTransport::UNIQUE_KEY => 'pagetitle',
     xPDOTransport::RELATED_OBJECTS => true,
     xPDOTransport::RELATED_OBJECT_ATTRIBUTES => array (

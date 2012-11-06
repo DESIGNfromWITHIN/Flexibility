@@ -28,11 +28,11 @@
 * @package articles
 */
 $subpackages = array(
-    'formit' => 'formit-2.1.1-pl',
+    'formit' => 'formit-2.1.2-pl',
     'gallery' => 'gallery-1.5.2-pl',
-    'getresources' => 'getresources-1.5.0-pl',
+    'getresources' => 'getresources-1.5.1-pl',
     'if' => 'if-1.1-pl',
-    'migx' => 'migx-2.2.2-pl',
+    'migx' => 'migx-2.3.2-pl',
 	'simplesearch' => 'simplesearch-1.6.0-pl',
 	'switch' => 'switch-1.0-beta1',
 	'tinymce' => 'tinymce-4.3.3-pl',

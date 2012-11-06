@@ -35,19 +35,23 @@
             methods.largestUL();
           }
 
-          $('.top-bar .toggle-topbar').live('click.fndtn', function (e) {
+          if (settings.$topbar.parent().hasClass('fixed')) {
+            $('body').css('padding-top',settings.$topbar.outerHeight())
+          }
+
+          $('.top-bar .toggle-topbar').die('click.fndtn').live('click.fndtn', function (e) {
             e.preventDefault();
 
             if (methods.breakpoint()) {
               settings.$topbar.toggleClass('expanded');
               settings.$topbar.css('min-height', '');
-
             }
           });
 
           // Show the Dropdown Levels on Click
-          $('.top-bar .has-dropdown>a').live('click.fndtn', function (e) {
-            e.preventDefault();
+          $('.top-bar .has-dropdown>a').die('click.fndtn').live('click.fndtn', function (e) {
+            if (Modernizr.touch || methods.breakpoint())
+              e.preventDefault();
 
             if (methods.breakpoint()) {
               var $this = $(this),
@@ -67,8 +71,14 @@
             }
           });
 
+          $(window).on('resize.fndtn.topbar',function() {
+            if (!methods.breakpoint()) {
+              settings.$topbar.css('min-height', '');
+            }
+          });
+
           // Go up a level on Click
-          $('.top-bar .has-dropdown .back').live('click.fndtn', function (e) {
+          $('.top-bar .has-dropdown .back').die('click.fndtn').live('click.fndtn', function (e) {
             e.preventDefault();
 
             var $this = $(this),
