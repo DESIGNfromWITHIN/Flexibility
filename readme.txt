@@ -1,4 +1,4 @@
-Flexibility - version 3.0.2-rc
+Flexibility - version 3.0.3-rc
 http://flexibilitymodx.com/
 
 -----------------------------------------------------------------------------------------------------------
@@ -12,18 +12,22 @@ With this package you will have a fully functional website with a dropdown nav, 
 Portfolio & blog: DESIGNfromWITHIN http://designfromwithin.com
 Twitter: MennoPP https://twitter.com/MennoPP
 
+-----------------------------------------------------------------------------------------------------------
+QUICKSTART
+-----------------------------------------------------------------------------------------------------------
+
+1. Download and install Flexibility from the MODX package manager.
 
 -----------------------------------------------------------------------------------------------------------
-QUICKSTART        PLEASE READ THIS 
+MANUAL INSTALL
 -----------------------------------------------------------------------------------------------------------
 
 1. Install MODx Revolution on your website.
 
-2. download the package and upload the "flexibility-3.0.2-rc.transport.zip" file to "<your_modx_install>/core/packages/" (You only need the transport.zip file, do not unzip it yourself)
+2. download the package and upload the "flexibility-3.0.3-rc.transport.zip" file to "<your_modx_install>/core/packages/" (You only need the transport.zip file, do not unzip it yourself)
 
 3. Install the "Flexibility" package: Go to "System" > "Package Management" > "Add New Package" > "Search Locally for Packages" > "Yes".
 
-THAT IS ALL!
 (to be sure clear your cache > "Site" > "Clear Cache")
 
 -----------------------------------------------------------------------------------------------------------
@@ -53,9 +57,7 @@ UPDATE instructions:
 -----------------------------------------------------------------------------------------------------------
 
 - All sub-packages (like Wayfinder) are installed by Flexibility and you will be able to remove/update each sub-package under "System" > "Package Management".
-- You can update the package via package installer, download the new version and place it in:
-[base_path}/core/packages/
-Update the package under "System" > "Package Management"
+- You can update the package via package installer, Flexibility will not override excisiting Resources.
 
 -----------------------------------------------------------------------------------------------------------
 CREDITS:

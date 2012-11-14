@@ -1,5 +1,9 @@
 Changelog for Flexibility
 
+flexibility-3.0.3-rc.transport (14 november 2012)
+====================================
+- Fixed Slider MIGX item
+
 flexibility-3.0.2-rc.transport (6 november 2012)
 ====================================
 - Flexibility is a Release Candidate now!
