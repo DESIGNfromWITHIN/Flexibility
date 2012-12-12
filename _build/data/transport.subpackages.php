@@ -32,11 +32,11 @@ $subpackages = array(
     'gallery' => 'gallery-1.5.2-pl',
     'getresources' => 'getresources-1.5.1-pl',
     'if' => 'if-1.1-pl',
-    'migx' => 'migx-2.3.2-pl',
 	'simplesearch' => 'simplesearch-1.6.0-pl',
 	'switch' => 'switch-1.0-beta1',
 	'tinymce' => 'tinymce-4.3.3-pl',
 	'wayfinder' => 'wayfinder-2.3.3-pl',
+    'migx' => 'migx-2.3.2-pl',
 );
 $spAttr = array('vehicle_class' => 'xPDOTransportVehicle');
 

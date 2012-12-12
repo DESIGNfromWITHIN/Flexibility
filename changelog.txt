@@ -1,5 +1,13 @@
 Changelog for Flexibility
 
+flexibility-3.0.5-rc.transport (12 december 2012)
+====================================
+- Changed UPDATE_OBJECT back to TRUE (xPDOTransport::UPDATE_OBJECT => true), this was not working... Will try to create a seperate update package to Flexibility.
+
+flexibility-3.0.4-rc.transport (4 december 2012)
+====================================
+- Fixed Slider MIGX items (again)
+
 flexibility-3.0.3-rc.transport (14 november 2012)
 ====================================
 - Fixed Slider MIGX item, should work fine now

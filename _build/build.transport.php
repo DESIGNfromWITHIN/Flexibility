@@ -31,7 +31,7 @@
 /* Set package info be sure to set all of these */
 define('PKG_NAME','Flexibility');
 define('PKG_NAME_LOWER','flexibility');
-define('PKG_VERSION','3.0.3');
+define('PKG_VERSION','3.0.5');
 define('PKG_RELEASE','rc');
 define('PKG_CATEGORY','Flexibility');
 
@@ -172,23 +172,20 @@ if ($hasTemplates) { /* add templates  */
     } else { $modx->log(modX::LOG_LEVEL_FATAL,'Adding templates failed.'); }
 }
 
-/* add tvs */
-
-if ($hasTemplateVariables) {
-	/* add tvs */
-	$tvs = include $sources['data'].'transport.tvs.php';
-	if (is_array($tvs)) {
-		$category->addMany($tvs,'TemplateVars');
-	}
-}
-
-
-if ($hasPlugins) {
+if ($hasPlugins) { /* add plugins */
     $modx->log(modX::LOG_LEVEL_INFO,'Adding in Plugins.');
     $plugins = include $sources['data'] . 'transport.plugins.php';
      if (is_array($plugins)) {
         $category->addMany($plugins);
      }
+}
+
+if ($hasTemplateVariables) { /* add tvs */
+    /* add tvs */
+    $tvs = include $sources['data'].'transport.tvs.php';
+    if (is_array($tvs)) {
+        $category->addMany($tvs,'TemplateVars');
+    }
 }
 
 /* Create Category attributes array dynamically
@@ -273,9 +270,6 @@ if ($hasValidator) {
         'source' => $sources['validators'] . 'validate.if.php',
     ));
     $vehicle->validate('php',array(
-        'source' => $sources['validators'] . 'validate.migx.php',
-    ));
-    $vehicle->validate('php',array(
         'source' => $sources['validators'] . 'validate.simplesearch.php',
     ));
     $vehicle->validate('php',array(
@@ -287,6 +281,9 @@ if ($hasValidator) {
     $vehicle->validate('php',array(
         'source' => $sources['validators'] . 'validate.wayfinder.php',
     ));
+    $vehicle->validate('php',array(
+        'source' => $sources['validators'] . 'validate.migx.php',
+    ));
 }
 /* package in script resolver if any */
 if ($hasResolver) {
@@ -294,7 +291,21 @@ if ($hasResolver) {
     $vehicle->resolve('php',array(
         'source' => $sources['resolvers'] . 'install.script.php',
     ));
-} 
+}
+
+/* Add subpackages */
+/* The transport.zip files will be copied to core/packages
+ * but will have to be installed manually with "Add New Package and
+ *  "Search Locally for Packages" in Package Manager
+ */
+
+if ($hasSubPackages) {
+    $modx->log(modX::LOG_LEVEL_INFO, 'Adding in subpackages.');
+     $vehicle->resolve('file',array(
+        'source' => $sources['packages'],
+        'target' => "return MODX_CORE_PATH;",
+        ));
+}
 
 /* package in script resolver if any */
 if ($hasResolver) {
@@ -322,20 +333,6 @@ if ($hasTemplates) {
         ));
 }
 
-/* Add subpackages */
-/* The transport.zip files will be copied to core/packages
- * but will have to be installed manually with "Add New Package and
- *  "Search Locally for Packages" in Package Manager
- */
-
-if ($hasSubPackages) {
-    $modx->log(modX::LOG_LEVEL_INFO, 'Adding in subpackages.');
-     $vehicle->resolve('file',array(
-        'source' => $sources['packages'],
-        'target' => "return MODX_CORE_PATH;",
-        ));
-}
-
 /* Put the category vehicle (with all the stuff we added to the
  * category) into the package 
  */
@@ -352,7 +349,7 @@ if ($hasResources) {
     } else {
         $attributes= array(
     xPDOTransport::PRESERVE_KEYS => false,
-    xPDOTransport::UPDATE_OBJECT => false,
+    xPDOTransport::UPDATE_OBJECT => true,
     xPDOTransport::UNIQUE_KEY => 'pagetitle',
     xPDOTransport::RELATED_OBJECTS => true,
     xPDOTransport::RELATED_OBJECT_ATTRIBUTES => array (

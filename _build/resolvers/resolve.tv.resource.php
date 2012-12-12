@@ -29,7 +29,7 @@ if ($object && $object->xpdo) {
                 ),
 				
 				'page_box_01' => array(
-                    '1' => '<h3>Added in the Sub-content box 1 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+                    '14' => '<h3>Added in the Sub-content box 1 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
                     '2' => '<h3>Added in the Sub-content box 1 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
 					'3' => '<h3>Added in the Sub-content box 1 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
 					'4' => '<h3>Added in the Sub-content box 1 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
@@ -42,7 +42,7 @@ if ($object && $object->xpdo) {
                 ),
 				
 				'page_box_02' => array(
-                    '1' => '<h3>Added in the Sub-content box 2 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+                    '14' => '<h3>Added in the Sub-content box 2 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
                     '2' => '<h3>Added in the Sub-content box 2 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
 					'3' => '<h3>Added in the Sub-content box 2 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
 					'4' => '<h3>Added in the Sub-content box 2 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
@@ -55,7 +55,7 @@ if ($object && $object->xpdo) {
                 ),
 				
 				'page_box_03' => array(
-                    '1' => '<h3>Added in the Sub-content box 3 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+                    '14' => '<h3>Added in the Sub-content box 3 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
                     '2' => '<h3>Added in the Sub-content box 3 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
 					'3' => '<h3>Added in the Sub-content box 3 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
 					'4' => '<h3>Added in the Sub-content box 3 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
@@ -68,7 +68,7 @@ if ($object && $object->xpdo) {
                 ),
 				
 				'page_box_04' => array(
-                    '1' => '<h3>Added in the Sub-content box 4 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+                    '14' => '<h3>Added in the Sub-content box 4 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
                     '2' => '<h3>Added in the Sub-content box 4 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
 					'3' => '<h3>Added in the Sub-content box 4 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
 					'4' => '<h3>Added in the Sub-content box 4 TV</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
@@ -81,12 +81,12 @@ if ($object && $object->xpdo) {
                 ),
 				
 				'page_lightbox' => array(
-                    '1' => '<h3>Title lightbox 1</h3>
+                    '14' => '<h3>Title lightbox 1</h3>
 <p>This is just some content.</p>',
                 ),
 				
 				'sidebar' => array(
-                    '1' => '<h3>Sidebar title</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
+                    '14' => '<h3>Sidebar title</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget sem ac neque egestas laoreet. Mauris pulvinar pharetra dolor ut elementum. Mauris et ipsum enim, sit amet molestie justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pellentesque mattis elit id eleifend.</p>',
                     '2' => '',
 					'3' => '',
 					'4' => '',
@@ -102,7 +102,7 @@ if ($object && $object->xpdo) {
                 ),
 				
 				'optional_contactform' => array(
-                    '1' => 'no',
+                    '14' => 'no',
                     '2' => 'no',
 					'3' => 'no',
 					'4' => 'no',
@@ -117,7 +117,7 @@ if ($object && $object->xpdo) {
                 ),
 				
 				'optional_gallery' => array(
-                    '1' => 'no',
+                    '14' => 'no',
                     '2' => 'no',
 					'3' => 'yes',
 					'4' => 'no',
@@ -131,7 +131,7 @@ if ($object && $object->xpdo) {
                 ),
 				
 				'optional_slider' => array(
-                    '1' => 'no',
+                    '14' => 'no',
                     '2' => 'no',
 					'3' => 'no',
 					'4' => 'no',
@@ -145,7 +145,7 @@ if ($object && $object->xpdo) {
                 ),
 				
 				'page_boxes' => array(
-                    '1' => '3',
+                    '14' => '3',
                     '2' => '0',
 					'3' => '0',
 					'4' => '0',

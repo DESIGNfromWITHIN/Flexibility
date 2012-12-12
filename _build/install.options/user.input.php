@@ -47,7 +47,18 @@
  * component.
  */
 
-$output = '<p>&nbsp;</p>
+$output = '<h1>Thank you for using Flexibility</h1>
+<p>This package is meant to be used once to quick-start MODX website projects. It will install a lot of things and provide a nice responsive MODX website based on the Foundation framework from ZURB.</p>
+<p>Any needed packages (like Wayfinder) will be installed automatically by the Flexibility package. You will be able to update and edit any sub-packages at a later date.</p>
+<h2>!!! ATTENTION !!!</h2>
+<ul>
+<li>The <b>Slider items</b> Template Variable (called multiItemsGrid) will not work after install, you need to open the multiItemsGrid Template Variable, and re-save it.
+Simply go to: <b>Elements tree</b> > <b>Template Variables</b> > <b>Flexibility</b> and open the <b>multiItemsGrid</b> Template Variable.
+Edit any field (like the name, remove the final <b>e</b> and retype it) and re-save the Template Variable. Now the Slider Items option will work as expected.<br>
+(If anybody knows how to fix this let me know!)</li>
+<li>If you change or edit any Chunk, Snippet, Template Variable or Plugin that was included in the Flexibility package.<br>
+<b>please rename it!</b> Or it will be overwritten on any future updates.</li>
+<h3>Installation options</h3>
 <label for="sitename">Enter the website name (you can change this later)</label>
 <p>&nbsp;</p>
 <input type="text" name="sitename" id="sitename" value="" align="left" size="40" maxlength="60" />
@@ -55,6 +66,5 @@ $output = '<p>&nbsp;</p>
 <input type="checkbox" name="change_sitename" id="change_sitename" checked="checked" value="1" align="left" />&nbsp;&nbsp;
 <label for="change_sitename">Set site name on install</label>
 <p>&nbsp;</p>';
-
 
 return $output;

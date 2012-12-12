@@ -381,15 +381,16 @@ $templateVariables[21]->fromArray(array(
 ),'',true,true);
 
 $input_properties=array(
-    'formtabs' => '[
+'formtabs' => '[
 {"caption":"Info", "fields": [
     {"field":"title","caption":"Title","description":"Title for the image."},
     {"field":"content","caption":"Content","description":"Content of the slide (optional).","inputTV":"slide_content"},
     {"field":"description","caption":"Description","inputTV":"slidetext"},
     {"field":"image","caption":"Image","inputTV":"image"}
 ]}
-]',
-    'columns' => '[
+]
+',
+'columns' => '[
 {"header": "Title", "width": "160", "sortable": "true", "dataIndex": "title"},
 {"header": "Image", "width": "50", "sortable": "false", "dataIndex": "image","renderer": "this.renderImage"}
 ]

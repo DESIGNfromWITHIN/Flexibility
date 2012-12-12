@@ -1,5 +1,17 @@
-Flexibility - version 3.0.3-rc
+Flexibility - version 3.0.5-rc
 http://flexibilitymodx.com/
+
+This package is meant to be used once to quick-start MODX website projects. It will install a lot of things and provide a nice responsive MODX website based on the Foundation framework from ZURB.
+
+-----------------------------------------------------------------------------------------------------------
+!!! ATTENTION !!!
+-----------------------------------------------------------------------------------------------------------
+
+- The Slider items Template Variable (called 'multiItemsGrid') will not work after install, you need to open the 'multiItemsGrid' Template Variable, and re-save it.
+Simply go to: 'Elements' tree > 'Template Variables' > 'Flexibility' and open the 'multiItemsGrid' Template Varibale.
+Edit any field (like the name, remove the final 'e' and retype it) and save the Template Varibale. Now the Slider Items option will work as expected.
+- If you change or edit any Chunk, Snippet, Template Variable or Plugin that was included in the Flexibility package, please rename it! Or it will be overwritten on any future updates.
+- Any needed packages (like Wayfinder) will be installed automatically by the Flexibility package. You will be able to update and edit any sub-packages at a later date.
 
 -----------------------------------------------------------------------------------------------------------
 ABOUT
@@ -24,7 +36,7 @@ MANUAL INSTALL
 
 1. Install MODx Revolution on your website.
 
-2. download the package and upload the "flexibility-3.0.3-rc.transport.zip" file to "<your_modx_install>/core/packages/" (You only need the transport.zip file, do not unzip it yourself)
+2. download the package and upload the "flexibility-3.0.5-rc.transport.zip" file to "<your_modx_install>/core/packages/" (You only need the transport.zip file, do not unzip it yourself)
 
 3. Install the "Flexibility" package: Go to "System" > "Package Management" > "Add New Package" > "Search Locally for Packages" > "Yes".
 
