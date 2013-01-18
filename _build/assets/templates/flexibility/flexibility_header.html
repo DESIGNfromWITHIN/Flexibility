@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="[[++cultureKey]]"> <![endif]-->
 <!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="[[++cultureKey]]"> <![endif]-->
@@ -10,14 +9,11 @@
   <base href="[[++site_url]]" />
   <meta charset="[[++modx_charset:lcase]]" />
   <!-- Set the viewport width to device width for mobile -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+  <meta name="viewport" content="width=device-width" />
   <title>[[*pagetitle]] - [[++site_name]]</title>
-  
   <meta name="description" content="[[*introtext:empty=`[[*content:strip_tags]]`:limit=`200`]]" />
   <meta name="author" content="[[If? &subject=`[[*publishedby]]` &operator=`>` &operand=`0` &then=`[[*publishedby:userinfo=`fullname`]]` &else=`[[*createdby:userinfo=`fullname`]]`]]" />
   <meta name="keywords" content="[[*page_keywords]][[*site_keywords:notempty=`,[[*site_keywords]]`]]" />
-
   <!-- Included CSS Files (Uncompressed) -->
   <link rel="stylesheet" href="[[++site_url]]assets/templates/flexibility/stylesheets/foundation.min.css">
   <link rel="stylesheet" href="[[++site_url]]assets/templates/flexibility/stylesheets/jquery.fancybox.css">
@@ -26,15 +22,12 @@
   <link rel="stylesheet" href="[[++site_url]]assets/templates/flexibility/stylesheets/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
   <link rel="stylesheet" href="[[++site_url]]assets/templates/flexibility/stylesheets/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
   <script src="[[++site_url]]assets/templates/flexibility/javascripts/modernizr.foundation.js"></script>
-
   <!-- IE Fix for HTML5 Tags -->
   <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-
 </head>
 <body>
-
   <header>
     <div class="row">
       <div class="six columns">
@@ -53,10 +46,10 @@
     <div class="row">
       <div class="twelve columns">
         <nav id="main_nav" class="hide-for-small">
-          [[!Wayfinder? &startId=`0` &rowTpl=`rowTpl` &innerTpl=`innerTpl` &outerTpl=`outerTpl` &outerClass=`nav-bar` &innerClass=`flyout` &parentClass=`has-flyout`]]
+          [[Wayfinder? &startId=`0` &rowTpl=`rowTpl` &innerTpl=`innerTpl` &outerTpl=`outerTpl` &outerClass=`nav-bar` &innerClass=`flyout` &parentClass=`has-flyout`]]
         </nav>
         <nav id="main_nav" class="mobile_nav show-for-small">
-          [[!Wayfinder? &startId=`0` &rowTpl=`rowTpl` &innerTpl=`innerTpl` &outerTpl=`outerTpl` &outerClass=`nav-bar` &innerClass=`flyout` &parentClass=`has-flyout`]]
+          <select id="nav_mobile">[[Wayfinder? &startId=`0` &level=`0` &outerTpl=`navMobileOuterTpl` &rowTpl=`navMobileRowTpl` &hereTpl=`navMobileHereTpl` &innerRowTpl=`navMobileInnerRowTpl` &innerHereTpl=`navMobileInnerHereTpl`]]</select>
         </nav>
       </div>
     </div>

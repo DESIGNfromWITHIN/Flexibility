@@ -1,4 +1,4 @@
-Flexibility - version 3.0.5-rc
+Flexibility - version 3.0.6-rc
 http://flexibilitymodx.com/
 
 This package is meant to be used once to quick-start MODX website projects. It will install a lot of things and provide a nice responsive MODX website based on the Foundation framework from ZURB.
@@ -36,7 +36,7 @@ MANUAL INSTALL
 
 1. Install MODx Revolution on your website.
 
-2. download the package and upload the "flexibility-3.0.5-rc.transport.zip" file to "<your_modx_install>/core/packages/" (You only need the transport.zip file, do not unzip it yourself)
+2. download the package and upload the "flexibility-3.0.6-rc.transport.zip" file to "<your_modx_install>/core/packages/" (You only need the transport.zip file, do not unzip it yourself)
 
 3. Install the "Flexibility" package: Go to "System" > "Package Management" > "Add New Package" > "Search Locally for Packages" > "Yes".
 

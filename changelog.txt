@@ -1,5 +1,10 @@
 Changelog for Flexibility
 
+flexibility-3.0.6-rc.transport (18 januari 2013)
+====================================
+- Added a mobile input navigation for smaller screens
+- The full template should now be faster and more streamlined
+
 flexibility-3.0.5-rc.transport (12 december 2012)
 ====================================
 - Changed UPDATE_OBJECT back to TRUE (xPDOTransport::UPDATE_OBJECT => true), this was not working... Will try to create a seperate update package to Flexibility.

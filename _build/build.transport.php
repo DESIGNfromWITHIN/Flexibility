@@ -31,7 +31,7 @@
 /* Set package info be sure to set all of these */
 define('PKG_NAME','Flexibility');
 define('PKG_NAME_LOWER','flexibility');
-define('PKG_VERSION','3.0.5');
+define('PKG_VERSION','3.0.6');
 define('PKG_RELEASE','rc');
 define('PKG_CATEGORY','Flexibility');
 

@@ -210,4 +210,49 @@ $chunks[22]->fromArray(array(
     'static_file' => 'assets/templates/flexibility/flexibility_footer.html',
 ),'',true,true);
 
+$chunks[23]= $modx->newObject('modChunk');
+$chunks[23]->fromArray(array(
+    'id' => 23,
+    'name' => 'navMobileInnerHereTpl',
+    'description' => '',
+    'snippet' => file_get_contents($sources['data'].'/chunks/navMobileInnerHereTpl.tpl'),
+    'properties' => '',
+),'',true,true);
+
+$chunks[24]= $modx->newObject('modChunk');
+$chunks[24]->fromArray(array(
+    'id' => 24,
+    'name' => 'navMobileInnerRowTpl',
+    'description' => '',
+    'snippet' => file_get_contents($sources['data'].'/chunks/navMobileInnerRowTpl.tpl'),
+    'properties' => '',
+),'',true,true);
+
+$chunks[25]= $modx->newObject('modChunk');
+$chunks[25]->fromArray(array(
+    'id' => 25,
+    'name' => 'navMobileHereTpl',
+    'description' => '',
+    'snippet' => file_get_contents($sources['data'].'/chunks/navMobileHereTpl.tpl'),
+    'properties' => '',
+),'',true,true);
+
+$chunks[26]= $modx->newObject('modChunk');
+$chunks[26]->fromArray(array(
+    'id' => 26,
+    'name' => 'navMobileRowTpl',
+    'description' => '',
+    'snippet' => file_get_contents($sources['data'].'/chunks/navMobileRowTpl.tpl'),
+    'properties' => '',
+),'',true,true);
+
+$chunks[27]= $modx->newObject('modChunk');
+$chunks[27]->fromArray(array(
+    'id' => 27,
+    'name' => 'navMobileOuterTpl',
+    'description' => '',
+    'snippet' => file_get_contents($sources['data'].'/chunks/navMobileOuterTpl.tpl'),
+    'properties' => '',
+),'',true,true);
+
 return $chunks;

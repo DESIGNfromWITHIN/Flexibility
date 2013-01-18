@@ -1,5 +1,4 @@
 [[$flexibility_header]]
-
   <!-- START Optional slider -->
   [[switch?
   &get=`[[*optional_slider]]`
@@ -8,13 +7,12 @@
   <div class="row">
     <div class="twelve columns">
       <div id="slider">
-        [[!getImageList? &tvname=`multiItemsGrid` &docid=`11` &tpl=`slideTpl`]]
+        [[getImageList? &tvname=`multiItemsGrid` &docid=`11` &tpl=`slideTpl`]]
       </div>
     </div>
   </div>
   `&default=``]]
   <!-- END Optional slider -->
-
   <div class="row">
     <div class="twelve columns">
       <!-- START Content and optional sidebar -->
@@ -24,13 +22,11 @@
       `:else=`
       `]]
       [[*content]]
-      
       <!-- START Optional content -->
       [[If? &subject=`[[*page_lightbox]]` &operator=`notempty` &then=`<p>[[$page_lightbox_trigger]]</p>`]]
       [[If? &subject=`[[*optional_gallery]]` &operator=`EQ` &operand=`yes` &then=`[[$page_gallery]]`]]
       [[If? &subject=`[[*optional_contactform]]` &operator=`EQ` &operand=`yes` &then=`[[$contactform]]`]]
       <!-- END  Optional content -->
-          
       [[*sidebar:isnot=``:then=`
         </div>
         <div class="four columns">
@@ -42,33 +38,7 @@
       <!-- END Content and optional sidebar -->
     </div>
   </div>
-  <!-- START Optional content boxes -->
-  [[switch?
-  &get=`[[*page_boxes]]`
-  &c1=`2`
-  &do1=`
   <div class="row">
-    <div class="six columns">
-      [[*page_box_01]]
-    </div>
-    <div class="six columns">
-      [[*page_box_02]]
-    </div>
-  </div>`
-  &c2=`3`
-  &do2=`<div class="row">
-    <div class="four columns">
-      [[*page_box_01]]
-    </div>
-    <div class="four columns">
-      [[*page_box_02]]
-    </div>
-    <div class="four columns">
-      [[*page_box_03]]
-    </div>
-  </div>`
-  &c3=`4`
-  &do3=`<div class="row">
     <div class="three columns">
       [[*page_box_01]]
     </div>
@@ -81,8 +51,6 @@
     <div class="three columns">
       [[*page_box_04]]
     </div>
-  </div>`
-  &default=``]]
+  </div>
   <!-- END  Optional content boxes -->
-
 [[$flexibility_footer]]
